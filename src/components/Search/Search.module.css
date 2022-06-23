@@ -1,5 +1,5 @@
 .mainWrapper {
-    @apply p-2 rounded-md flex flex-row justify-center items-center drop-shadow-2xl mr-auto ml-36;
+    @apply p-2 rounded-md flex flex-row justify-center items-center shadow-2xl mr-auto ml-36;
 }
 
 .contentWrapper {

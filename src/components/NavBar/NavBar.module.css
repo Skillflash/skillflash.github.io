@@ -11,7 +11,7 @@
 }
 
 .profileNavWrapper {
-    @apply drop-shadow-2xl h-11 justify-between items-center flex flex-row px-4 rounded-md ml-auto;
+    @apply shadow-2xl h-11 justify-between items-center flex flex-row px-4 rounded-md ml-auto;
 }
 
 .profileButton {

@@ -12,7 +12,7 @@ const TopNavBar = props => {
             <button className="outline-none">
                 <h2 className={`${styles.expertCTA}`}>Expert:in werden</h2>
             </button>
-            <div className={`${styles.profileNavWrapper} bg-primary-orange`}>
+            <div className={`${styles.profileNavWrapper} bg-primary-orange shadow-neutral-black`}>
                 <button className={`${styles.profileButton}`}>
                     <img alt="icon" src={menu} />
                 </button>
