@@ -173,7 +173,7 @@
 /* CTA card */
 
 .CTAWrapper {
-    @apply shadow-md rounded-md w-76 py-3 m-2 bg-gradient-to-r;
+    @apply rounded-md w-76 py-3 m-2 bg-gradient-to-r shadow-lg ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
 }
 
 .CTAContent {
