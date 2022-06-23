@@ -9,7 +9,9 @@ const TopNavBar = props => {
         <div className={`${styles.mainWrapper}`}>
             <h3 className={`${styles.logoTitle}`}>Logo</h3>
             <Search />
-            <h2 className={`${styles.expertCTA}`}>Expert:in werden</h2>
+            <button className="outline-none">
+                <h2 className={`${styles.expertCTA}`}>Expert:in werden</h2>
+            </button>
             <div className={`${styles.profileNavWrapper} bg-primary-orange`}>
                 <button className={`${styles.profileButton}`}>
                     <img alt="icon" src={menu} />

@@ -6,7 +6,7 @@ import styles from './Cards.module.css';
 
 const AudioCard = props => {
     return (
-        <div className={`${styles.audioWrapper} bg-neutral-white`}>
+        <div className={`${styles.audioWrapper} bg-neutral-white border-secondary-yellow hover:border-neutral-white`}>
             <div className={`${styles.articleHeader}`}>
                 <img src={avatar5} alt="avatar" className={`${styles.articleHeaderImage}`} />
                 <div className={`${styles.articleHeaderNameWrapper}`}>

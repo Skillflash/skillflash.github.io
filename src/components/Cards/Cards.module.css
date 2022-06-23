@@ -1,196 +1,193 @@
- /* Article Card */
+/* Article Card */
 
- .articleWrapper {
-     @apply drop-shadow-md rounded-md w-76 p-3 m-2 mb-3;
- }
+.articleWrapper {
+    @apply shadow-lg rounded-md w-76 p-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+}
 
- .articleHeader {
-     @apply flex flex-row justify-between items-center;
- }
+.articleHeader {
+    @apply flex flex-row justify-between items-center;
+}
 
- .articleHeaderImage {
-     @apply h-11 w-11 rounded-full drop-shadow-md bg-cover bg-center;
- }
+.articleHeaderImage {
+    @apply h-11 w-11 rounded-full shadow-md bg-cover bg-center;
+}
 
- .articleHeaderNameWrapper {
-     @apply mr-auto ml-8 text-left;
- }
+.articleHeaderNameWrapper {
+    @apply mr-auto ml-8 text-left;
+}
 
- .articleHeaderNameTitle {
-     @apply text-sm font-semibold;
- }
+.articleHeaderNameTitle {
+    @apply text-sm font-semibold;
+}
 
- .articleHeaderNameSubTitle {
-     @apply text-xs;
- }
+.articleHeaderNameSubTitle {
+    @apply text-xs;
+}
 
- .articleHeaderIcon {
-     @apply h-6 w-6;
- }
+.articleHeaderIcon {
+    @apply h-6 w-6;
+}
 
- .articleBody {
-     @apply text-left py-5;
- }
+.articleBody {
+    @apply text-left py-5;
+}
 
- .articleBodyTitle {
-     @apply text-2xl font-medium;
- }
+.articleBodyTitle {
+    @apply text-2xl font-medium;
+}
 
- .articleBodySubTitle {
-     @apply text-sm;
- }
+.articleBodySubTitle {
+    @apply text-sm;
+}
 
- .articleBodyPara {
-     @apply text-sm px-2 pt-2;
- }
+.articleBodyPara {
+    @apply text-sm px-2 pt-2;
+}
 
- .articleCTA {
-     @apply flex flex-row justify-between items-center mx-2 pb-3 mb-2 border-b-2;
- }
+.articleCTA {
+    @apply flex flex-row justify-between items-center mx-2 pb-3 mb-2 border-b-2;
+}
 
- .articleCTAButton {
-     @apply outline-none;
- }
+.articleCTAButton {
+    @apply outline-none;
+}
 
- .articleFooter {
-     @apply flex flex-row py-1;
- }
+.articleFooter {
+    @apply flex flex-row py-1;
+}
 
- .articleFooterImage {
-     @apply h-7 w-7 rounded-full drop-shadow-md bg-cover bg-center;
- }
+.articleFooterImage {
+    @apply h-7 w-7 rounded-full shadow-md bg-cover bg-center;
+}
 
- .articleFooterInput {
-     @apply outline-none ml-4 text-xs;
- }
+.articleFooterInput {
+    @apply outline-none ml-4 text-xs;
+}
 
+/* Expert Card */
 
- /* Expert Card */
+.expertWrapper {
+    @apply shadow-lg rounded-md w-76 p-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+}
 
- .expertWrapper {
-     @apply drop-shadow-md rounded-md w-76 p-3 m-2 mb-3;
- }
+.expertTitle {
+    @apply text-2xl font-medium py-2;
+}
 
- .expertTitle {
-     @apply text-2xl font-medium py-2;
- }
+.expertBody {
+    @apply text-base;
+}
 
- .expertBody {
-     @apply text-base;
- }
+.expertBodyCategoryWrapper {
+    @apply flex flex-row flex-wrap justify-end py-4;
+}
 
- .expertBodyCategoryWrapper {
-     @apply flex flex-row flex-wrap justify-end py-4;
- }
+.expertBodyCategoryText {
+    @apply rounded m-1 p-1.5 px-2 text-sm;
+}
 
- .expertBodyCategoryText {
-     @apply rounded m-1 p-1.5 px-2 text-sm;
- }
+.expertBodyWrapper {
+    @apply text-base;
+}
 
- .expertBodyWrapper {
-     @apply text-base;
- }
+.expertBodyImage {
+    @apply h-28 w-28 rounded-full shadow-md mx-auto bg-cover bg-center;
+}
 
- .expertBodyImage {
-     @apply h-28 w-28 rounded-full drop-shadow-md mx-auto bg-cover bg-center;
- }
+.expertBodyName {
+    @apply text-sm py-2;
+}
 
- .expertBodyName {
-     @apply text-sm py-2;
- }
+.expertFooter {
+    @apply flex flex-row justify-between items-center py-2;
+}
 
- .expertFooter {
-     @apply flex flex-row justify-between items-center py-2;
- }
+.expertFooterName {
+    @apply text-sm mr-auto ml-5 font-medium;
+}
 
- .expertFooterName {
-     @apply text-sm mr-auto ml-5 font-medium;
- }
+.expertFooterCTAButton {
+    @apply flex flex-row items-center ml-6;
+}
 
- .expertFooterCTAButton {
-     @apply flex flex-row items-center ml-6;
- }
+.expertFooterCTAButtonIcon {
+    @apply text-xl font-bold;
+}
 
- .expertFooterCTAButtonIcon {
-     @apply text-xl font-bold;
- }
+.expertFooterCTAButtonText {
+    @apply text-xs font-medium ml-1;
+}
 
- .expertFooterCTAButtonText {
-     @apply text-xs font-medium ml-1;
- }
+/* Audio Card */
 
+.audioWrapper {
+    @apply shadow-lg rounded-md w-76 p-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+}
 
- /* Audio Card */
+.audioBody {
+    @apply py-4;
+}
 
- .audioWrapper {
-     @apply drop-shadow-md rounded-md w-76 p-3 m-2 mb-3;
- }
+.audioBodyIconWrapper {
+    @apply h-16 w-16 rounded-full shadow-md mx-auto my-2 flex justify-center items-center;
+}
 
- .audioBody {
-     @apply py-4;
- }
+.audioBodyIcon {
+    @apply text-2xl;
+}
 
- .audioBodyIconWrapper {
-     @apply h-16 w-16 rounded-full drop-shadow-md mx-auto my-2 flex justify-center items-center;
- }
+.audioBodyTitle {
+    @apply font-medium text-2xl mb-1;
+}
 
- .audioBodyIcon {
-     @apply text-2xl;
- }
+.audioBodySubTitle {
+    @apply text-lg;
+}
 
- .audioBodyTitle {
-     @apply font-medium text-2xl mb-1;
- }
+/* Event Card */
 
- .audioBodySubTitle {
-     @apply text-lg;
- }
+.eventWrapper {
+    @apply shadow-lg rounded-md w-76 py-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+}
 
+.eventBody {
+    @apply relative my-4;
+}
 
- /* Event Card */
+.eventBodyImage {
+    @apply h-64 w-full bg-cover bg-center;
+}
 
- .eventWrapper {
-     @apply drop-shadow-md rounded-md w-76 py-3 m-2 mb-3;
- }
+.eventDate {
+    @apply absolute top-4 right-4 p-2 rounded shadow-md;
+}
 
- .eventBody {
-     @apply relative my-4;
- }
+.eventFooter {
+    @apply text-left;
+}
 
- .eventBodyImage {
-     @apply h-64 w-full bg-cover bg-center;
- }
+.eventName {
+    @apply p-1 px-4 rounded-md inline-block text-base font-medium;
+}
 
- .eventDate {
-     @apply absolute top-4 right-4 p-2 rounded drop-shadow-md;
- }
+/* CTA card */
 
- .eventFooter {
-     @apply text-left;
- }
+.CTAWrapper {
+    @apply shadow-md rounded-md w-76 py-3 m-2 bg-gradient-to-r;
+}
 
- .eventName {
-     @apply p-1 px-4 rounded-md inline-block text-base font-medium;
- }
+.CTAContent {
+    @apply text-center text-white px-1 py-5;
+}
 
- /* CTA card */
+.CTAIcon {
+    @apply w-12 h-12 mb-2;
+}
 
- .CTAWrapper {
-     @apply drop-shadow-md rounded-md w-76 py-3 m-2 bg-gradient-to-r;
- }
+.CTATitle {
+    @apply text-2xl font-medium mb-2;
+}
 
- .CTAContent {
-     @apply text-center text-white px-1 py-5
- }
-
- .CTAIcon {
-     @apply w-12 h-12 mb-2
- }
-
- .CTATitle {
-     @apply text-2xl font-medium mb-2
- }
-
- .CTASubtitle {
-     @apply text-base font-semibold
- }
+.CTASubtitle {
+    @apply text-base font-semibold;
+}

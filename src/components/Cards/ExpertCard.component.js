@@ -6,7 +6,7 @@ import { avatar3, avatar4 } from '../../resources/Images';
 
 const ExpertCard = props => {
     return (
-        <div className={`${styles.expertWrapper} bg-neutral-white`}>
+        <div className={`${styles.expertWrapper} bg-neutral-white border-primary-blue hover:border-neutral-white`}>
             <h3 className={`${styles.expertTitle} text-neutral-black`}>Projektmanager:in</h3>
             <div className={`${styles.expertBody}`}>
                 <div className={`${styles.expertBodyCategoryWrapper}`}>

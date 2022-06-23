@@ -6,7 +6,7 @@ import styles from './Cards.module.css';
 
 const EventCard = props => {
     return (
-        <div className={`${styles.eventWrapper} bg-neutral-white`}>
+        <div className={`${styles.eventWrapper} bg-neutral-white border-secondary-pink hover:border-transparent`}>
             <div className={`${styles.articleHeader} px-3`}>
                 <img src={avatar6} alt="avatar" className={`${styles.articleHeaderImage}`} />
                 <div className={`${styles.articleHeaderNameWrapper}`}>

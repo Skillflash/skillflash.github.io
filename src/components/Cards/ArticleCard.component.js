@@ -6,7 +6,7 @@ import { FiCornerUpRight, FiThumbsUp, FiMessageCircle, FiMoreVertical } from "re
 
 const ArticleCard = props => { 
     return (
-        <div className={`${styles.articleWrapper} bg-neutral-white`}>
+        <div className={`${styles.articleWrapper} bg-neutral-white border-primary-lila hover:border-neutral-white`}>
             <div className={`${styles.articleHeader}`}>
                 <img src={avatar1} alt="avatar" className={`${styles.articleHeaderImage}`} />
                 <div className={`${styles.articleHeaderNameWrapper}`}>
