@@ -1,0 +1,52 @@
+.mainWrapper {
+    @apply relative;
+}
+
+
+.heroImage {
+    @apply w-screen h-132;
+}
+
+.heroWrapper {
+    @apply absolute inset-0 py-2;
+}
+
+.heroThought {
+    @apply flex flex-row;
+}
+
+.heroArrow {
+    @apply h-36 w-36 -ml-12;
+}
+
+.heroThoughtImageWrapper {
+    @apply relative ml-6 mt-4;
+}
+
+.heroThoughtImage {
+    @apply h-56 w-auto;
+}
+
+.heroThoughtText {
+    @apply absolute -mt-1 top-28 ml-24 -translate-y-1/2 w-64 text-2xl;
+}
+
+.heroTitleWrapper {
+    @apply w-1/2 mx-auto flex flex-col items-center;
+}
+
+.heroTitle {
+    @apply text-5xl;
+}
+
+.heroSubTitle {
+    @apply text-5xl font-medium my-2;
+}
+
+.heroWelcomText {
+    @apply px-16 mx-3.5 text-center tracking-wide text-sm;
+}
+
+.heroButtonWrapper {
+    @apply flex justify-center items-center my-10;
+}

@@ -1,0 +1,19 @@
+.mainWrapper {
+    @apply bg-gradient-to-br from-primary-blue to-primary-lila text-neutral-white py-3 flex flex-row px-5 justify-between items-center sticky top-0 drop-shadow-md z-50;
+}
+
+.logoTitle {
+    @apply text-neutral-white uppercase font-medium text-xl ml-6;
+}
+
+.expertCTA {
+    @apply text-lg;
+}
+
+.profileNavWrapper {
+    @apply drop-shadow-2xl h-11 justify-between items-center flex flex-row px-4 rounded-md ml-auto;
+}
+
+.profileButton {
+    @apply mx-1
+}

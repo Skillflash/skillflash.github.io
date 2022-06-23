@@ -1,0 +1,23 @@
+.mainWrapper {
+    @apply p-2 rounded-md flex flex-row justify-center items-center drop-shadow-2xl mr-auto ml-36;
+}
+
+.contentWrapper {
+    @apply border rounded-md flex flex-row overflow-hidden;
+}
+
+.inputField {
+    @apply px-3 py-3 outline-none border-r;
+}
+
+.dropDownButtonWrapper {
+    @apply flex flex-row justify-between px-3 items-center w-28 border-l;
+}
+
+.dropDownButton {
+    @apply text-neutral-black text-xs flex flex-row items-center justify-between w-full outline-none;
+}
+
+.searchButton {
+    @apply rounded-md w-12 h-12 flex justify-center items-center ml-2;
+}
