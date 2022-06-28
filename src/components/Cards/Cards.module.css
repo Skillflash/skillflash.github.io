@@ -169,7 +169,6 @@
 .eventName {
     @apply p-1 px-4 rounded-md inline-block text-base font-medium;
 }
-
 /* CTA card */
 
 .CTAWrapper {
