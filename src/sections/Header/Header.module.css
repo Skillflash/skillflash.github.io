@@ -1,14 +1,57 @@
 .mainWrapper {
-    @apply relative;
+    @apply relative bg-gradient-to-tr h-132 top-0 flex justify-center items-center pb-40;
+}
+
+.headerContent {
+    @apply flex flex-col items-center
+}
+
+.headerContentTitle {
+    @apply text-6xl font-bold font-source-sans-pro;
+}
+
+.headerContentSubTitle {
+    @apply text-base font-medium my-4 mb-14 font-quicksand;
+}
+
+.headerContentSearchWrapper {}
+
+
+
+
+
+
+ /* Bottom curve */
+
+ .headerBottomCurve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.headerBottomCurve svg {
+    position: relative;
+    display: block;
+    width: calc(268% + 1.3px);
+    height: 500px;
+}
+
+.headerBottomCurve .headerBottomCurveFill {
+    fill: #FFFFFF;
 }
 
 
-.heroImage {
+/* Old styles */
+
+/* .heroImage {
     @apply w-screen h-132;
 }
 
 .heroWrapper {
-    @apply absolute inset-0 py-2;
+    @apply py-2;
 }
 
 .heroThought {
@@ -49,4 +92,4 @@
 
 .heroButtonWrapper {
     @apply flex justify-center items-center my-10;
-}
+} */
