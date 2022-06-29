@@ -4,8 +4,8 @@ import styles from './Skills.module.css';
 const Skills = props => {
   const { text, color } = props;
   return(
-    <div className={`${styles.SkillBox} border-${color}`}>
-        <p className={`${styles.SkillText} text-${color}`}>{props.text}</p>
+    <div className={`${styles.SkillBox} border-${color} `}>
+        <p className={`${styles.SkillText} text-${color}`}>{text}</p>
     </div>
 )
 }
