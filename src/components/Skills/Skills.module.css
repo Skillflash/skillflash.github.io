@@ -1,0 +1,14 @@
+/* Skills */
+.SkillBox{
+    @apply px-4 py-2 border-4 rounded-3xl mr-2 shadow-2xl;
+}
+
+.SkillText{
+    @apply text-base font-bold text-center;
+}
+.SkillsArea{
+    @apply flex flex-row flex-wrap w-80 px-4 py-6;
+}
+.SkillsNumber{
+    @apply text-base font-bold text-center px-4 py-2 ;
+}
