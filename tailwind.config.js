@@ -22,7 +22,7 @@ module.exports = {
         },
         'primary-blue': {
           light: '#77a9fc',
-          DEFAULT: '#3C84FA',
+          DEFAULT: '#3A86FF',
           dark: '#2a5caf',
         },
         'primary-lila': {
