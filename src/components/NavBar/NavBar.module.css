@@ -1,17 +1,29 @@
 .mainWrapper {
-    @apply bg-gradient-to-br from-primary-blue to-primary-lila text-neutral-white py-3 flex flex-row px-5 justify-between items-center sticky top-0 drop-shadow-md z-50;
+    @apply w-screen py-4 flex flex-row px-14 justify-between items-center fixed top-0 z-50 duration-[700ms] ease-in-out;
 }
 
 .logoTitle {
-    @apply text-neutral-white uppercase font-medium text-xl ml-6;
+    @apply font-extrabold font-source-sans-pro text-3xl mr-14 duration-[700ms] ease-in-out;
+}
+
+.navButton {
+    @apply flex flex-row items-center mx-10 duration-500 ease-in-out;
+}
+
+.navButtonIcon {
+    @apply invisible text-lg font-bold duration-500 ease-in-out;
+}
+
+.navButton:hover .navButtonIcon {
+    @apply visible mr-3;
 }
 
 .expertCTA {
-    @apply text-lg;
+    @apply text-xl font-source-sans-pro bg-gradient-to-r bg-clip-text text-transparent font-bold capitalize duration-[700ms] ease-in-out;
 }
 
 .profileNavWrapper {
-    @apply shadow-2xl h-11 justify-between items-center flex flex-row px-4 rounded-md ml-auto;
+    @apply shadow-lg justify-between items-center flex flex-row px-2 py-3 rounded-md ml-auto outline-none;
 }
 
 .profileButton {

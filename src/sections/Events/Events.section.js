@@ -8,7 +8,7 @@ const Events = props => {
         <section className={`${styles.mainWrapper} bg-neutral-white`}>
             <h3 className={`${styles.eventsTitle} text-transparent from-primary-blue to-primary-lila`}>Events, Expert:innen, Fachartikel und mehr..</h3>
             <div className={`${styles.eventsCards}`}>
-                <div>
+                {/* <div>
                     <CTACard />
                     <EventCard />
                     <ArticleCard />
@@ -29,7 +29,7 @@ const Events = props => {
                     <AudioCard />
                     <ArticleCard />
                     <ExpertCard />
-                </div>
+                </div> */}
             </div>
         </section>
     )

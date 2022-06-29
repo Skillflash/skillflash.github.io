@@ -1,5 +1,5 @@
 .mainWrapper {
-    @apply pt-56 -mt-72 text-center pb-20;
+    @apply z-50 text-center pb-20;
 }
 
 .eventsTitle {

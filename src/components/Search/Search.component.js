@@ -1,24 +1,17 @@
 import React from 'react';
-import { chevron_down, search } from '../../resources/Icons';
+import { FiChevronRight, FiSearch } from 'react-icons/fi';
 
 import styles from './Search.module.css';
 
 const Search = props => {
     return (
         <div className={`${styles.mainWrapper} bg-neutral-white`}>
-            <div className={`${styles.contentWrapper} border-neutral-grey`}>
-                <input className={`${styles.inputField} text-neutral-grey`} placeholder={'Thema'} />
-                <div className={`${styles.dropDownButtonWrapper}  border-neutral-grey`}>
-                    <button className={`${styles.dropDownButton}`}>
-                        <div>
-                            <p>Auswählen</p>
-                        </div>
-                        <img alt="icon" src={chevron_down} />
-                    </button>
-                </div>
+            <div className={`${styles.contentWrapper} border-primary-orange`}>
+                <FiSearch className={`${styles.searchInputIcon} text-primary-orange`} />
+                <input className={`${styles.inputField} text-primary-lila`} placeholder={'Strategie, Digitalisierung, Projektmanagemnt..'} value={'Strategie, Digitalisierung, Projektmanagemnt..'} />
             </div>
             <button className={`${styles.searchButton} bg-primary-orange`}>
-                <img alt="icon" src={search} />
+                <FiChevronRight className={`${styles.searchButtonIcon} text-neutral-white`} />
             </button>
         </div>
     )
