@@ -3,8 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        'source-sans-pro': ['"Source Sans Pro"'],
+        'quicksand': ['"Quicksand"'],
+        'atkinson':['"Atkinson Hyperlegible"']
+      },
       height: {
-        '132': '45rem',
+        '132': '50rem',
       },
       width: {
         '76': '19rem',

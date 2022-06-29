@@ -17,8 +17,6 @@ const Events = props => {
                 <div>
                     <TeamCard/>
                 </div>
-
-
                 {/* <div>
                     <CTACard />
                     <EventCard />
