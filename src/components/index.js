@@ -6,6 +6,11 @@ import ExpertCard from './Cards/ExpertCard.component';
 import AudioCard from './Cards/AudioCard.component';
 import EventCard from './Cards/EventCard.component';
 import CTACard from './Cards/CTACard.component';
+import ExpertCard1 from './Cards/ExpertCard1.component';
+import EventCard1 from './Cards/EventCard1.component';
+import TeamCard from './Cards/TeamCard.component';
+
+
 
 export {
     TopNavBar,
@@ -16,4 +21,7 @@ export {
     AudioCard,
     EventCard,
     CTACard,
+    ExpertCard1,
+    EventCard1,
+    TeamCard,
 };
