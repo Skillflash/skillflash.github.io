@@ -65,7 +65,10 @@ module.exports = {
           DEFAULT: '#47D7B2',
           dark: '#32977d',
         },
-      }
+      },
+      backgroundImage: theme => ({
+        'event-image': "url('/src/resources/Images/project.png')"
+       })
     }
   },
   plugins: []
