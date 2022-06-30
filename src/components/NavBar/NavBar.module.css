@@ -7,7 +7,7 @@
 }
 
 .navButton {
-    @apply flex flex-row items-center mx-10 duration-500 ease-in-out;
+    @apply flex flex-row items-center duration-500 ease-in-out;
 }
 
 .navButtonIcon {
@@ -19,7 +19,7 @@
 }
 
 .expertCTA {
-    @apply text-xl font-source-sans-pro bg-gradient-to-r bg-clip-text text-transparent font-bold capitalize duration-[700ms] ease-in-out;
+    @apply text-xl font-source-sans-pro bg-gradient-to-r bg-clip-text text-transparent capitalize duration-[700ms] ease-in-out;
 }
 
 .profileNavWrapper {
@@ -28,4 +28,16 @@
 
 .profileButton {
     @apply mx-1
+}
+
+.navProfile {
+    @apply relative ml-auto;
+}
+
+.navProfileMenu {
+    @apply absolute shadow-lg drop-shadow-xl mt-2 p-3 rounded right-1 -mr-1 w-64 duration-500 ease-in-out;
+}
+
+.divider {
+    @apply border-b w-full my-3;
 }

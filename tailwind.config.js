@@ -22,27 +22,32 @@ module.exports = {
         },
         'primary-blue': {
           light: '#77a9fc',
-          DEFAULT: '#3C84FA',
+          DEFAULT: '#3A86FF',
           dark: '#2a5caf',
         },
         'primary-lila': {
           light: '#a874f2',
-          DEFAULT: '#8978EC',
+          DEFAULT: '#8338EC',
           dark: '#5c27a5',
         },
         'primary-orange': {
           light: '#fb8c79',
-          DEFAULT: '#F95A3F',
+          DEFAULT: '#FB5607',
           dark: '#ae3f2c',
         },
         'secondary-pink': {
           light: '#fa8399',
-          DEFAULT: '#F84E6D',
+          DEFAULT: '#FF006E',
           dark: '#ae374c',
         },
         'secondary-yellow': {
           light: '#ffd377',
           DEFAULT: '#FFC03D',
+          dark: '#b3862b',
+        },
+        'secondary-rosa': {
+          light: '#ffd377',
+          DEFAULT: '#FF00EE',
           dark: '#b3862b',
         },
         'neutral-white': {

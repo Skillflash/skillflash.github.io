@@ -16,6 +16,13 @@ import avatar12 from './avatar12.jpg';
 import flower1 from './flower1.jpg';
 import project from './project.png';
 import team from './team.jpg';
+import draw from './draw.jpg';
+import javascript from './javascript.jpg';
+import language from './language.jpg';
+import training from './training.jpg';
+import guide from './guide.jpg';
+import graphic from './graphic.jpg';
+import project_management from './project_management.jpg';
 
 
 export { 
@@ -37,4 +44,11 @@ export {
     flower1,
     project,
     team,
+    draw,
+    training,
+    graphic,
+    project_management,
+    guide,
+    language,
+    javascript,
 };
