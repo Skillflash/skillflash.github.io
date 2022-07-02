@@ -13,6 +13,7 @@ import Skills from './Skills/Skills.component';
 import AudioCard1 from './Cards/AudioCard1.component';
 import ArticleCard1 from './Cards/ArticleCard1.component';
 import ProjectCard from './Cards/ProjectCard.component';
+import HeaderWrapper from './HeaderWrapper/HeaderWrapper.component';
 
 export {
     TopNavBar,
@@ -30,4 +31,5 @@ export {
     Skills,
     ArticleCard1,
     ProjectCard,
+    HeaderWrapper,
 };

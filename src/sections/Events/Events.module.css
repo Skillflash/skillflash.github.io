@@ -7,5 +7,6 @@
 }
 
 .eventsCards {
-    @apply px-8 py-8 flex flex-row flex-wrap justify-start items-start;
+    @apply lg:grid-cols-4 lg:gap-4;
+    @apply px-10 py-8 grid;
 }
