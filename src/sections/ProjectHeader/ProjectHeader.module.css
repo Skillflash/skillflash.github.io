@@ -1,0 +1,32 @@
+.projectWrapper {
+    @apply flex flex-wrap items-center justify-center flex-row z-10 w-4/5 mb-5;
+}
+
+.projectButton {
+    @apply flex flex-row items-center justify-center mx-1 my-1 py-1.5 px-5 rounded-3xl shadow-xl drop-shadow-xl;
+}
+
+.projectButtonText {
+    @apply text-2xl font-quicksand font-bold;
+}
+
+.projectButtonIcon {
+    @apply text-2xl ml-2 font-quicksand
+}
+
+.projectSkillButton {
+    @apply flex flex-row items-center justify-center mx-1 my-1 py-1.5 px-3.5 rounded-3xl border-2 shadow-md drop-shadow-md duration-300 ease-in-out;
+    @apply hover:bg-opacity-50;
+}
+
+.projectSkillButtonText {
+    @apply text-base font-quicksand font-bold;
+}
+
+.projectBack {
+    @apply absolute top-20 left-14 h-8 w-8 flex justify-center items-center rounded-full border-4;
+}
+
+.projectBackIcon {
+    @apply font-extrabold text-xl;
+}

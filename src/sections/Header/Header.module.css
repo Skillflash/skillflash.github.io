@@ -1,16 +1,3 @@
-.mainWrapper {
-    @apply relative bg-gradient-to-tr h-132 top-0 flex justify-center items-center;
-}
-
-.mainWrapperDotted {
-    @apply bg-primary-lila bg-opacity-10 h-132 w-full flex justify-center items-center pb-40;
-}
-
-.mainWrapperDotted {
-    background-image: radial-gradient(#80808062 1.9px, transparent 0);
-    background-size: 27px 27px;
-}
-
 .headerContent {
     @apply flex flex-col items-center
 }
@@ -41,30 +28,6 @@
 
 
 
-
-
-
- /* Bottom curve */
-
- .headerBottomCurve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.headerBottomCurve svg {
-    position: relative;
-    display: block;
-    width: calc(268% + 1.3px);
-    height: 500px;
-}
-
-.headerBottomCurve .headerBottomCurveFill {
-    fill: #FFFFFF;
-}
 
 
 /* Old styles */

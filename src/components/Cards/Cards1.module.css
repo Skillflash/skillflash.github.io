@@ -9,13 +9,13 @@
     @apply flex flex-row flex-wrap w-full px-4 py-6;
 }
 .SkillsNumber{
-    @apply text-base font-bold text-center px-4 py-2 font-quicksand
+    @apply text-base font-bold text-center px-1 py-2 font-quicksand ml-auto;
 }
 
 
 /* Expert Card */
 .ExpertWrapper{
-    @apply shadow-md m-2 rounded-md relative w-76 duration-500 ease-in-out;
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
     @apply hover:shadow-2xl;
 }
 .ExpertBody{
@@ -34,8 +34,9 @@
 
 
 /* Event Card */
+
 .EventWrapper {
-    @apply  shadow-md m-2 rounded-md relative w-76 duration-500 ease-in-out;
+    @apply  shadow-md my-1 rounded-md relative duration-500 ease-in-out;
     @apply hover:shadow-2xl;
 }
 
@@ -74,7 +75,7 @@
 /* Team Card */
 
 .TeamWrapper {
-    @apply shadow-md m-2 rounded-md relative w-76 duration-500 ease-in-out;
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
     @apply hover:shadow-2xl;
 }
 
@@ -99,7 +100,7 @@
 /* Audio Card */
 
 .audioWrapper {
-    @apply shadow-md m-2 rounded-md relative w-76 duration-500 ease-in-out;
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
     @apply hover:shadow-2xl;
 }
 
@@ -123,7 +124,7 @@
 /* Article Card */
 
 .articleWrapper {
-    @apply shadow-md m-2 rounded-md relative w-76 duration-500 ease-in-out;
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
     @apply hover:shadow-2xl;
 }
 
@@ -148,7 +149,7 @@
 /* Project Card */
 
 .projectWrapper {
-    @apply shadow-md m-2 rounded-md relative w-76 duration-500 ease-in-out;
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
     @apply hover:shadow-2xl;
 }
 
@@ -161,15 +162,24 @@
 }
 
 .projectBackgroundGradient {
-    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8  flex flex-col;
 }
 
 .projectNameWrapper {
-    @apply px-4 py-2 w-fit rounded-3xl mt-28;
+    @apply outline-none px-4 py-2 w-fit rounded-3xl mt-28 mr-auto shadow-xl drop-shadow-xl duration-500 ease-in-out;
+    @apply hover:bg-opacity-70;
 }
 
 .projectName {
     @apply text-left font-bold text-base font-quicksand;
+}
+
+.skillButton {
+    @apply outline-none p-1 px-4 rounded-3xl mr-2 border-2 shadow-xl drop-shadow-2xl;
+}
+
+.skillButtonText {
+    @apply font-quicksand font-bold;
 }
 
 
@@ -184,14 +194,15 @@
 }
 
 .cardFloatButtonIcon {
-    @apply text-xl
+    @apply text-xl;
 }
 
 .EventWrapper:hover .cardFloatButtonsWrapper,
 .ExpertWrapper:hover .cardFloatButtonsWrapper,
 .TeamWrapper:hover .cardFloatButtonsWrapper,
 .audioWrapper:hover .cardFloatButtonsWrapper,
-.projectWrapper:hover .cardFloatButtonsWrapper {
+.projectWrapper:hover .cardFloatButtonsWrapper,
+.articleWrapper:hover .cardFloatButtonsWrapper {
     @apply opacity-100 duration-500 ease-in-out;
 }
 

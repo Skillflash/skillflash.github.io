@@ -1,0 +1,24 @@
+.mainWrapper {
+    @apply  text-center pb-20 -mt-44;
+}
+
+.skillsButtonFilters {
+    @apply flex flex-row px-10 py-7;
+}
+
+.skillsButton {
+    @apply relative z-10 my-1 mr-1.5 flex flex-row justify-center items-center px-4 py-1.5 rounded-3xl shadow-md drop-shadow-xl;
+}
+
+.skillsButtonText {
+    @apply font-source-sans-pro font-bold;
+}
+
+.skillsButtonIcon {
+    @apply ml-2 text-xl;
+}
+
+.skillsCards {
+    @apply lg:grid-cols-4 lg:gap-4;
+    @apply px-10 py-8 grid;
+}

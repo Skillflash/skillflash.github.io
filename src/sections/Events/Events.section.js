@@ -9,11 +9,7 @@ const Events = props => {
         <section className={`${styles.mainWrapper} bg-neutral-white`}>
             {/* <h3 className={`${styles.eventsTitle} text-transparent from-primary-blue to-primary-lila`}>Events, Expert:innen, Fachartikel und mehr..</h3> */}
             <div className={`${styles.eventsCards}`}>
-                <ExpertCard1 />
-                <EventCard1 />
-                <AudioCard1 />
-                <TeamCard />
-                <ArticleCard1 />
+                
                 {projects.map((project, index) => <ProjectCard project={project} />)}
                 {/* <div>
                     <CTACard />
