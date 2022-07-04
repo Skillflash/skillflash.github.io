@@ -1,5 +1,5 @@
 .mainWrapper {
-    @apply w-screen py-4 flex flex-row px-14 justify-between items-center fixed top-0 z-50 duration-[700ms] ease-in-out;
+    @apply w-screen py-4 hidden md:flex flex-row px-14 justify-between items-center fixed top-0 z-50 duration-[700ms] ease-in-out;
 }
 
 .logoTitle {
@@ -40,4 +40,24 @@
 
 .divider {
     @apply border-b w-full my-3;
+}
+
+
+/* Bottom Bar */
+
+.bottomWrapper {
+    @apply fixed w-screen bottom-0 flex flex-row items-center justify-around py-4 px-3 shadow-lg drop-shadow-xl;
+    @apply md:hidden;
+}
+
+.bottomLink {
+    @apply flex flex-col justify-center items-center px-5 bg-clip-text bg-gradient-to-tr;
+}
+
+.bottomLinkIcon {
+    @apply text-2xl mb-1;
+}
+
+.bottomLinkText {
+    @apply text-transparent font-source-sans-pro font-bold text-lg;
 }

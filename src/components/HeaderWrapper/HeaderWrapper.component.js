@@ -5,7 +5,7 @@ import styles from './HeaderWrapper.module.css';
 
 const HeaderWrapper = ({ children, scrollY }) => {
     return (
-        <section className={`${styles.mainWrapper} ${styles.back} from-secondary-yellow via-secondary-pink to-primary-lila`}>
+        <section className={`${styles.mainWrapper} ${bgGradient}`}>
             <div className={`${styles.mainWrapperDotted}`}>
                 <div className={`${styles.headerContent}`}>
                     {children}
@@ -25,3 +25,5 @@ const HeaderWrapper = ({ children, scrollY }) => {
 }
 
 export default HeaderWrapper;
+
+const bgGradient = "from-secondary-yellow to-secondary-pink md:from-secondary-yellow md:via-secondary-pink md:to-primary-lila";

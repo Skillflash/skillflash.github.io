@@ -1,5 +1,7 @@
 .mainWrapper {
-    @apply p-3 w-3/4 rounded-md flex flex-row justify-center items-center shadow-2xl z-20;
+    @apply p-3 w-11/12 rounded-md flex flex-row justify-center items-center shadow-2xl z-20 fixed top-6;
+    @apply md:w-3/4 md:relative;
+
 }
 
 .contentWrapper {

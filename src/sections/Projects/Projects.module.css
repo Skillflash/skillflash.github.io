@@ -1,5 +1,6 @@
 .mainWrapper {
-    @apply  text-center pb-20 -mt-44;
+    @apply  text-center pb-20 -mt-16;
+    @apply md:-mt-44;
 }
 
 .skillsButtonFilters {
