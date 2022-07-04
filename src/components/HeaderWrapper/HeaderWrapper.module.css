@@ -1,9 +1,13 @@
 .mainWrapper {
-    @apply relative bg-gradient-to-tr h-132 top-0 flex justify-center items-center;
+    @apply relative bg-gradient-to-tr h-120 top-0 flex justify-center items-center;
+    @apply md:h-132;
+
 }
 
 .mainWrapperDotted {
-    @apply bg-primary-lila bg-opacity-10 h-132 w-full flex justify-center items-center pb-40;
+    @apply bg-primary-lila bg-opacity-10 h-120 w-full flex justify-center items-center pb-2;
+    @applu sm:pb-10;
+    @apply md:pb-40 md:h-132;
 }
 
 .mainWrapperDotted {
@@ -12,15 +16,17 @@
 }
 
 .headerContent {
-    @apply flex flex-col items-center
+    @apply flex flex-col items-center;
+    @apply md:mt-0;
 }
 
 .headerButton {
-    @apply z-50 mt-10 -mb-24 flex flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply z-50 mt-10 -mb-24 hidden flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply md:flex;
 }
 
 .headerButtonFixed {
-    @apply fixed top-20 z-50 flex flex-row items-center p-2 rounded shadow-xl bg-neutral-white;
+    @apply fixed top-20 z-50 shadow-xl bg-neutral-white;
 }
 
 .headerButtonText {
@@ -48,9 +54,18 @@
     position: relative;
     display: block;
     width: calc(268% + 1.3px);
-    height: 500px;
+    height: 250px;
 }
 
 .headerBottomCurve .headerBottomCurveFill {
     fill: #FFFFFF;
+}
+
+@media (min-width: 768px) { 
+    .headerBottomCurve svg {
+        position: relative;
+        display: block;
+        width: calc(268% + 1.3px);
+        height: 500px;
+    }
 }
