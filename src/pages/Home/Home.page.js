@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Search, TopNavBar} from '../../components';
+import {BottomBar, Search, TopNavBar} from '../../components';
 import { Events, Header } from '../../sections';
 import styles from './Home.module.css'
 
@@ -12,6 +12,7 @@ const Home = props => {
             <TopNavBar scrollY={scrollY} />
             <Header scrollY={scrollY} />
             <Events />
+            <BottomBar />
         </section>
     )
 }
