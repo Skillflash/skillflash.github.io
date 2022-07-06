@@ -19,6 +19,8 @@ const ExpertCard1 = props => {
             <div className={`${styles.SkillsArea}`}>
                 <Skills text={'Subskill'} color={'primary-blue'}/>
                 <Skills text={'Subskill'} color={'primary-blue'}/>
+                <Skills text={'Subskill'} color={'primary-blue'}/>
+                <Skills text={'Subskill'} color={'primary-blue'}/>
                 <p className={`${styles.SkillsNumber} text-primary-blue`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

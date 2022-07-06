@@ -1,5 +1,5 @@
 .projectWrapper {
-    @apply flex flex-wrap items-center justify-center flex-row z-10 w-4/5 mb-5;
+    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5;
 }
 
 .projectButton {
