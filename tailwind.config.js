@@ -78,7 +78,7 @@ module.exports = {
         },
       },
       backgroundImage: theme => ({
-        'event-image': "url('/src/resources/Images/project.png')"
+        'event-image': "url('/src/resources/Images/project.png')",
        })
     }
   },

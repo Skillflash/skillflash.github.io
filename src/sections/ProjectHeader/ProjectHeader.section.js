@@ -21,7 +21,7 @@ const ProjectHeader = props => {
                     </button>
                 )}
             </div>
-            <div className={`${styles.projectWrapper} overflow-y-scroll`}>
+            <div className={`${styles.projectWrapper} hover:overflow-y-auto`}>
                 {skills.map((skill, index) =>
                     <button className={`text-neutral-black ${styles.projectSkillButton} bg-neutral-white border-neutral-black`}>
                         <h6 className={`${styles.projectSkillButtonText}`}>{skill}</h6>
