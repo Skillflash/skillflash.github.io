@@ -79,6 +79,13 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'event-image': "url('/src/resources/Images/project.png')",
+        'project-management': "url('/src/resources/Images/project_management.jpg')",
+        'javascript': "url('/src/resources/Images/javascript.jpg')",
+        'graphic': "url('/src/resources/Images/graphic.jpg')",
+        'draw': "url('/src/resources/Images/draw.jpg')",
+        'training': "url('/src/resources/Images/training.jpg')",
+        'language': "url('/src/resources/Images/language.jpg')",
+        'guide': "url('/src/resources/Images/guide.jpg')",
        })
     }
   },

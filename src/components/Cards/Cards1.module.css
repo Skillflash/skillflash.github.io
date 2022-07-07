@@ -158,7 +158,7 @@
 }
 
 .projectBackgroundImage {
-    @apply w-full h-72 bg-opacity-5 bg-cover rounded-md;
+    @apply w-full h-80 bg-opacity-5 bg-cover rounded-md;
 }
 
 .projectBackgroundGradient {
