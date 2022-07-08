@@ -46,7 +46,8 @@
 /* Bottom Bar */
 
 .bottomWrapper {
-    @apply fixed w-screen bottom-0 flex flex-row items-center justify-around py-4 px-3 shadow-lg drop-shadow-xl;
+    /* @apply fixed w-screen bottom-0 flex flex-row items-center justify-around py-4 px-3 shadow-lg drop-shadow-xl; */
+    @apply fixed w-screen bottom-0 flex flex-row items-center justify-around py-4 px-3 shadow-lg drop-shadow-xl z-10;
     @apply md:hidden;
 }
 

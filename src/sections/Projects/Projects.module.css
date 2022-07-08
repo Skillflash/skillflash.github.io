@@ -1,10 +1,11 @@
 .mainWrapper {
-    @apply  text-center pb-20 -mt-16;
+    /* @apply  text-center pb-20 -mt-16; */
+    @apply  text-center pb-20 -mt-16 -z-10;
     @apply md:-mt-44;
 }
 
 .skillsButtonFilters {
-    @apply flex flex-row px-10 py-7;
+    @apply flex flex-row flex-wrap px-10 py-7;
 }
 
 .skillsButton {
@@ -20,6 +21,8 @@
 }
 
 .skillsCards {
-    @apply lg:grid-cols-4 lg:gap-4;
     @apply px-10 py-8 grid;
+    @apply sm:grid-cols-2 sm:gap-7 sm:justify-center;
+    @apply md:grid-cols-3 md:gap-5;
+    @apply lg:grid-cols-4 lg:gap-4;
 }

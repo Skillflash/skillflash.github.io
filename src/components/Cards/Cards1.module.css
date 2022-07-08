@@ -158,7 +158,7 @@
 }
 
 .projectBackgroundImage {
-    @apply w-full h-72 bg-opacity-5 bg-cover rounded-md;
+    @apply w-full h-80 bg-opacity-5 bg-cover object-cover object-left rounded-md;
 }
 
 .projectBackgroundGradient {
@@ -175,7 +175,8 @@
 }
 
 .skillButton {
-    @apply outline-none p-1 px-4 rounded-3xl mr-2 mb-2 border-2 shadow-xl drop-shadow-2xl;
+    /* @apply outline-none p-1 px-4 rounded-3xl mr-2 mb-2 border-2 shadow-xl drop-shadow-2xl; */
+    @apply outline-none p-1 px-4 rounded-3xl mr-2 border-2 mt-2 shadow-xl drop-shadow-2xl;
 }
 
 .skillButtonText {
