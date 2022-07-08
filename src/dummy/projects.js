@@ -4,37 +4,44 @@ const Projects = [
   {
     name: "Projektmanagement",
     skills: ["Klassisch", "Agil"],
-    image: project_management
+    image: project_management,
+    background: 'project-management',
   },
   {
     name: "Front End Dev.",
     skills: ["JavaScript", "Bootstrap"],
-    image: javascript
+    image: javascript,
+    background: 'javascript',
   },
   {
     name: "Grafik Design",
     skills: ["Photoshop", "Subskill"],
-    image: graphic
+    image: graphic,
+    background: 'graphic',
   },
   {
     name: "Training",
     skills: ["Personal", "Keynote"],
-    image: training
+    image: training,
+    background: 'training',
   },
   {
     name: "Fremdsprache",
     skills: ["English", "Spanish"],
-    image: language
+    image: language,
+    background: 'language',
   },
   {
     name: "Zeichnen",
     skills: ["Flipchart", "Cartoon"],
-    image: draw
+    image: draw,
+    background: 'draw',
   },
   {
     name: "Führung",
     skills: ["Holokratie", "Top-Down"],
-    image: guide
+    image: guide,
+    background: 'guide',
   }
 ]
 

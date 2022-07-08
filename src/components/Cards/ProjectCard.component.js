@@ -11,8 +11,9 @@ const ProjectCard = props => {
     const { project } = props;
 
     return (
-        <div className={`${styles.projectWrapper}`}>
-            <div className={`${styles.projectBackgroundImageWrapper}`}>
+        <div className={`${styles.EventWrapper}`}>
+            <div>
+
                 <img src={project.image} alt={project.name} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.projectBackgroundGradient}`}>
                     <NavLink to='/project' className={`${styles.projectNameWrapper} bg-neutral-black`}>
@@ -30,7 +31,7 @@ const ProjectCard = props => {
                 )}
                 {/* <Skills text={'Subskill'} color={'primary-blue'}/>
                 <Skills text={'Subskill'} color={'primary-blue'}/> */}
-                <p className={`${styles.SkillsNumber} text-nuetral-black`}>24..</p>
+                <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>
                 <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoAddCircleOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
