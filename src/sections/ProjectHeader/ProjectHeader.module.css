@@ -16,7 +16,7 @@
 }
 
 .projectSkillsWrapper {
-    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5;
+    @apply relative z-10 flex flex-wrap items-center justify-center flex-row w-4/5 mb-5;
 }
 
 .projectSkillButton {
