@@ -1,13 +1,8 @@
 /* Skills */
-.SkillBox{
-    @apply px-4 py-2 border-2 rounded-3xl mr-2 shadow-2xl;
-}
-.SkillText{
-    @apply text-base font-bold text-center;
-}
 .SkillsArea{
-    @apply flex flex-row flex-wrap w-full px-4 py-6;
+    @apply flex flex-row flex-wrap items-center w-full px-4 py-6;
 }
+
 .SkillsNumber{
     @apply text-base font-bold text-center px-1 py-2 font-quicksand ml-auto;
 }
@@ -19,7 +14,7 @@
     @apply hover:shadow-2xl;
 }
 .ExpertBody{
-    @apply w-full h-80 pt-11;
+    @apply w-full h-72 pt-11;
 }
 .ExpertImage{
     @apply w-40 h-40 rounded-full mx-auto border-2 border-white shadow-2xl
@@ -40,12 +35,12 @@
     @apply hover:shadow-2xl;
 }
 
-.EventBackgroundImage {
-    @apply w-full h-80 bg-opacity-5 bg-event-image bg-cover rounded-md;
+.EventBackgroundImageWrapper {
+    @apply relative;
 }
 
 .EventBackgroundGradient {
-    @apply w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
 }
 
 .EventDateArea {
@@ -80,7 +75,7 @@
 }
 
 .TeamBody{
-    @apply w-full h-80 pt-10;
+    @apply w-full h-72 pt-10;
 }
 
 .TeamImage{
@@ -105,7 +100,7 @@
 }
 
 .audioBackgroundWrapper {
-    @apply w-full h-80 bg-opacity-5 bg-cover rounded-md;
+    @apply w-full h-72 bg-opacity-5 bg-cover rounded-md;
 }
 
 .audioBackgroundGradient {
@@ -113,7 +108,7 @@
 }
 
 .audioPlay {
-    @apply border-2 w-20 h-20 rounded-full flex justify-center items-center mx-auto my-5;
+    @apply border-2 w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4;
 }
 
 .audioPlayIcon {
@@ -128,13 +123,13 @@
     @apply hover:shadow-2xl;
 }
 
-.articleBackgroundImage {
-    @apply w-full h-80 bg-opacity-5 bg-event-image bg-cover rounded-md;
+.articleBackgroundImageWrapper {
+    @apply relative;
 }
 
 
 .articleBackgroundGradient {
-    @apply w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
 }
 
 .articleSpace {
@@ -154,11 +149,11 @@
 }
 
 .projectBackgroundImageWrapper {
-    @apply relative
+    @apply relative;
 }
 
 .projectBackgroundImage {
-    @apply w-full h-80 bg-opacity-5 bg-cover object-cover object-left rounded-md;
+    @apply w-full h-72 bg-opacity-5 bg-cover object-cover object-left rounded-md;
 }
 
 .projectBackgroundGradient {
@@ -175,8 +170,7 @@
 }
 
 .skillButton {
-    /* @apply outline-none p-1 px-4 rounded-3xl mr-2 mb-2 border-2 shadow-xl drop-shadow-2xl; */
-    @apply outline-none p-1 px-4 rounded-3xl mr-2 border-2 mt-2 shadow-xl drop-shadow-2xl;
+    @apply outline-none p-1 px-4 rounded-3xl mr-2 border-2 my-1 shadow-xl drop-shadow-2xl;
 }
 
 .skillButtonText {

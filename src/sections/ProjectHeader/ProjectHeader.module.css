@@ -1,5 +1,6 @@
 .projectWrapper {
-    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5;
+    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5 -mt-5;
+    @apply md:mt-0;
 }
 
 .projectButton {
@@ -14,6 +15,10 @@
     @apply text-2xl ml-2 font-quicksand
 }
 
+.projectSkillsWrapper {
+    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5;
+}
+
 .projectSkillButton {
     @apply flex flex-row items-center justify-center mx-1 my-1 py-1.5 px-3.5 rounded-3xl border-2 shadow-md drop-shadow-md duration-300 ease-in-out;
     @apply hover:bg-opacity-50;
@@ -23,10 +28,35 @@
     @apply text-base font-quicksand font-bold;
 }
 
+.projectBackWrapper {
+    @apply fixed z-30 top-0 left-0 bg-neutral-white p-5 bg-opacity-90;
+    @apply md:absolute md:top-20 md:left-14 md:p-0 md:bg-transparent;
+}
+
 .projectBack {
-    @apply absolute top-20 left-14 h-8 w-8 flex justify-center items-center rounded-full border-4;
+    @apply h-8 w-8 flex justify-center items-center rounded-full border-4 border-primary-orange;
+    @apply md:border-neutral-white ;
 }
 
 .projectBackIcon {
-    @apply font-extrabold text-xl;
+    @apply font-extrabold text-xl text-primary-orange;
+    @apply md:text-neutral-white;
+}
+
+
+.headerButton {
+    @apply z-50 flex flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply md:hidden;
+}
+
+.headerButtonFixed {
+    @apply fixed mt-5 top-20 z-50 shadow-xl bg-neutral-white;
+}
+
+.headerButtonText {
+    @apply font-source-sans-pro font-bold text-2xl mx-3 bg-gradient-to-tr bg-clip-text text-transparent;
+}
+
+.headerButtonIcon {
+    @apply text-xl mr-2;
 }

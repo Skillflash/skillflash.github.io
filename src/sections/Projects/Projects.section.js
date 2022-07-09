@@ -17,7 +17,7 @@ const Projects = props => {
         <section className={`${styles.mainWrapper} bg-neutral-white`}>
             <div className={`${styles.skillsButtonFilters}`}>
                 {_filters.map((filter, index) => 
-                    <button className={`text-neutral-white ${styles.skillsButton} ${filter.color}`}>
+                    <button key={index} className={`text-neutral-white ${styles.skillsButton} ${filter.color}`}>
                         <h6 className={`${styles.skillsButtonText}`}>{filter.name}</h6>
                         <IoCloseCircle className={`${styles.skillsButtonIcon}`} />
                     </button>

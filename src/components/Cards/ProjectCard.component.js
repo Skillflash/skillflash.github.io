@@ -12,8 +12,7 @@ const ProjectCard = props => {
 
     return (
         <div className={`${styles.EventWrapper}`}>
-            <div>
-
+            <div className={`${styles.projectBackgroundImageWrapper}`}>
                 <img src={project.image} alt={project.name} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.projectBackgroundGradient}`}>
                     <NavLink to='/project' className={`${styles.projectNameWrapper} bg-neutral-black`}>
@@ -29,8 +28,6 @@ const ProjectCard = props => {
                         <p className={`${styles.skillButtonText} text-neutral-black`}>{skill}</p>
                     </button>
                 )}
-                {/* <Skills text={'Subskill'} color={'primary-blue'}/>
-                <Skills text={'Subskill'} color={'primary-blue'}/> */}
                 <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

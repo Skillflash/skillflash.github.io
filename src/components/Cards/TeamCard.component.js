@@ -26,8 +26,8 @@ const TeamCard = props => {
 
             </div>
             <div className={`${styles.SkillsArea}`}>
-                <Skills text={'Subskill'} color={'secondary-rosa'}/>
-                <Skills text={'Subskill'} color={'secondary-rosa'}/>
+                <Skills text={'Subskill'} color={'rosa'}/>
+                <Skills text={'Subskill'} color={'rosa'}/>
                 <p className={`${styles.SkillsNumber} text-secondary-rosa`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

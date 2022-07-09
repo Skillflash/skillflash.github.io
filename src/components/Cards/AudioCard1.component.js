@@ -22,8 +22,8 @@ const AudioCard1 = props => {
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>
-                <Skills text={'Subskill'} color={'neutral-black'}/>
-                <Skills text={'Subskill'} color={'neutral-black'}/>
+                <Skills text={'Subskill'} color={'black'}/>
+                <Skills text={'Subskill'} color={'black'}/>
                 <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>
