@@ -1,10 +1,12 @@
 .mainWrapper {
+    /* @apply  text-center pb-20 -mt-16; */
     @apply  text-center pb-20 -mt-16 -z-10;
     @apply md:-mt-44;
 }
 
 .skillsButtonFilters {
-    @apply flex flex-row flex-wrap px-10 py-7;
+    @apply fixed top-0 flex flex-row px-20 py-4 bg-neutral-white whitespace-nowrap w-screen overflow-x-auto z-10;
+    @apply md:relative md:py-7 md:px-10 md:bg-transparent md:w-fit;
 }
 
 .skillsButton {

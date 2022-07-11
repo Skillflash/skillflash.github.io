@@ -2,13 +2,14 @@ import React from 'react';
 import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
 
 import styles from './Cards1.module.css';
-import { avatar7 } from '../../resources/Images';
+import { avatar7, project } from '../../resources/Images';
 import {Skills} from '..';
 
 const ArticleCard1 = props => {
     return (
         <div className={`${styles.articleWrapper}`}>
-            <div className={`${styles.articleBackgroundImage}`}>
+            <div className={`${styles.articleBackgroundImageWrapper}`}>
+                <img src={project} alt={'project.name'} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.articleBackgroundGradient}`}>
                     <div>
                         <img src= {avatar7} alt='avatar 7' className='w-14 h-14 rounded-full border-2 border-white shadow-2xl'/>
@@ -20,8 +21,8 @@ const ArticleCard1 = props => {
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>
-                <Skills text={'Subskill'} color={'primary-orange'}/>
-                <Skills text={'Subskill'} color={'primary-orange'}/>
+                <Skills text={'Subskill'} color={'orange'}/>
+                <Skills text={'Subskill'} color={'orange'}/>
                 <p className={`${styles.SkillsNumber} text-primary-orange`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

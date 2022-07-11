@@ -17,10 +17,8 @@ const ExpertCard1 = props => {
                 <p className={`${styles.ExpertFunction}`}><span className='font-bold'> 4 Jahre</span> Berufserfahrung </p>
             </div>
             <div className={`${styles.SkillsArea}`}>
-                <Skills text={'Subskill'} color={'primary-blue'}/>
-                <Skills text={'Subskill'} color={'primary-blue'}/>
-                <Skills text={'Subskill'} color={'primary-blue'}/>
-                <Skills text={'Subskill'} color={'primary-blue'}/>
+                <Skills text={'Subskill'} color={'blue'}/>
+                <Skills text={'Subskill'} color={'blue'}/>
                 <p className={`${styles.SkillsNumber} text-primary-blue`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

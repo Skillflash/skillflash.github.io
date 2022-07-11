@@ -2,13 +2,14 @@ import React from 'react';
 import Skills from '../Skills/Skills.component';
 
 import styles from './Cards1.module.css';
-import { avatar7 } from '../../resources/Images';
+import { avatar7, project } from '../../resources/Images';
 import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
 
 const EventCard1 = props => {
     return (
         <div className={`${styles.EventWrapper}`}>
-            <div className={`${styles.EventBackgroundImage}`}>
+            <div className={`${styles.EventBackgroundImageWrapper}`}>
+                <img src={project} alt={'project.name'} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.EventBackgroundGradient}`}>
                     <div>
                         <img src= {avatar7} alt='avatar 7' className='w-14 h-14 rounded-full border-2 border-white shadow-2xl'/>
@@ -16,14 +17,14 @@ const EventCard1 = props => {
                     <div className={`${styles.EventDateArea} bg-neutral-black`}>
                         <p className={`${styles.EventDate} text-neutral-white`}>12. Mai</p>
                     </div>
-                    <p className={`${styles.EventTitle} text-neutral-black`}> Event Titel </p>
+                    <p className={`${styles.EventTitle} text-neutral-black`}>Event Titel</p>
                     <p className={`${styles.EventDescription} text-neutral-black`}>Lörem ipsum anar epipp som doskapet, kontradade mivårade..</p>
                     <p className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}> Mehr anseigen </p>
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>
-                <Skills text={'Subskill'} color={'primary-lila'}/>
-                <Skills text={'Subskill'} color={'primary-lila'}/>
+                <Skills text={'Subskill'} color={'lila'}/>
+                <Skills text={'Subskill'} color={'lila'}/>
                 <p className={`${styles.SkillsNumber} text-primary-lila`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

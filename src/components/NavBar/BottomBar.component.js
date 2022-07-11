@@ -18,14 +18,14 @@ const BottomBar = props => {
                 <h6 className={`${styles.bottomLinkText}`}>Skills</h6>
             </NavLink>
             <NavLink
-                to='/projects'
+                to='/project'
                 className={({isActive}) => isActive ? `${styles.bottomLink} ${textGradient} ${activeLink}` : `${styles.bottomLink} ${textGradient}`}
             >
                 <IoHeartOutline className={`${styles.bottomLinkIcon} text-primary-orange`} />
                 <h6 className={`${styles.bottomLinkText}`}>Wunschliste</h6>
             </NavLink>
             <NavLink
-                to='/wishlist'
+                to='/project'
                 className={({isActive}) => isActive ? `${styles.bottomLink} ${textGradient} ${activeLink}` : `${styles.bottomLink} ${textGradient}`}
             >
                 <IoPersonCircleOutline className={`${styles.bottomLinkIcon} text-primary-orange`} />
