@@ -15,7 +15,7 @@ const ProjectCard = props => {
             <div className={`${styles.projectBackgroundImageWrapper}`}>
                 <img src={project.image} alt={project.name} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.projectBackgroundGradient}`}>
-                    <NavLink to='/project' className={`${styles.projectNameWrapper} bg-neutral-black`}>
+                    <NavLink to={`/project/${project.name}`} className={`${styles.projectNameWrapper} bg-neutral-black`}>
                         <p className={`${styles.projectName} text-neutral-white`}>{project.name}</p>
                     </NavLink>
                     <p className={`${styles.EventDescription} text-neutral-black`}>Lörem ipsum anar epipp som doskapet, kontradade mivårade..</p>
