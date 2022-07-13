@@ -4,9 +4,15 @@
 
 }
 
+.enterpriseWrapper {
+    @apply relative bg-gradient-to-tr h-screen top-0 flex justify-center items-center pb-20;
+    @apply md:h-128 md:pb-0;
+
+}
+
 .mainWrapperDotted {
     @apply bg-primary-lila bg-opacity-10 h-120 w-full flex justify-center items-center pb-2;
-    @applu sm:pb-10;
+    @apply sm:pb-10;
     @apply md:pb-40 md:h-132;
 }
 
@@ -68,4 +74,12 @@
         width: calc(268% + 1.3px);
         height: 500px;
     }
+}
+
+.headerWrapper {
+    background-image: radial-gradient(240.64% 1101.56% at -65.99% 206.66%, #FFBE0B 15.1%, rgba(255, 190, 11, 0.9) 30.96%, #FF006E 53.65%, #8338EC 82.29%, #8338EC 90.1%, #8338EC 98.96%) ;
+}
+
+.enterPrise {
+    background-image:radial-gradient(230.54% 990.13% at -50.06% 199.6%, #FFBE0B 15.1%, rgba(255, 190, 11, 0.9) 30.96%, #FF006E 53.65%, #8338EC 82.29%, #8338EC 90.1%, #8338EC 98.96%);
 }

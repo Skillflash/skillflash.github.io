@@ -1,0 +1,92 @@
+
+
+.headerContentTitle {
+    @apply text-2xl font-thin text-center font-source-sans-pro;
+    @apply sm:text-3xl;
+    @apply md:text-4xl;
+    @apply lg:text-5xl;
+}
+
+.headerContentTitleSub {
+    @apply text-3xl font-black text-center font-source-sans-pro;
+    @apply sm:text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-[56px];
+}
+
+.headerContentSubTitle {
+    @apply text-base font-extrabold my-4 mb-2 font-quicksand px-10 text-center;
+    @apply md:text-lg md:mb-14 md:w-3/5 md:px-24;
+}
+
+
+.headerButton {
+    @apply z-50 flex flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply md:hidden;
+}
+
+.headerButtonFixed {
+    @apply fixed mt-6 top-16 z-50 shadow-xl bg-neutral-white;
+}
+
+.headerButtonText {
+    @apply font-source-sans-pro font-bold text-2xl mx-3 bg-gradient-to-tr bg-clip-text text-transparent;
+}
+
+.headerButtonIcon {
+    @apply text-xl mr-2;
+}
+
+
+
+
+
+/* Old styles */
+
+/* .heroImage {
+    @apply w-screen h-132;
+}
+
+.heroWrapper {
+    @apply py-2;
+}
+
+.heroThought {
+    @apply flex flex-row;
+}
+
+.heroArrow {
+    @apply h-36 w-36 -ml-12;
+}
+
+.heroThoughtImageWrapper {
+    @apply relative ml-6 mt-4;
+}
+
+.heroThoughtImage {
+    @apply h-56 w-auto;
+}
+
+.heroThoughtText {
+    @apply absolute -mt-1 top-28 ml-24 -translate-y-1/2 w-64 text-2xl;
+}
+
+.heroTitleWrapper {
+    @apply w-1/2 mx-auto flex flex-col items-center;
+}
+
+.heroTitle {
+    @apply text-5xl;
+}
+
+.heroSubTitle {
+    @apply text-5xl font-medium my-2;
+}
+
+.heroWelcomText {
+    @apply px-16 mx-3.5 text-center tracking-wide text-sm;
+}
+
+.heroButtonWrapper {
+    @apply flex justify-center items-center my-10;
+} */
