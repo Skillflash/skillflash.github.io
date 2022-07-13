@@ -15,6 +15,7 @@ import ArticleCard1 from './Cards/ArticleCard1.component';
 import ProjectCard from './Cards/ProjectCard.component';
 import HeaderWrapper from './HeaderWrapper/HeaderWrapper.component';
 import BottomBar from './NavBar/BottomBar.component';
+import EnterpriseWrapper from './HeaderWrapper/EnterpriseWrapper.component';
 
 export {
     TopNavBar,
@@ -34,4 +35,5 @@ export {
     ProjectCard,
     HeaderWrapper,
     BottomBar,
+    EnterpriseWrapper,
 };
