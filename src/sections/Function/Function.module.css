@@ -1,29 +1,23 @@
-*{
-    color: White;
-    text-align: center;
-
-
+* {
+  color: White;
+  text-align: center;
 }
 .functionHeader {
-    font-weight: bold;
-    font-size: larger;
-    padding-bottom: .5rem;
-
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: 0.5rem;
 }
 
-p{
-    padding-bottom: 3rem;
+p {
+  padding-bottom: 3rem;
 }
 ol {
-    padding-bottom: 1.5rem;
-    text-align: left;
-    display: flex;
-    padding-left: 20rem;
+  padding-bottom: 1.5rem;
+  text-align: left;
+  display: flex;
+  padding-left: 20rem;
+}
 
-}
-html {
-    /* font-size: 10rem; */
-}
 .check {
-    border-radius: 50%;
+  border-radius: 50%;
 }

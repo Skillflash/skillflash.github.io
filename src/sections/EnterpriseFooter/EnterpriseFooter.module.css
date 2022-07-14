@@ -1,0 +1,42 @@
+section {
+    text-align: center;
+    margin-top: 1rem;
+}
+.buttons{
+    background: linear-gradient(to right, #F84E6D, #FFBE0B);
+     margin-bottom: 2rem; 
+     border-radius: 3px;
+     padding: 10px;
+     box-shadow: 15px;
+     font-weight: bold;
+     display: flex;
+     margin-left: auto;
+    margin-right: auto;
+     
+
+}
+.span {
+    font-size: 23px;
+    background: -webkit-linear-gradient(#F84E6D,#FFBE0B, #F84E6D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+  }
+  .p{
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .icon {
+        margin-top: 5px;
+    }

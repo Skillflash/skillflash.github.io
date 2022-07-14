@@ -23,7 +23,10 @@ import training from './training.jpg';
 import guide from './guide.jpg';
 import graphic from './graphic.jpg';
 import project_management from './project_management.jpg';
-import desktop from './Group 13.png'
+import desktop from './Group 13.png';
+import CMSDashboard from './CMSDashboard.png';
+import user from './user.png'
+
 
 
 export { 
@@ -52,5 +55,7 @@ export {
     guide,
     language,
     javascript,
-    desktop
+    desktop,
+    CMSDashboard,
+    user,
 };
