@@ -10,6 +10,7 @@ module.exports = {
       },
       height: {
         '132': '50rem',
+        '128': '45rem',
         '120': '30rem',
       },
       width: {
@@ -43,7 +44,7 @@ module.exports = {
         },
         'secondary-yellow': {
           light: '#ffd377',
-          DEFAULT: '#FFC03D',
+          DEFAULT: '#FFBE0B',
           dark: '#b3862b',
         },
         'secondary-rosa': {

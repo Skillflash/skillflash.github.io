@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { IoArrowBack, IoCloseCircleOutline } from 'react-icons/io5';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 
 import styles from './ProjectHeader.module.css';
 import { HeaderWrapper } from '../../components';
@@ -8,10 +8,14 @@ import { FiFilter } from 'react-icons/fi';
 
 const ProjectHeader = props => {
     const { scrollY } = props;
-    const [activeSkills, setActiveSkills] = useState(['Projektmanagement']);
-    const [selectedSkills, setSelectedSkills] = useState(['Projektmanagement']);
+
+    let params = useParams();
+    const [activeSkill, setActiveSkill] = useState(false);
+    const [activeSkills, setActiveSkills] = useState([]);
+    const [selectedSkills, setSelectedSkills] = useState([]);
     const [skills, setSkills] = useState(['Klassich', 'Hauptskill', 'Subsksill', 'Subskidll', 'Sudbskill', 'Subskgill', 'Suebskill', 'Subshkill', 'Subskrill', 'Subskibll', 'Subskiall', 'Subskijll', 'Subskiltl', 'Subiskill']);
     const [range, setRange] = useState(20);
+
 
     const showSize = () => {
         let screenWidth = window.screen.availWidth;
@@ -73,15 +77,27 @@ const ProjectHeader = props => {
     return (
         <HeaderWrapper scrollY={scrollY}>
             <div className={`${styles.projectWrapper}`}>
-                {selectedSkills.map((selectedSkill, index) =>
+                <button
+                    onClick={(event) => setActiveSkill(!activeSkill)}
+                    className={`
+                    text-neutral-white
+                    ${styles.projectButton}
+                    ${!activeSkill && 'bg-opacity-70'}
+                    bg-neutral-black`}
+                    >
+                        <h6 className={`${styles.projectButtonText}`}>{params.project}</h6>
+                        <IoCloseCircleOutline className={`${styles.projectButtonIcon}`} />
+                    </button>
+                {selectedSkills.length >= 1 && selectedSkills.map((selectedSkill, index) =>
                     <button
                         onClick={() => SetActiveSkills(selectedSkill)}
                         key={index}
                         className={`
-                        text-neutral-white
-                        ${styles.projectButton}
+                        text-neutral-black
+                        border-neutral-black
+                        ${styles.projectButtonSelected}
                         ${activeSkills.findIndex(a => a === selectedSkill) === -1 && 'bg-opacity-70'}
-                        bg-neutral-black`}
+                        bg-neutral-white`}
                     >
                         <h6 className={`${styles.projectButtonText}`}>{selectedSkill}</h6>
                         <IoCloseCircleOutline onClick={(event) => SetSelectedActiveSkills(selectedSkill, event)} className={`${styles.projectButtonIcon}`} />

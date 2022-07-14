@@ -1,25 +1,32 @@
-.headerContent {
-    @apply flex flex-col items-center
-}
+
 
 .headerContentTitle {
+    @apply text-2xl font-thin text-center font-source-sans-pro;
+    @apply sm:text-3xl;
+    @apply md:text-4xl;
+    @apply lg:text-5xl;
+}
+
+.headerContentTitleSub {
     @apply text-3xl font-black text-center font-source-sans-pro;
     @apply sm:text-4xl;
     @apply md:text-5xl;
-    @apply lg:text-6xl;
+    @apply lg:text-[56px];
 }
 
 .headerContentSubTitle {
     @apply text-base font-extrabold my-4 mb-2 font-quicksand px-10 text-center;
-    @apply md:text-lg mb-14;
+    @apply md:text-lg md:mb-14 md:w-3/5 md:px-24;
 }
 
+
 .headerButton {
-    @apply z-50 mt-10 -mb-24 flex flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply z-50 flex flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply md:hidden;
 }
 
 .headerButtonFixed {
-    @apply fixed top-20 z-50 flex flex-row items-center p-2 rounded shadow-xl bg-neutral-white;
+    @apply fixed mt-6 top-16 z-50 shadow-xl bg-neutral-white;
 }
 
 .headerButtonText {
