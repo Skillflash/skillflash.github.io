@@ -1,22 +1,22 @@
 import React from 'react';
-import { Function } from '../../sections'
-import { EnterpriseFooter } from '../../sections';
 
 import { BottomBar, TopNavBar } from '../../components';
-import { EnterpriseHeader, About } from '../../sections';
+import { EnterpriseHeader, About, EnterpriseFooter, Function } from '../../sections';
 
 import style from './Enterprise.module.css';
 
 
 const Enterprise = props => {
+    const { scrollY } = props;
+
     return (
-        <section className='relative'>
+        <section>
             <TopNavBar scrollY={scrollY} />
             <EnterpriseHeader  scrollY={scrollY} />
             <About/>
             {/* <Projects /> */}
-             <Function />
-            <EnterpriseFooter />
+            {/* <Function />
+            <EnterpriseFooter /> */}
             <BottomBar />
         </section>
 

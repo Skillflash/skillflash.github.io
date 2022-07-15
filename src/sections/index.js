@@ -14,5 +14,7 @@ export {
     Projects,
     EnterpriseHeader,
     About,
+    Function,
+    EnterpriseFooter,
 }
 

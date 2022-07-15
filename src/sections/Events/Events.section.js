@@ -10,7 +10,7 @@ const Events = props => {
             {/* <h3 className={`${styles.eventsTitle} text-transparent from-primary-blue to-primary-lila`}>Events, Expert:innen, Fachartikel und mehr..</h3> */}
             <div className={`${styles.eventsCards}`}>
                 
-                {projects.map((project, index) => <ProjectCard project={project} />)}
+                {projects.map((project, index) => <ProjectCard project={project} key={index} />)}
                 {/* <div>
                     <CTACard />
                     <EventCard />
