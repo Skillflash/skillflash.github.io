@@ -11,3 +11,10 @@
 .heroButtonIcon {
     @apply h-3 w-3;
 }
+
+
+/* Stats button */
+
+.statsButton {
+    @apply  rounded-md shadow-md drop-shadow-xl px-6 py-3 m-2;
+}

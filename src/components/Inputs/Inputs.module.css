@@ -1,0 +1,11 @@
+.submitWrapper {
+    @apply shadow-md drop-shadow-xl rounded-md p-3 flex flex-col w-full;
+}
+
+.submitLabel {
+    @apply text-xs font-medium w-fit mx-3 -mb-2 z-10 relative;
+}
+
+.submitField {
+    @apply outline-none border border-neutral-grey rounded-md text-sm p-2;
+}
