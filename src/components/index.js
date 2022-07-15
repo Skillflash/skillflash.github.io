@@ -14,6 +14,8 @@ import BottomBar from './NavBar/BottomBar.component';
 import EnterpriseHeaderWrapper from './EnterpriseHeaderWrapper/EnterpriseHeaderWrapper';
 import EnterpriseWrapper from './HeaderWrapper/EnterpriseWrapper.component';
 import ExpertCard from './Cards/ExpertCard.component';
+import StatsButton from './Buttons/StatsButton.component';
+import SumbitInput from './Inputs/SubmitInput.component';
 
 export {
     TopNavBar,
@@ -32,4 +34,6 @@ export {
     BottomBar,
     EnterpriseHeaderWrapper,
     EnterpriseWrapper,
+    StatsButton,
+    SumbitInput,
 };

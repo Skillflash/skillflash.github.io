@@ -6,6 +6,7 @@ import Function from "./Function/Function.section"
 import EnterpriseFooter from "./EnterpriseFooter/EterpriseFooter.section"
 import EnterpriseHeader from "./EnterpriseHeader/EnterpriseHeader.section";
 import About from "./About/About.section";
+import AboutDash from "./AboutDash/AboutDash.section";
 
 export {
     Header,
@@ -16,5 +17,7 @@ export {
     About,
     Function,
     EnterpriseFooter,
+    AboutDash,
 }
+
 

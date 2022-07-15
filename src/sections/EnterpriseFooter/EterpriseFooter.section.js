@@ -1,107 +1,69 @@
 import React from "react";
-import {
-  CMSDashboard,
-  user,
-  user2,
-  user3,
-  profile,
-} from "../../resources/Images";
-import style from "./EnterpriseFooter.module.css";
-import { FaRocket } from "react-icons/fa";
-import { FaThumbsUp } from "react-icons/fa";
-import { FaThumbsDown } from "react-icons/fa";
+import { StatsButton, SumbitInput } from "../../components";
+import { avatar1 } from "../../resources/Images";
+import { IconName, MdThumbDown, MdThumbUp } from "react-icons/md";
+
+import styles from "./EnterpriseFooter.module.css";
 
 const EnterpriseFooter = () => {
   return (
-    <section>
-      <span className={style.container}>
-        <img src={user} alt="user" width="5%" />
-        <span className={style.span}>Antonia nutzt das Dashboard..</span>
-      </span>
-      <p className={style.p}>
-        ..einerseits zum Erstellen von Formaten, wie zum Beispiel Events <br />
-        und andererseits zum Verwalten ihres öffentlichen Mitgliederprofils.
-      </p>
-      <img src={CMSDashboard} className={style.img2} alt="CMSDashboard" />
-      <button className={style.buttons}>
-        Hier eine Demo vereinbaren &nbsp; &nbsp;
-        <FaRocket className={style.icon} />
-      </button>
-      <br />
-      <br />
-      <section className={style.section1}>
-        <div class="grid grid-cols-2 ">
-          <div>
-            <br />
-            <span className={style.span}>Unser Team..</span>
-            <br />
-            <br />
-            <div class="grid grid-cols-2">
-              <div>
-                <img
-                  className={style.img3}
-                  src={user3}
-                  alt="user"
-                  width="30%"
-                />
-                <h6>Oscar Schröder</h6>
-                <small>Tätigkeit</small>
-                <br />
+    <section className={`${styles.mainWrapper} ${styles.radialWrapper}`}>
+      <div className={`${styles.mainDotWrapper}`}>
+        <div className={`${styles.topCurve}`}>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"  className={`${styles.topCurveFill}`}></path>
+            </svg>
+        </div>
+        <div className={`${styles.contentWrapper}`}>
+          <div className={`${styles.contentBox} bg-neutral-white`}>
+            <h6 className={`${styles.contentBoxTitle}`}>Unser Team..</h6>
+            <div className={`${styles.contentBoxWrapper}`}>
+              <div className={`$ -mb-3`}>
+                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <h5 className={`${styles.contentBoxName} text-neutral-black`}>Oscar Schröder</h5>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Sales & Finanzen</h6>
               </div>
-              <div>
-                <img
-                  className={style.img3}
-                  src={profile}
-                  alt="user"
-                  width="30%"
-                />
-                <h6>Olli/Tobi?</h6>
-                <small>Tätigkeit</small>
-                <br />
+              <div className={`$ -mb-3`}>
+                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <h5 className={`${styles.contentBoxName} text-neutral-black`}>Leonardo Bornhäußer</h5>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Produkt Design</h6>
+              </div>
+              <div className={`$ -mb-3`}>
+                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <h5 className={`${styles.contentBoxName} text-neutral-black`}>Tobias Braun</h5>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>IT & Sicherheit</h6>
+              </div>
+              <div className={`$ -mb-3`}>
+                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <h5 className={`${styles.contentBoxName} text-neutral-black`}>Antonia Sensen</h5>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Media & Netzwerk</h6>
               </div>
             </div>
-            <div class="grid grid-cols-2">
-              <div>
-                <img
-                  className={style.img3}
-                  src={user2}
-                  alt="user"
-                  width="30%"
-                />
-                <h6>Leonardo Bornhäußer</h6>
-                <small>Tätigkeit</small>
-                <br />
-              </div>
-              <div>
-                <img src={user} className={style.img3} alt="user" width="30%" />
-                <h6>Antonia Sensen</h6>
-                <small>Tätigkeit</small>
-                <br />
-              </div>
-            </div>
-            <div></div>
           </div>
-          <div className={style.section2}>
-            <span className={style.span}>..hat noch eine Frage:</span>
-            <br />
-            <br />
-            <p className={style.p}>
-              Wir legen großen Wert auf Deine Meinung und <br /> möchten gerne
-              wissen,
-              <br />
-              wie Du unser Vorhaben findest?
-            </p>
-            <section className={style.groupButton}>
-              <button className={style.faUpIcon}>
-                <FaThumbsUp />
-              </button>
-              <button className={style.faDownIcon}>
-                <FaThumbsDown value={{ color: "blue", size: "500px" }} />
-              </button>
-            </section>
+          <div className={`${styles.contentBox} bg-neutral-white`}>
+            <h6 className={`${styles.contentBoxTitle}`}>..hat noch eine Frage:</h6>
+            <div>
+              <p className={`${styles.contentText} text-neutral-black`}>
+                Wir legen großen Wert auf Deine Meinung und möchten gerne wissen, 
+                wie Du unser Vorhaben findest?
+              </p>
+              <div className={`${styles.statsWrapper}`}>
+                <StatsButton invert>
+                  <MdThumbUp className={`${styles.statsIcon} text-neutral-white`} />
+                </StatsButton>
+                <StatsButton>
+                  <MdThumbDown className={`${styles.statsIcon} text-primary-blue`} />
+                </StatsButton>
+              </div>
+              <div className={`${styles.statsWrapper} w-4/5 md:w-2/3 mx-auto`}>
+                <SumbitInput
+                  placeholder={'Email'}
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };
