@@ -13,8 +13,13 @@ import avatar9 from './avatar9.jpg';
 import avatar10 from './avatar10.jpg';
 import avatar11 from './avatar11.jpg';
 import avatar12 from './avatar12.jpg';
+import avatar13 from './avatar13.jpg';
+import avatar14 from './avatar14.png';
 import flower1 from './flower1.jpg';
 import project from './project.png';
+import phone from './phone.png';
+import arrow_down from './arrow-down.png';
+import spiral_arrow from './spiral-arrow.png';
 import team from './team.jpg';
 import draw from './draw.jpg';
 import javascript from './javascript.jpg';
@@ -48,6 +53,8 @@ export {
     avatar10,
     avatar11,
     avatar12,
+    avatar13,
+    avatar14,
     flower1,
     project,
     team,
@@ -64,4 +71,8 @@ export {
     user2,
     profile,
     user3,
+    arrow_down,
+    spiral_arrow,
+    phone,
+
 };

@@ -1,10 +1,14 @@
 .projectWrapper {
-    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5 -mt-5;
+    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5 -mt-14;
     @apply md:mt-0;
 }
 
 .projectButton {
     @apply flex flex-row items-center justify-center mx-1 my-1 py-1.5 px-5 rounded-3xl shadow-xl drop-shadow-xl;
+}
+
+.projectButtonSelected {
+    @apply flex flex-row items-center border-2 justify-center mx-1 my-1 py-1.5 px-5 rounded-3xl shadow-xl drop-shadow-xl;
 }
 
 .projectButtonText {
@@ -50,7 +54,7 @@
 }
 
 .headerButtonFixed {
-    @apply fixed mt-5 top-20 z-50 shadow-xl bg-neutral-white;
+    @apply fixed mt-6 top-16 z-50 shadow-xl bg-neutral-white;
 }
 
 .headerButtonText {
@@ -60,3 +64,4 @@
 .headerButtonIcon {
     @apply text-xl mr-2;
 }
+

@@ -3,16 +3,12 @@ import { FiFilter } from 'react-icons/fi';
 
 import styles from './HeaderWrapper.module.css';
 
-const HeaderWrapper = ({ children, scrollY }) => {
+const EnterpriseWrapper = ({ children, scrollY }) => {
     return (
-        <section className={`${styles.mainWrapper} ${styles.headerWrapper}`}>
+        <section className={`${styles.enterpriseWrapper} ${styles.enterPrise}`}>
             <div className={`${styles.mainWrapperDotted}`}>
                 <div className={`${styles.headerContent}`}>
                     {children}
-                    <button className={`${styles.headerButton} ${scrollY >= 390 && styles.headerButtonFixed}`}>
-                        <h6 className={`${styles.headerButtonText} ${scrollY >= 390 ? `from-secondary-pink to-secondary-yellow` : 'from-neutral-white to-neutral-white'}`}>Suche konfigurieren</h6>
-                        <FiFilter className={`${styles.headerButtonIcon} ${scrollY >= 390 ? 'text-primary-orange' : 'text-neutral-white'}`} />
-                    </button>
                 </div>
                 <div className={`${styles.headerBottomCurve}`}>
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -24,6 +20,6 @@ const HeaderWrapper = ({ children, scrollY }) => {
     )
 }
 
-export default HeaderWrapper;
+export default EnterpriseWrapper;
 
 // const bgGradient = "from-secondary-yellow to-secondary-pink md:from-secondary-yellow md:via-secondary-pink md:to-primary-lila";
