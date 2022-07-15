@@ -1,0 +1,23 @@
+* {
+  color: White;
+  text-align: center;
+}
+.functionHeader {
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  padding-bottom: 3rem;
+}
+ol {
+  padding-bottom: 1.5rem;
+  text-align: left;
+  display: flex;
+  padding-left: 20rem;
+}
+
+.check {
+  border-radius: 50%;
+}
