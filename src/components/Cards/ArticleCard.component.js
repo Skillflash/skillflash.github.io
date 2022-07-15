@@ -1,42 +1,37 @@
 import React from 'react';
+import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
 
 import styles from './Cards.module.css';
-import {avatar1, avatar2} from '../../resources/Images'
-import { FiCornerUpRight, FiThumbsUp, FiMessageCircle, FiMoreVertical } from "react-icons/fi";
+import { avatar7, project } from '../../resources/Images';
+import {Skills} from '..';
 
-const ArticleCard = props => { 
+const ArticleCard = props => {
     return (
-        <div className={`${styles.articleWrapper} bg-neutral-white border-primary-lila hover:border-neutral-white`}>
-            <div className={`${styles.articleHeader}`}>
-                <img src={avatar1} alt="avatar" className={`${styles.articleHeaderImage}`} />
-                <div className={`${styles.articleHeaderNameWrapper}`}>
-                    <p className={`${styles.articleHeaderNameTitle} text-neutral-black`}>Name</p>
-                    <p className={`${styles.articleHeaderNameSubTitle} text-neutral-grey`}>Name</p>
+        <div className={`${styles.articleWrapper}`}>
+            <div className={`${styles.articleBackgroundImageWrapper}`}>
+                <img src={project} alt={'project.name'} className={`${styles.projectBackgroundImage}`} />
+                <div className={`${styles.articleBackgroundGradient}`}>
+                    <div>
+                        <img src= {avatar7} alt='avatar 7' className='w-14 h-14 rounded-full border-2 border-white shadow-2xl'/>
+                    </div>
+                    <div className={`${styles.articleSpace}`}/>
+                    <p className={`${styles.EventTitle} text-neutral-black`}> Artikel Titel </p>
+                    <p className={`${styles.EventDescription} text-neutral-black`}>Lörem ipsum anar epipp som doskapet, kontradade mivårade didogt benera inte jåsperen..</p>
+                    <p className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}> Mehr anseigen </p>
                 </div>
-                <FiMoreVertical  className={`${styles.articleHeaderIcon} text-neutral-black`} />
             </div>
-            <div className={`${styles.articleBody}`}>
-                <p className={`${styles.articleBodyTitle} text-neutral-black`}>Title</p>
-                <p className={`${styles.articleBodySubTitle} text-gray-700`}>Subtitle</p>
-                <p className={`${styles.articleBodyPara} text-gray-700`}>Lorem ipsum carrots, enhanced undergraduate developer, but they do occaecat time and vitality, Lorem ipsum carrots, enhanced undergraduate developer...</p>
+            <div className={`${styles.SkillsArea}`}>
+                <Skills text={'Subskill'} color={'orange'}/>
+                <Skills text={'Subskill'} color={'orange'}/>
+                <p className={`${styles.SkillsNumber} text-primary-orange`}>24..</p>
             </div>
-            <div className={`${styles.articleCTA}`}>
-                <button className={`${styles.articlCTAButton}`}>
-                    <FiThumbsUp  className={`${styles.articleHeaderIcon} text-neutral-black`} />
-                </button>
-                <button>
-                    <FiMessageCircle className={`${styles.articleHeaderIcon} text-neutral-black`} />
-                </button>
-                <button>
-                    <FiCornerUpRight  className={`${styles.articleHeaderIcon} text-neutral-black`} />
-                </button>
-            </div>
-            <div className={`${styles.articleFooter}`}>
-                <img src={avatar2} alt="avatar" className={`${styles.articleFooterImage}`} />
-                <input className={`${styles.articleFooterInput} text-neutral-black`} placeholder='Enter your comment' />
+            <div className={`${styles.cardFloatButtonsWrapper}`}>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoAddCircleOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoShareSocialOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoHeartOutline className={`${styles.cardFloatButtonIcon} text-secondary-pink`} /></button>
             </div>
         </div>
     )
 }
 
-export default ArticleCard;
+export default ArticleCard

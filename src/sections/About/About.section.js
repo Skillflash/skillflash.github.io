@@ -3,7 +3,7 @@ import { avatar13, arrow_down, phone, spiral_arrow, vertical_spiral } from '../.
 import { MdLocationPin } from 'react-icons/md';
 
 import styles from './About.module.css';
-import { ExpertCard1 } from '../../components';
+import { ExpertCard } from '../../components';
 import experts from '../../dummy/experts';
 
 const About = () => {
@@ -81,7 +81,7 @@ const About = () => {
                     <p className={`${styles.expertInfoContent}`}>..und sie organisert ihr 
 Expertenprofil und ihre Angebote auf bei uns.</p>
            
-                    <ExpertCard1 expert = {experts[1]} skillcolor = 'neutral-black'/>
+                    <ExpertCard expert = {experts[1]} skillcolor = 'neutral-black'/>
             </div>
             </div>
         </div>

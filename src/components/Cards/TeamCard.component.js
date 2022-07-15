@@ -1,7 +1,7 @@
 import React from 'react';
 import Skills from '../Skills/Skills.component';
 
-import styles from './Cards1.module.css';
+import styles from './Cards.module.css';
 import { avatar7, avatar8, avatar9, avatar10, avatar11, avatar12, team } from '../../resources/Images';
 import { IoAddCircleOutline, IoHeartOutline, IoShareOutline, IoShareSocialOutline } from 'react-icons/io5';
 

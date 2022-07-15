@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { avatar7 } from '../../resources/Images';
 import Skills from '../Skills/Skills.component';
 
-import styles from './Cards1.module.css';
+import styles from './Cards.module.css';
 
 
 const ProjectCard = props => {

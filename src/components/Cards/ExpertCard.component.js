@@ -1,36 +1,67 @@
 import React from 'react';
-import { FiHeart, FiMessageCircle } from "react-icons/fi";
+import Skills from '../Skills/Skills.component';
 
 import styles from './Cards.module.css';
-import { avatar3, avatar4 } from '../../resources/Images';
+import { avatar7 } from '../../resources/Images';
+import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
+import { MdLocationPin } from 'react-icons/md';
+
 
 const ExpertCard = props => {
+
+    const { expert, skillcolor } = props
+
+    let textColor = 'text-primary-'+ skillcolor;
+
     return (
-        <div className={`${styles.expertWrapper} bg-neutral-white border-primary-blue hover:border-neutral-white`}>
-            <h3 className={`${styles.expertTitle} text-neutral-black`}>Projektmanager:in</h3>
-            <div className={`${styles.expertBody}`}>
-                <div className={`${styles.expertBodyCategoryWrapper}`}>
-                    <p className={`${styles.expertBodyCategoryText} bg-primary-blue text-neutral-white`}>Agile Coaching</p>
-                    <p className={`${styles.expertBodyCategoryText} bg-primary-blue text-neutral-white`}>Training</p>
-                    <p className={`${styles.expertBodyCategoryText} bg-primary-blue text-neutral-white`}>Workshops</p>
-                    <p className={`${styles.expertBodyCategoryText} bg-primary-blue text-neutral-white`}>Speaker</p>
+        <div className={`${styles.ExpertWrapper}`}>
+            <div className={`${styles.ExpertBody}`}>
+                <div>
+                    <img src= {expert.image} alt='avatar' className={`${styles.ExpertImage}`}/>
                 </div>
-                <div className={`${styles.exportBodyWrapper}`}>
-                    <img className={`${styles.expertBodyImage}`} alt='avatar' src={avatar3} />
-                    <p className={`${styles.expertBodyName} text-gray-700`}>Vor- und Nachname</p>
+                <p className={`${styles.ExpertTitle}`}> {expert.firstName} {expert.lastName} </p>
+                <p className={`${styles.ExpertFunction}`}><span className='font-bold'> {expert.experience} Jahre</span> Berufserfahrung </p>
+                {
+                    expert.address === undefined ?
+                    <p></p>:
+                
+                <div className = {`${styles.ExpertAddress}`}>
+                    <MdLocationPin size = {16} className = 'm-1' /> 
+                    <p> {expert.address} </p>
                 </div>
+                }
+                <div className='p-6'>
+
+                {
+                    expert.domain === [] ?
+                    <p></p> :
+                
+                <div>
+                    {
+                        expert.domain.map((domain, index)=>
+                            <button className={`${styles.ExpertDomain}`}>
+                                <p> {domain} </p>
+                            </button>
+                        )
+                    }
+                </div>
+                }
+                <div className={`${styles.ExpertSkills}`}>
+                    {
+                        expert.skills.map((skill,index) =>
+                            <Skills text = {skill} color = {skillcolor} />
+                        )
+                    }
+                    <p className= {`${styles.SkillsNumber} ${textColor}`}>24..</p>
+                </div>
+                </div>
+
             </div>
-            <div className={`${styles.expertFooter}`}>
-                <img className={`${styles.articleFooterImage}`} alt='avatar' src={avatar4} />
-                <p className={`${styles.expertFooterName} text-neutral-black`}>Name</p>
-                <button className={`${styles.expertFooterCTAButton}`}>
-                    <FiMessageCircle className={`${styles.expertFooterCTAButtonIcon} text-neutral-black`} />
-                    <p className={`${styles.expertFooterCTAButtonText}`}>100</p>
-                </button>
-                <button className={`${styles.expertFooterCTAButton}`}>
-                    <FiHeart className={`${styles.expertFooterCTAButtonIcon} text-neutral-black`} />
-                    <p className={`${styles.expertFooterCTAButtonText}`}>100</p>
-                </button>
+                
+            <div className={`${styles.cardFloatButtonsWrapper}`}>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoAddCircleOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoShareSocialOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoHeartOutline className={`${styles.cardFloatButtonIcon} text-secondary-pink`} /></button>
             </div>
         </div>
     )

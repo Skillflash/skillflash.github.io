@@ -1,44 +1,39 @@
 import React from 'react';
-import { FiCornerUpRight, FiThumbsUp, FiMessageCircle, FiMoreVertical, FiPlay } from "react-icons/fi";
+import { IoAddCircleOutline, IoHeartOutline, IoPlayOutline, IoShareSocialOutline } from 'react-icons/io5';
 
-import { avatar5, avatar6 } from '../../resources/Images';
-import styles from './Cards.module.css';
+import styles from './Cards.module.css'
+import { avatar7 } from '../../resources/Images';
+import {Skills} from '..';
+// import { FiPlay } from 'react-icons/fi';
 
-const AudioCard = props => {
+const AudioCard
+ = props => {
     return (
-        <div className={`${styles.audioWrapper} bg-neutral-white border-secondary-yellow hover:border-neutral-white`}>
-            <div className={`${styles.articleHeader}`}>
-                <img src={avatar5} alt="avatar" className={`${styles.articleHeaderImage}`} />
-                <div className={`${styles.articleHeaderNameWrapper}`}>
-                    <p className={`${styles.articleHeaderNameTitle} text-neutral-black`}>Name</p>
-                    <p className={`${styles.articleHeaderNameSubTitle} text-neutral-grey`}>Name</p>
+        <div className={`${styles.audioWrapper}`}>
+            <div className={`${styles.audioBackgroundWrapper}`}>
+                <div className={`${styles.audioBackgroundGradient}`}>
+                    <div>
+                        <img src= {avatar7} alt='avatar 7' className={`${styles.eventAuthorImage} border-neutral-white`}/>
+                    </div>
+                    <button className={`${styles.audioPlay} border-neutral-black`}>
+                        <IoPlayOutline className={`${styles.audioPlayIcon}`} />
+                    </button>
+                    <p className={`${styles.EventTitle} text-neutral-black`}>Audio/Video Titel </p>
+                    <p className={`${styles.EventDescription} text-neutral-black`}>Lörem ipsum anar epipp som doskapet, kontradade mivårade..</p>
                 </div>
-                <FiMoreVertical  className={`${styles.articleHeaderIcon} text-neutral-black`} />
             </div>
-            <div className={`${styles.audioBody}`}>
-                <div className={`${styles.audioBodyIconWrapper} bg-neutral-grey`}>  
-                    <FiPlay  className={`${styles.audioBodyIcon} text-neutral-black`} />
-                </div>
-                <p className={`${styles.audioBodyTitle} text-neutral-black`}>Title</p>
-                <p className={`${styles.audioBodySubTitle} text-gray-700`}>Subtitle</p>
+            <div className={`${styles.SkillsArea}`}>
+                <Skills text={'Subskill'} color={'black'}/>
+                <Skills text={'Subskill'} color={'black'}/>
+                <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
             </div>
-            <div className={`${styles.articleCTA}`}>
-                <button className={`${styles.articlCTAButton}`}>
-                    <FiThumbsUp  className={`${styles.articleHeaderIcon} text-neutral-black`} />
-                </button>
-                <button>
-                    <FiMessageCircle className={`${styles.articleHeaderIcon} text-neutral-black`} />
-                </button>
-                <button>
-                    <FiCornerUpRight  className={`${styles.articleHeaderIcon} text-neutral-black`} />
-                </button>
-            </div>
-            <div className={`${styles.articleFooter}`}>
-                <img src={avatar6} alt="avatar" className={`${styles.articleFooterImage}`} />
-                <input className={`${styles.articleFooterInput} text-neutral-black`} placeholder='Enter your comment' />
+            <div className={`${styles.cardFloatButtonsWrapper}`}>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoAddCircleOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoShareSocialOutline className={`${styles.cardFloatButtonIcon} text-primary-lila`} /></button>
+                <button className={`${styles.cardFloatButton} bg-neutral-white`}><IoHeartOutline className={`${styles.cardFloatButtonIcon} text-secondary-pink`} /></button>
             </div>
         </div>
     )
 }
 
-export default AudioCard;
+export default AudioCard
