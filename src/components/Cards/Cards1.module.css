@@ -14,17 +14,35 @@
     @apply hover:shadow-2xl;
 }
 .ExpertBody{
-    @apply w-full h-72 pt-11;
+    @apply w-full pt-11;
 }
 .ExpertImage{
     @apply w-40 h-40 rounded-full mx-auto border-2 border-white shadow-2xl
 }
 .ExpertTitle{
-    @apply text-2xl font-bold mt-2 font-source-sans-pro;
+    @apply text-2xl font-bold mt-2 font-source-sans-pro text-center;
 }
 
 .ExpertFunction{
-    @apply text-base mt-2 font-normal font-quicksand;
+    @apply text-base mt-2 font-normal font-quicksand text-center;
+}
+
+.ExpertAddress{
+    @apply flex flex-row text-neutral-black text-base font-bold font-quicksand w-full mx-auto mt-2 justify-center;
+}
+.ExpertDomain{
+    @apply p-1 bg-neutral-black text-neutral-white hover:opacity-70 rounded-2xl shadow-xl font-bold font-quicksand px-2 mb-4;
+}
+.ExpertSkills{
+    @apply flex flex-row flex-wrap;
+}
+
+.ExpertSkill{
+    @apply px-3 py-1 rounded-3xl border-2 font-bold font-quicksand shadow-xl mr-4 hover:bg-gray-300;
+}
+
+.ExpertSkillNumber{
+    @apply font-bold font-quicksand text-right
 }
 
 

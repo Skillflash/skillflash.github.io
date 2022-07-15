@@ -1,0 +1,85 @@
+.mainWrapper {
+    @apply w-full;
+ }
+ 
+ .clientWrapper{
+     @apply flex md:flex-row flex-wrap p-2 w-full justify-center;
+ }
+ 
+ .clientImageWrapper{
+     @apply md:ml-10 sm:grid-cols-1 md:grid-cols-2
+ }
+ 
+ .clientInfoWrapper{
+     @apply md:w-[400px] sm:grid-cols-1 md:grid-cols-2;
+ }
+ 
+ .clientInfoTitle{
+     @apply text-5xl font-source-sans-pro font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-fade to-primary-orange;
+ }
+ 
+ .clientInfoContent{
+     @apply text-2xl font-bold text-neutral-black font-quicksand mt-2 mb-6;
+ }
+ 
+ .clientSkillSearch{
+     @apply text-2xl font-source-sans-pro font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-fade to-primary-orange mb-2;
+ }
+ 
+ .clientSkills{
+     @apply flex flex-row flex-wrap mt-4;
+ }
+ 
+ .clientAddress{
+     @apply flex flex-row mt-4
+ }
+ 
+ .clientImage{
+     @apply w-80 h-80 rounded-full border-4 border-white shadow-2xl
+ }
+ 
+ .selectedSkill{
+     @apply bg-neutral-black px-3 py-1 rounded-3xl shadow-lg m-1 hover:bg-opacity-50
+ }
+ 
+ .buttonSkill{
+     @apply bg-neutral-white px-3 py-1 rounded-3xl shadow-lg border-2 m-1 hover:bg-neutral-grey-light
+ }
+ 
+ 
+ 
+ 
+ .expertWrapper{
+     @apply flex md:flex-row flex-wrap p-2 w-full justify-center;
+ }
+ 
+ .expertPhoneImageWrapper{
+     @apply w-80 mr-16 -mt-5
+ }
+ 
+ .expertInfoWrapper{
+     
+ }
+ 
+ .expertInfoTitle{
+     @apply text-5xl font-source-sans-pro font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-fade to-primary-orange;
+ }
+ 
+ .expertInfoWrapper{
+     @apply md:w-96 sm:grid-cols-1 md:grid-cols-2;
+ }
+ 
+ .expertInfoTitle{
+     @apply text-5xl font-source-sans-pro font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-fade to-primary-orange;
+ }
+ 
+ .expertInfoContent{
+     @apply text-2xl font-bold text-neutral-black font-quicksand mt-2 mb-6;
+ }
+ 
+ .expertCard{
+     @apply mt-24;
+ }
+ 
+ 
+ 
