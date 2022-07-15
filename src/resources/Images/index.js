@@ -25,7 +25,10 @@ import graphic from './graphic.jpg';
 import project_management from './project_management.jpg';
 import desktop from './Group 13.png';
 import CMSDashboard from './CMSDashboard.png';
-import user from './user.png'
+import user from './user.png';
+import user2 from './user2.png';
+import user3 from './user3.png';
+import profile from './Profil.png'
 
 
 
@@ -33,7 +36,7 @@ export {
     hero, 
     arrow, 
     call_out, 
-    avatar1, 
+    avatar1,
     avatar2, 
     avatar3,
     avatar4,
@@ -58,4 +61,7 @@ export {
     desktop,
     CMSDashboard,
     user,
+    user2,
+    profile,
+    user3,
 };

@@ -1,42 +1,87 @@
 section {
-    text-align: center;
-    margin-top: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
-.buttons{
-    background: linear-gradient(to right, #F84E6D, #FFBE0B);
-     margin-bottom: 2rem; 
-     border-radius: 3px;
-     padding: 10px;
-     box-shadow: 15px;
-     font-weight: bold;
-     display: flex;
-     margin-left: auto;
-    margin-right: auto;
-     
-
+.buttons {
+  background: linear-gradient(to right, #f84e6d, #ffbe0b);
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 1px 2px 1px 1px #f2f2f2;
+  font-weight: bold;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 .span {
-    font-size: 23px;
-    background: -webkit-linear-gradient(#F84E6D,#FFBE0B, #F84E6D);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-  }
-  .p{
-    margin-top: 0;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-  }
-  .img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } 
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-    .icon {
-        margin-top: 5px;
-    }
+  font-size: 23px;
+  background: -webkit-linear-gradient(#f84e6d, #ffbe0b, #f84e6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+.p {
+  margin-top: 0;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin-top: 5px;
+}
+h6,
+small,
+.img3 {
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.section2 {
+  box-shadow: 2px 5px 5px 5px #f2f2f2;
+  padding: 1rem;
+  margin: 1rem;
+}
+.section1 {
+  width: 70%;
+  justify-content: center;
+  display: block;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.groupButton {
+  display: flex;
+}
+.faUpIcon {
+  background: linear-gradient(to right, #526cf9, #8338ec);
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  box-shadow: 1px 2px 1px 3px #f2f2f2;
+  font-weight: bold;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 1rem;
+}
+.faDownIcon {
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  box-shadow: 1px 2px 1px 3px #f2f2f2;
+  font-weight: bold;
+  display: flex;
+  margin-left: 10px;
+  margin-right: auto;
+  padding: 1rem;
+  background: linear-gradient(to right, black, blue);
+}
