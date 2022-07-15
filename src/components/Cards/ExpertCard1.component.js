@@ -10,19 +10,32 @@ import { MdLocationPin } from 'react-icons/md';
 const ExpertCard1 = props => {
 
     const { expert, skillcolor } = props
+
+    let textColor = 'text-primary-'+ skillcolor;
+
     return (
         <div className={`${styles.ExpertWrapper}`}>
             <div className={`${styles.ExpertBody}`}>
                 <div>
-                    <img src= {expert.image} alt='avatar 7' className={`${styles.ExpertImage}`}/>
+                    <img src= {expert.image} alt='avatar' className={`${styles.ExpertImage}`}/>
                 </div>
                 <p className={`${styles.ExpertTitle}`}> {expert.firstName} {expert.lastName} </p>
                 <p className={`${styles.ExpertFunction}`}><span className='font-bold'> {expert.experience} Jahre</span> Berufserfahrung </p>
+                {
+                    expert.address === undefined ?
+                    <p></p>:
+                
                 <div className = {`${styles.ExpertAddress}`}>
                     <MdLocationPin size = {16} className = 'm-1' /> 
                     <p> {expert.address} </p>
                 </div>
+                }
                 <div className='p-6'>
+
+                {
+                    expert.domain === [] ?
+                    <p></p> :
+                
                 <div>
                     {
                         expert.domain.map((domain, index)=>
@@ -32,15 +45,14 @@ const ExpertCard1 = props => {
                         )
                     }
                 </div>
+                }
                 <div className={`${styles.ExpertSkills}`}>
                     {
                         expert.skills.map((skill,index) =>
-                            <button className={`${styles.ExpertSkill} text-${skillcolor} border-${skillcolor}`}>
-                                <p> {skill} </p>
-                            </button>
+                            <Skills text = {skill} color = {skillcolor} />
                         )
                     }
-                    <p className= {`${styles.ExpertSkillNumber} text-${skillcolor}`}>24..</p>
+                    <p className= {`${styles.SkillsNumber} ${textColor}`}>24..</p>
                 </div>
                 </div>
 
