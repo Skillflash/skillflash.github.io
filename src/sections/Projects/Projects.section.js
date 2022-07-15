@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
-import { ArticleCard1, AudioCard1, EventCard1, ExpertCard1, TeamCard } from '../../components';
+import { ArticleCard, AudioCard, EventCard, ExpertCardInn, TeamCard } from '../../components';
 
 import styles from './Projects.module.css'
 
@@ -46,13 +46,13 @@ const Projects = props => {
                 )}
             </div>
             <div className={`${styles.skillsCards}`}>
-                <ExpertCard1 />
-                <EventCard1 />
-                <AudioCard1 />
+                <ExpertCardInn />
+                <EventCard />
+                <AudioCard />
                 <TeamCard />
-                <ArticleCard1 />
-                <EventCard1 />
-                <AudioCard1 />
+                <ArticleCard />
+                <EventCard />
+                <AudioCard />
                 <TeamCard />
             </div>
         </section>

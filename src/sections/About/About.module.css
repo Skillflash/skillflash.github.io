@@ -1,5 +1,5 @@
 .mainWrapper {
-    @apply w-full;
+    @apply w-full relative -mt-24;
  }
  
  .clientWrapper{
@@ -78,7 +78,7 @@
  }
  
  .expertCard{
-     @apply mt-24;
+     @apply mt-32;
  }
  
  

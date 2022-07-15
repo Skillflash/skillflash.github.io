@@ -1,192 +1,221 @@
-/* Article Card */
-
-.articleWrapper {
-    @apply shadow-lg rounded-md w-76 p-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+/* Skills */
+.SkillsArea{
+    @apply flex flex-row flex-wrap items-center w-full px-4 py-6;
 }
 
-.articleHeader {
-    @apply flex flex-row justify-between items-center;
+.SkillsNumber{
+    @apply text-base font-bold text-center px-1 py-2 font-quicksand ml-auto;
 }
 
-.articleHeaderImage {
-    @apply h-11 w-11 rounded-full shadow-md bg-cover bg-center;
-}
-
-.articleHeaderNameWrapper {
-    @apply mr-auto ml-8 text-left;
-}
-
-.articleHeaderNameTitle {
-    @apply text-sm font-semibold;
-}
-
-.articleHeaderNameSubTitle {
-    @apply text-xs;
-}
-
-.articleHeaderIcon {
-    @apply h-6 w-6;
-}
-
-.articleBody {
-    @apply text-left py-5;
-}
-
-.articleBodyTitle {
-    @apply text-2xl font-medium;
-}
-
-.articleBodySubTitle {
-    @apply text-sm;
-}
-
-.articleBodyPara {
-    @apply text-sm px-2 pt-2;
-}
-
-.articleCTA {
-    @apply flex flex-row justify-between items-center mx-2 pb-3 mb-2 border-b-2;
-}
-
-.articleCTAButton {
-    @apply outline-none;
-}
-
-.articleFooter {
-    @apply flex flex-row py-1;
-}
-
-.articleFooterImage {
-    @apply h-7 w-7 rounded-full shadow-md bg-cover bg-center;
-}
-
-.articleFooterInput {
-    @apply outline-none ml-4 text-xs;
-}
 
 /* Expert Card */
-
-.expertWrapper {
-    @apply shadow-lg rounded-md w-76 p-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+.ExpertWrapper{
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
+    @apply hover:shadow-2xl;
+}
+.ExpertBody{
+    @apply w-full pt-11;
+}
+.ExpertImage{
+    @apply w-40 h-40 rounded-full mx-auto border-2 border-white shadow-2xl
+}
+.ExpertTitle{
+    @apply text-2xl font-bold mt-2 font-source-sans-pro text-center;
 }
 
-.expertTitle {
-    @apply text-2xl font-medium py-2;
+.ExpertFunction{
+    @apply text-base mt-2 font-normal font-quicksand text-center;
 }
 
-.expertBody {
-    @apply text-base;
+.ExpertAddress{
+    @apply flex flex-row text-neutral-black text-base font-bold font-quicksand w-full mx-auto mt-2 justify-center;
+}
+.ExpertDomain{
+    @apply p-1 bg-neutral-black text-neutral-white hover:opacity-70 rounded-2xl shadow-xl font-bold font-quicksand px-2 mb-4;
+}
+.ExpertSkills{
+    @apply flex flex-row flex-wrap;
 }
 
-.expertBodyCategoryWrapper {
-    @apply flex flex-row flex-wrap justify-end py-4;
+.ExpertSkill{
+    @apply px-3 py-1 rounded-3xl border-2 font-bold font-quicksand shadow-xl mr-4 hover:bg-gray-300;
 }
 
-.expertBodyCategoryText {
-    @apply rounded m-1 p-1.5 px-2 text-sm;
+.ExpertSkillNumber{
+    @apply font-bold font-quicksand text-right
 }
 
-.expertBodyWrapper {
-    @apply text-base;
+
+/* Event Card */
+
+.EventWrapper {
+    @apply  shadow-md my-1 rounded-md relative duration-500 ease-in-out;
+    @apply hover:shadow-2xl;
 }
 
-.expertBodyImage {
-    @apply h-28 w-28 rounded-full shadow-md mx-auto bg-cover bg-center;
+.EventBackgroundImageWrapper {
+    @apply relative;
 }
 
-.expertBodyName {
-    @apply text-sm py-2;
+.EventBackgroundGradient {
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
 }
 
-.expertFooter {
-    @apply flex flex-row justify-between items-center py-2;
+.EventDateArea {
+    @apply mt-5 px-4 py-2 w-fit rounded-3xl;
 }
 
-.expertFooterName {
-    @apply text-sm mr-auto ml-5 font-medium;
+.EventDate {
+    @apply text-left font-bold text-2xl font-quicksand;
 }
 
-.expertFooterCTAButton {
-    @apply flex flex-row items-center ml-6;
+.EventTitle{
+    @apply mt-2 font-bold text-2xl text-left font-source-sans-pro;
 }
 
-.expertFooterCTAButtonIcon {
-    @apply text-xl font-bold;
+.EventDescription{
+    @apply mt-2 text-base font-extrabold text-left font-quicksand;
 }
 
-.expertFooterCTAButtonText {
-    @apply text-xs font-medium ml-1;
+.EventLink{
+    @apply mt-2 bg-gradient-to-tr text-transparent bg-clip-text text-base font-bold text-left font-quicksand underline;
 }
+
+.eventAuthorImage {
+    @apply w-14 h-14 rounded-full border-2 shadow-2xl drop-shadow-xl
+}
+
+/* Team Card */
+
+.TeamWrapper {
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
+    @apply hover:shadow-2xl;
+}
+
+.TeamBody{
+    @apply w-full h-72 pt-10;
+}
+
+.TeamImage{
+    @apply w-40 h-40 rounded-full mx-auto border-2 border-white shadow-2xl;
+}
+.TeamTitle{
+    @apply text-2xl font-bold mt-2 font-source-sans-pro;
+}
+.TeamProfilesArea{
+    @apply flex flex-row w-40 mt-2 mx-auto;
+}
+.TeamProfiles{
+    @apply w-8 h-8 rounded-full border-2 border-white shadow-xl drop-shadow-md;
+}
+
 
 /* Audio Card */
 
 .audioWrapper {
-    @apply shadow-lg rounded-md w-76 p-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
+    @apply hover:shadow-2xl;
 }
 
-.audioBody {
-    @apply py-4;
+.audioBackgroundWrapper {
+    @apply w-full h-72 bg-opacity-5 bg-cover rounded-md;
 }
 
-.audioBodyIconWrapper {
-    @apply h-16 w-16 rounded-full shadow-md mx-auto my-2 flex justify-center items-center;
+.audioBackgroundGradient {
+    @apply w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
 }
 
-.audioBodyIcon {
-    @apply text-2xl;
+.audioPlay {
+    @apply border-2 w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4;
 }
 
-.audioBodyTitle {
-    @apply font-medium text-2xl mb-1;
+.audioPlayIcon {
+    @apply text-4xl;
 }
 
-.audioBodySubTitle {
-    @apply text-lg;
+
+/* Article Card */
+
+.articleWrapper {
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
+    @apply hover:shadow-2xl;
 }
 
-/* Event Card */
-
-.eventWrapper {
-    @apply shadow-lg rounded-md w-76 py-3 m-2 mb-3 border-2 ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+.articleBackgroundImageWrapper {
+    @apply relative;
 }
 
-.eventBody {
-    @apply relative my-4;
+
+.articleBackgroundGradient {
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
 }
 
-.eventBodyImage {
-    @apply h-64 w-full bg-cover bg-center;
+.articleSpace {
+    @apply mt-5 px-4 py-2;
 }
 
-.eventDate {
-    @apply absolute top-4 right-4 p-2 rounded shadow-md;
+.articleDate {
+    @apply text-left font-bold text-2xl font-quicksand;
 }
 
-.eventFooter {
-    @apply text-left;
+
+/* Project Card */
+
+.projectWrapper {
+    @apply shadow-md my-1 rounded-md relative duration-500 ease-in-out;
+    @apply hover:shadow-2xl;
 }
 
-.eventName {
-    @apply p-1 px-4 rounded-md inline-block text-base font-medium;
-}
-/* CTA card */
-
-.CTAWrapper {
-    @apply rounded-md w-76 py-3 m-2 bg-gradient-to-r shadow-lg ease-in-out duration-300 hover:shadow-2xl hover:shadow-secondary-pink-light;
+.projectBackgroundImageWrapper {
+    @apply relative;
 }
 
-.CTAContent {
-    @apply text-center text-white px-1 py-5;
+.projectBackgroundImage {
+    @apply w-full h-72 bg-opacity-5 bg-cover object-cover object-left rounded-md;
 }
 
-.CTAIcon {
-    @apply w-12 h-12 mb-2;
+.projectBackgroundGradient {
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8  flex flex-col;
 }
 
-.CTATitle {
-    @apply text-2xl font-medium mb-2;
+.projectNameWrapper {
+    @apply outline-none px-4 py-2 w-fit rounded-3xl mt-28 mr-auto shadow-xl drop-shadow-xl duration-500 ease-in-out;
+    @apply hover:bg-opacity-70;
 }
 
-.CTASubtitle {
-    @apply text-base font-semibold;
+.projectName {
+    @apply text-left font-bold text-base font-quicksand;
 }
+
+.skillButton {
+    @apply outline-none p-1 px-4 rounded-3xl mr-2 border-2 my-1 shadow-xl drop-shadow-2xl;
+}
+
+.skillButtonText {
+    @apply font-quicksand font-bold;
+}
+
+
+/* Floating buttons */
+
+.cardFloatButtonsWrapper {
+    @apply absolute top-6 opacity-0 right-4 flex flex-col duration-500 ease-in-out;
+}
+
+.cardFloatButton {
+    @apply my-1.5 h-9 w-9 flex items-center justify-center rounded-full shadow-lg;
+}
+
+.cardFloatButtonIcon {
+    @apply text-xl;
+}
+
+.EventWrapper:hover .cardFloatButtonsWrapper,
+.ExpertWrapper:hover .cardFloatButtonsWrapper,
+.TeamWrapper:hover .cardFloatButtonsWrapper,
+.audioWrapper:hover .cardFloatButtonsWrapper,
+.projectWrapper:hover .cardFloatButtonsWrapper,
+.articleWrapper:hover .cardFloatButtonsWrapper {
+    @apply opacity-100 duration-500 ease-in-out;
+}
+

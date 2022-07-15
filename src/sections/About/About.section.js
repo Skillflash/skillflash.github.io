@@ -3,22 +3,21 @@ import { avatar13, arrow_down, phone, spiral_arrow } from '../../resources/Image
 import { MdLocationPin } from 'react-icons/md';
 
 import styles from './About.module.css';
-import { ExpertCard1 } from '../../components';
+import { ExpertCard } from '../../components';
 import experts from '../../dummy/experts';
 
 const About = () => {
-  const [client, setClient] = useState({name:'Paul', address: 'Hidelsheim'});
-  const [skills, setSkills] = useState(['Klassisch','Agil']);
-  const [selectedSkills, setSelectedSkills] = useState(['Projektmanagement']);
+    const [client, setClient] = useState({name:'Paul', address: 'Hidelsheim'});
+    const [skills, setSkills] = useState(['Klassisch','Agil']);
+    const [selectedSkills, setSelectedSkills] = useState(['Projektmanagement']);
+    
   return (
     <div className={`${styles.mainWrapper}`}>
         <div className={`${styles.clientWrapper}`}>
-
             <div className={`${styles.clientInfoWrapper}`}>
                 <h4 className={`${styles.clientInfoTitle}`}> Das is {client.name} </h4>
                 <p className={`${styles.clientInfoContent}`}>..er wohnt in Hildesheim und sucht den oder die Richtige für sein Projektmanagement vor Ort.</p>
                 <h6 className={`${styles.clientSkillSearch}`}> Gesuchte Skills: </h6>
-
                 <div className={`${styles.clientSkills}`}>
                     {selectedSkills.map((selectedSkill,index)=>
                     <button key={index} className={`${styles.selectedSkill}`}>
@@ -57,13 +56,10 @@ const About = () => {
                 <h4 className={`${styles.expertInfoTitle}`}> {client.name} sucht </h4>
                 <p className={`${styles.expertInfoContent}`}>..auf unserer Plattform nach den gewünschten Skills und findet die passende Expertin.</p>
                 <div className={`${styles.expertCard}`}>
-                    <ExpertCard1 expert = {experts[1]} skillcolor = 'neutral-black'/>
+                    <ExpertCard expert={experts[1]} skillcolor = 'neutral-black'/>
                 </div>
             </div>
         </div>
-
-
-
     </div>
   )
 }

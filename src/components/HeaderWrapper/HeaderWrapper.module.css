@@ -16,6 +16,12 @@
     @apply md:pb-40 md:h-132;
 }
 
+.enterpriseWrapperDotted {
+    @apply bg-primary-lila bg-opacity-10 h-screen w-full flex justify-center items-center pb-2;
+    @apply sm:pb-10;
+    @apply md:pb-40 md:h-128;
+}
+
 .mainWrapperDotted {
     background-image: radial-gradient(#80808062 1.9px, transparent 0);
     background-size: 27px 27px;
