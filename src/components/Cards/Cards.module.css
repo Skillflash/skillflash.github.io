@@ -58,7 +58,7 @@
 }
 
 .EventBackgroundGradient {
-    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-[#FFFFFF20] via-[#FFFFFF99] to-neutral-white px-4 pt-8;
 }
 
 .EventDateArea {
@@ -122,7 +122,7 @@
 }
 
 .audioBackgroundGradient {
-    @apply w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
+    @apply w-full h-full bg-gradient-to-b from-[#FFFFFF20] via-[#FFFFFF99] to-neutral-white px-4 pt-8;
 }
 
 .audioPlay {
@@ -147,7 +147,7 @@
 
 
 .articleBackgroundGradient {
-    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8;
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-[#FFFFFF20] via-[#FFFFFF99] to-neutral-white px-4 pt-8;
 }
 
 .articleSpace {
@@ -175,7 +175,7 @@
 }
 
 .projectBackgroundGradient {
-    @apply absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-white px-4 pt-8  flex flex-col;
+    @apply absolute top-0 w-full h-full bg-gradient-to-b from-[#FFFFFF20] via-[#FFFFFF99] to-neutral-white px-4 pt-8  flex flex-col;
 }
 
 .projectNameWrapper {
