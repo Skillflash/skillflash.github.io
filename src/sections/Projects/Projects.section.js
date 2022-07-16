@@ -49,8 +49,7 @@ const Projects = props => {
                 )}
             </div>
             <div className={`${styles.skillsCards}`}>
-                <ExpertCard expert = { experts[0]} skillcolor = 'blue'  />
-
+                <ExpertCardInn expert = { experts[0]} skillcolor = 'blue'  />
                 <EventCard />
                 <AudioCard />
                 <TeamCard />
