@@ -28,14 +28,13 @@ import training from './training.jpg';
 import guide from './guide.jpg';
 import graphic from './graphic.jpg';
 import project_management from './project_management.jpg';
+import vertical_spiral from './vertical-spiral.png';
 import desktop from './Group 13.png';
 import CMSDashboard from './CMSDashboard.png';
 import user from './user.png';
 import user2 from './user2.png';
 import user3 from './user3.png';
 import profile from './Profil.png'
-
-
 
 export { 
     hero, 
@@ -74,5 +73,5 @@ export {
     arrow_down,
     spiral_arrow,
     phone,
-
+    vertical_spiral
 };

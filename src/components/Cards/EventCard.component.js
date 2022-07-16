@@ -5,6 +5,7 @@ import styles from './Cards.module.css';
 import { avatar7, project } from '../../resources/Images';
 import Skills from '../Skills/Skills.component';
 
+
 const EventCard = props => {
     return (
         <div className={`${styles.EventWrapper}`}>

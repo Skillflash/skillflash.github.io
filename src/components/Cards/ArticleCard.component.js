@@ -34,4 +34,4 @@ const ArticleCard = props => {
     )
 }
 
-export default ArticleCard;
+export default ArticleCard
