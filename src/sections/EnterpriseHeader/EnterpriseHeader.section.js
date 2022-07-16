@@ -14,11 +14,11 @@ const EnterpriseHeader = props => {
                 <br />
                 <span className={`${styles.headerContentTitleSub}`}>mit Skillflash Enterprise</span>
             </h2>
-            <h4 className={`${styles.headerContentSubTitle} text-neutral-white`}>
+            <p className={`${styles.headerContentSubTitle} text-neutral-white`}>
                 Eine Plattform mit online und offline Formaten in individuellem Branding.
                 Darüber machen wir Bildungsformate erreichbarer, vernetzen Regionen
                 und fördern die Entwicklung jedes Einzelnen.
-            </h4>
+            </p>
             <button className={`${styles.headerButton} ${scrollY >= 200 && styles.headerButtonFixed}`}>
                 <h6 className={`${styles.headerButtonText} ${scrollY >= 200 ? `from-secondary-pink to-secondary-yellow` : 'from-neutral-white to-neutral-white'}`}>Verstehen wie's geht</h6>
                 <IoBulbOutline className={`${styles.headerButtonIcon} ${scrollY >= 200 ? 'text-primary-orange' : 'text-neutral-white'}`} />

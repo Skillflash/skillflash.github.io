@@ -119,8 +119,8 @@
  }
 
  .arrowSpiral {
-    @apply hidden  object-none object-center -mt-5;
-    @apply md:w-48 md:block md:ml-20;
+    @apply hidden -mt-5;
+    @apply md:h-40 md:block md:ml-36;
  }
 
  .arrowVertical {

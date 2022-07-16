@@ -16,7 +16,7 @@
 
 .headerContentSubTitle {
     @apply text-base font-extrabold my-4 mb-2 font-quicksand px-10 text-center;
-    @apply md:text-lg md:mb-14 md:w-3/5 md:px-24;
+    @apply md:mb-14 md:w-3/5 md:px-24;
 }
 
 
