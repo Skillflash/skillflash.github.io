@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { avatar13, arrow_down, phone, spiral_arrow, vertical_spiral } from '../../resources/Images';
+import { avatar13, arrow_down, phone, spiral_arrow, vertical_spiral, phone1 } from '../../resources/Images';
 import { MdLocationPin } from 'react-icons/md';
 
 import styles from './About.module.css';
@@ -45,7 +45,7 @@ const About = () => {
                   <div className={`${styles.expertPhoneImageWrapper}`}>
                       <h4 className={`${styles.expertInfoTitle} from-secondary-pink to-secondary-yellow`}> Die Suche.. </h4>
                       <p className={`${styles.expertInfoContent}`}>..startet Paul auf unserer Plattform nach angabe der gewünschten Skills und lernt die Projektmanagerin, Antonia, kennen.</p>
-                      <img src={phone} alt="phone" className={`${styles.expertPhoneImage}`} />
+                      <img src={phone1} alt="phone" className={`${styles.expertPhoneImage}`} />
                       <img src={spiral_arrow} alt="" className={`${styles.arrowSpiral}`}/>
                       <img src={vertical_spiral} alt="" className={`${styles.arrowVertical}`} />
                 </div>

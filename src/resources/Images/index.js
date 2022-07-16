@@ -19,6 +19,7 @@ import avatar17 from './avatar17.png';
 import flower1 from './flower1.jpg';
 import project from './project.png';
 import phone from './phone.png';
+import phone1 from './phone1.png';
 import arrow_down from './arrow-down.png';
 import spiral_arrow from './spiral-arrow.png';
 import team from './team.jpg';
@@ -67,5 +68,6 @@ export {
     arrow_down,
     spiral_arrow,
     phone,
+    phone1,
     vertical_spiral
 };
