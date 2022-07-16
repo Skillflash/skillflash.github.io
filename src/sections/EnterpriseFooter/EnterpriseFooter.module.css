@@ -27,7 +27,7 @@
 }
 
 .contentBox {
-  @apply px-5 py-10 rounded-md shadow-xl drop-shadow-2xl;
+  @apply px-5 py-10 rounded-md shadow-xl drop-shadow-2xl w-full;
   @apply md:px-12;
 }
 
