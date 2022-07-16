@@ -14,7 +14,7 @@
     @apply hover:shadow-2xl;
 }
 .ExpertBody{
-    @apply pt-11;
+    @apply w-full pt-11;
 }
 .ExpertImage{
     @apply w-40 h-40 rounded-full mx-auto border-2 border-white shadow-2xl
@@ -31,7 +31,7 @@
     @apply flex flex-row text-neutral-black text-base font-bold font-quicksand w-full mx-auto mt-2 justify-center;
 }
 .ExpertDomain{
-    @apply p-1 bg-neutral-black text-neutral-white hover:opacity-70 rounded-2xl shadow-xl font-bold font-quicksand px-3 mb-4;
+    @apply p-1 bg-neutral-black text-neutral-white hover:opacity-70 rounded-2xl shadow-xl font-bold font-quicksand px-2 mb-4;
 }
 .ExpertSkills{
     @apply flex flex-row flex-wrap;
@@ -42,7 +42,7 @@
 }
 
 .ExpertSkillNumber{
-    @apply font-bold font-quicksand mt-4 
+    @apply font-bold font-quicksand text-right
 }
 
 

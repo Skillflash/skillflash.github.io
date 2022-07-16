@@ -6,7 +6,7 @@ import styles from './HeaderWrapper.module.css';
 const EnterpriseWrapper = ({ children, scrollY }) => {
     return (
         <section className={`${styles.enterpriseWrapper} ${styles.enterPrise}`}>
-            <div className={`${styles.mainWrapperDotted}`}>
+            <div className={`${styles.enterpriseWrapperDotted}`}>
                 <div className={`${styles.headerContent}`}>
                     {children}
                 </div>

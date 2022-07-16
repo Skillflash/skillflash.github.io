@@ -4,7 +4,6 @@ import { IoAddCircleOutline, IoHeartOutline, IoPlayOutline, IoShareSocialOutline
 import styles from './Cards.module.css'
 import { avatar7 } from '../../resources/Images';
 import {Skills} from '..';
-// import { FiPlay } from 'react-icons/fi';
 
 const AudioCard
  = props => {
@@ -37,3 +36,4 @@ const AudioCard
 }
 
 export default AudioCard
+

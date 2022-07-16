@@ -1,0 +1,104 @@
+.mainWrapper {
+    @apply relative h-auto;
+}
+
+.radialWrapper {
+    background-image:radial-gradient(207.54% 924.13% at -26.06% 276.6%, #FFBE0B 15.1%, rgba(255, 190, 11, 0.9) 30.96%, #FF006E 53.65%, #8338EC 82.29%, #8338EC 90.1%, #8338EC 98.96%);
+}
+
+.mainDotWrapper {
+    @apply bg-primary-lila bg-opacity-10 h-auto w-full flex justify-center items-center py-20;
+    @apply sm:pb-28;
+    @apply md:pb-40;
+}
+
+.mainDotWrapper {
+    background-image: radial-gradient(#80808062 1.9px, transparent 0);
+    background-size: 27px 27px;
+}
+
+.contentWrapper {
+    @apply py-20;
+}
+
+.aboutWrapper {
+    @apply flex flex-row justify-center items-center my-1.5 mb-3;
+}
+
+.aboutWrapperImage {
+    @apply border border-neutral-white h-14 w-14 rounded-full mr-5 shadow-md drop-shadow-lg;
+}
+
+.aboutWrapperTitle {
+    @apply font-source-sans-pro font-bold text-xl;
+    @apply sm:text-2xl;
+    @apply md:text-3xl;
+}
+
+.aboutText {
+    @apply font-quicksand font-bold text-base text-center mx-auto px-10;
+}
+
+.dashBoard {
+    @apply mx-auto my-5 h-72 w-auto;
+    @apply sm:h-80;
+    @apply md:h-120
+}
+
+.aboutButton {
+    @apply z-10 relative px-3 py-1.5 rounded-md flex flex-row items-center justify-center mx-auto shadow-lg drop-shadow-xl;
+}
+
+.aboutButtonText {
+    @apply bg-gradient-to-tr text-transparent bg-clip-text from-primary-orange to-secondary-yellow font-source-sans-pro font-bold text-2xl;
+}
+
+.aboutButtonIcon {
+    @apply text-2xl ml-2;
+}
+
+
+
+/* Top curve */
+
+.topCurve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.topCurve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 271px;
+}
+
+.topCurve .topCurveFill{
+    fill: #FFFFFF;
+}
+
+
+.bottomCurve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottomCurve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 271px;
+}
+
+.bottomCurve .bottomCurveFill {
+    fill: #FFFFFF;
+}

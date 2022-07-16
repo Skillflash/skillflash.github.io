@@ -1,9 +1,9 @@
 import React from 'react';
-import Skills from '../Skills/Skills.component';
+import { IoAddCircleOutline, IoHeartOutline, IoShareOutline, IoShareSocialOutline } from 'react-icons/io5';
 
 import styles from './Cards.module.css';
+import Skills from '../Skills/Skills.component';
 import { avatar7, avatar8, avatar9, avatar10, avatar11, avatar12, team } from '../../resources/Images';
-import { IoAddCircleOutline, IoHeartOutline, IoShareOutline, IoShareSocialOutline } from 'react-icons/io5';
 
 const TeamCard = props => {
     return (
@@ -21,9 +21,6 @@ const TeamCard = props => {
                     <img src= {avatar11} alt='avatar 11' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
                     <img src= {avatar12} alt='avatar 12' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
                 </div>
-                
-                
-
             </div>
             <div className={`${styles.SkillsArea}`}>
                 <Skills text={'Subskill'} color={'rosa'}/>

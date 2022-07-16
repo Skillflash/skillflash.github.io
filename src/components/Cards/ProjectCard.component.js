@@ -1,11 +1,10 @@
 import React from 'react';
 import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
-import { avatar7 } from '../../resources/Images';
-import Skills from '../Skills/Skills.component';
 
 import styles from './Cards.module.css';
-
+import { avatar7 } from '../../resources/Images';
+import Skills from '../Skills/Skills.component';
 
 const ProjectCard = props => {
     const { project } = props;

@@ -1,0 +1,87 @@
+.mainWrapper {
+    @apply relative h-auto;
+}
+
+.radialWrapper {
+  background-image:radial-gradient(207.54% 924.13% at -26.06% 276.6%, #FFBE0B 15.1%, rgba(255, 190, 11, 0.9) 30.96%, #FF006E 53.65%, #8338EC 82.29%, #8338EC 90.1%, #8338EC 98.96%)
+}
+
+.mainDotWrapper {
+    @apply bg-primary-lila bg-opacity-10 h-auto w-full flex justify-center items-center pt-48 pb-28 px-20;
+    @apply sm:pt-48 pb-28;
+    @apply md:pt-72 pb-40;
+}
+
+.mainDotWrapper {
+    background-image: radial-gradient(#80808062 1.9px, transparent 0);
+    background-size: 27px 27px;
+}
+
+.contentWrapper {
+  @apply grid grid-cols-1 gap-7 my-2;
+  @apply md:grid-cols-2;
+}
+
+.contentBoxWrapper {
+  @apply grid grid-cols-2 gap-12 mt-4;
+}
+
+.contentBox {
+  @apply px-5 py-10 rounded-md shadow-xl drop-shadow-2xl;
+  @apply md:px-12;
+}
+
+.contentBoxTitle {
+  @apply text-center text-2xl text-transparent bg-gradient-to-tr from-primary-orange to-secondary-yellow bg-clip-text font-bold font-source-sans-pro;
+}
+
+.contentBoxImage {
+  @apply rounded-full mx-auto h-20 w-20 border border-neutral-white shadow-lg drop-shadow-lg mb-2;
+}
+
+.contentBoxName {
+  @apply text-center font-quicksand text-base font-extrabold;
+}
+
+.contentBoxSector {
+  @apply text-center font-quicksand text-sm font-semibold;
+}
+
+.contentText {
+  @apply font-quicksand font-bold text-center mt-5 px-10;
+}
+
+.statsWrapper {
+    @apply flex flex-row justify-center items-center mt-12;
+}
+
+.statsIcon {
+  @apply text-2xl;
+}
+
+
+
+
+
+
+/* Top curve */
+
+.topCurve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.topCurve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 271px;
+}
+
+.topCurve .topCurveFill {
+    fill: #FFFFFF;
+}

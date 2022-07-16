@@ -9,6 +9,7 @@ import thumbs_up from './thumbs-up.png';
 import more_vertical from './more-vertical.png'
 import heart from './heart.png';
 import play from './play.png';
+import check from './check.JPG';
 
 export {
     chevron_down,
@@ -22,4 +23,5 @@ export {
     thumbs_up,
     heart,
     play,
+    check
 };

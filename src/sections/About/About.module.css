@@ -1,5 +1,5 @@
 .mainWrapper {
-    @apply w-full mt-11 pb-16;
+    @apply w-full relative -mt-24;
  }
  
  .clientWrapper{
@@ -113,6 +113,7 @@
  .expertCard{
      @apply w-[356px] object-none object-center;
      @apply md:w-96 md:-mt-56;
+     @apply mt-32;
  }
  
  

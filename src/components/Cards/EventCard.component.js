@@ -1,9 +1,10 @@
 import React from 'react';
-import Skills from '../Skills/Skills.component';
+import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
 
 import styles from './Cards.module.css';
 import { avatar7, project } from '../../resources/Images';
-import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
+import Skills from '../Skills/Skills.component';
+
 
 const EventCard = props => {
     return (
