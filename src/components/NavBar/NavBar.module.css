@@ -52,7 +52,7 @@
 }
 
 .bottomLink {
-    @apply flex flex-col justify-center items-center px-5 bg-clip-text bg-gradient-to-tr;
+    @apply flex flex-col justify-center items-center px-5;
 }
 
 .bottomLinkIcon {
@@ -60,5 +60,5 @@
 }
 
 .bottomLinkText {
-    @apply text-transparent font-source-sans-pro font-bold text-lg;
+    @apply text-transparent font-source-sans-pro font-bold text-lg bg-clip-text bg-gradient-to-tr;
 }
