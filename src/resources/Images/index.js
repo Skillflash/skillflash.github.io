@@ -11,7 +11,7 @@ import avatar9 from './avatar9.jpg';
 import avatar10 from './avatar10.jpg';
 import avatar11 from './avatar11.jpg';
 import avatar12 from './avatar12.jpg';
-import avatar13 from './avatar13.jpg';
+import avatar13 from './avatar13.png';
 import avatar14 from './avatar14.png';
 import avatar15 from './avatar15.png';
 import avatar16 from './avatar16.png';
