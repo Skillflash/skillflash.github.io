@@ -20,7 +20,7 @@
     @apply w-40 h-40 rounded-full mx-auto border-2 border-white shadow-2xl
 }
 .ExpertTitle{
-    @apply text-2xl font-bold mt-2 font-source-sans-pro text-center;
+    @apply text-2xl font-bold mt-2 font-source-sans-pro text-center text-neutral-black;
 }
 
 .ExpertFunction{
@@ -38,7 +38,7 @@
 }
 
 .ExpertSkill{
-    @apply px-3 py-1 rounded-3xl border-2 font-bold font-quicksand shadow-xl mr-4 hover:bg-gray-300;
+    @apply px-3 py-1 rounded-3xl border-2 font-bold font-quicksand shadow-xl mr-4 mt-2 hover:bg-gray-300;
 }
 
 .ExpertSkillNumber{

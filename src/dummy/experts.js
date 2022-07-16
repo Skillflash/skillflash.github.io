@@ -2,10 +2,10 @@ import { avatar7, avatar13, avatar14, avatar5 } from "../resources/Images";
 
 const experts = [
     {
-        firstName: 'Jane',
-        lastName: 'Doe',
+        firstName: 'Vor und',
+        lastName: 'Nachname',
         experience: '4',
-        domain: ['Hauptskill'],
+        domain: [],
         address: undefined,
         skills: ['Subskill','Subskill',],
         image: avatar7,

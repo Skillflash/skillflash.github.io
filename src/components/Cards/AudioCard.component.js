@@ -5,7 +5,8 @@ import styles from './Cards.module.css'
 import { avatar7 } from '../../resources/Images';
 import {Skills} from '..';
 
-const AudioCard = props => {
+const AudioCard
+ = props => {
     return (
         <div className={`${styles.audioWrapper}`}>
             <div className={`${styles.audioBackgroundWrapper}`}>
@@ -35,3 +36,4 @@ const AudioCard = props => {
 }
 
 export default AudioCard
+
