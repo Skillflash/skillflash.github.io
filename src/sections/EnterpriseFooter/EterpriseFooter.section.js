@@ -1,6 +1,6 @@
 import React from "react";
 import { StatsButton, SumbitInput } from "../../components";
-import { avatar1 } from "../../resources/Images";
+import { avatar1, avatar14, avatar15, avatar16, avatar17 } from "../../resources/Images";
 import { IconName, MdThumbDown, MdThumbUp } from "react-icons/md";
 
 import styles from "./EnterpriseFooter.module.css";
@@ -19,24 +19,24 @@ const EnterpriseFooter = () => {
             <h6 className={`${styles.contentBoxTitle}`}>Unser Team..</h6>
             <div className={`${styles.contentBoxWrapper}`}>
               <div className={`$ -mb-3`}>
-                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <img alt='user' src={avatar16} className={`${styles.contentBoxImage} bg-neutral-white`} />
                 <h5 className={`${styles.contentBoxName} text-neutral-black`}>Oscar Schröder</h5>
-                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Sales & Finanzen</h6>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Sales &amp; Finanzen</h6>
               </div>
               <div className={`$ -mb-3`}>
-                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <img alt='user' src={avatar17} className={`${styles.contentBoxImage} bg-neutral-white`} />
                 <h5 className={`${styles.contentBoxName} text-neutral-black`}>Leonardo Bornhäußer</h5>
                 <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Produkt Design</h6>
               </div>
               <div className={`$ -mb-3`}>
-                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <img alt='user' src={avatar15} className={`${styles.contentBoxImage}`} />
                 <h5 className={`${styles.contentBoxName} text-neutral-black`}>Tobias Braun</h5>
-                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>IT & Sicherheit</h6>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>IT &amp; Sicherheit</h6>
               </div>
               <div className={`$ -mb-3`}>
-                <img alt='user' src={avatar1} className={`${styles.contentBoxImage}`} />
+                <img alt='user' src={avatar14} className={`${styles.contentBoxImage}`} />
                 <h5 className={`${styles.contentBoxName} text-neutral-black`}>Antonia Sensen</h5>
-                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Media & Netzwerk</h6>
+                <h6 className={`${styles.contentBoxSector} text-neutral-black`}>Media &amp; Netzwerk</h6>
               </div>
             </div>
           </div>

@@ -11,25 +11,24 @@ const BottomBar = props => {
         <nav className={`${styles.bottomWrapper} bg-neutral-white`}>
             <NavLink
                 to='/'
-                className={({isActive}) => isActive ? `${styles.bottomLink} ${textGradient} ${activeLink}` : `${styles.bottomLink} ${textGradient}`}
+                className={({isActive}) => isActive ? `${styles.bottomLink} ${activeLink}` : `${styles.bottomLink}`}
             >
-
                 <FiSearch className={`${styles.bottomLinkIcon} text-primary-orange`} />
-                <h6 className={`${styles.bottomLinkText}`}>Skills</h6>
+                <h6 className={`${styles.bottomLinkText} ${textGradient}`}>Skills</h6>
             </NavLink>
             <NavLink
                 to='/project'
-                className={({isActive}) => isActive ? `${styles.bottomLink} ${textGradient} ${activeLink}` : `${styles.bottomLink} ${textGradient}`}
+                className={({isActive}) => isActive ? `${styles.bottomLink}${activeLink}` : `${styles.bottomLink}`}
             >
                 <IoHeartOutline className={`${styles.bottomLinkIcon} text-primary-orange`} />
-                <h6 className={`${styles.bottomLinkText}`}>Wunschliste</h6>
+                <h6 className={`${styles.bottomLinkText} ${textGradient}`}>Wunschliste</h6>
             </NavLink>
             <NavLink
                 to='/project'
-                className={({isActive}) => isActive ? `${styles.bottomLink} ${textGradient} ${activeLink}` : `${styles.bottomLink} ${textGradient}`}
+                className={({isActive}) => isActive ? `${styles.bottomLink} ${activeLink}` : `${styles.bottomLink}`}
             >
                 <IoPersonCircleOutline className={`${styles.bottomLinkIcon} text-primary-orange`} />
-                <h6 className={`${styles.bottomLinkText}`}>Anmelden</h6>
+                <h6 className={`${styles.bottomLinkText} ${textGradient}`}>Anmelden</h6>
             </NavLink>
         </nav>
     )

@@ -1,6 +1,4 @@
-import hero from './hero.png';
 import arrow from './arrow.png';
-import call_out from './call_out.png';
 import avatar1 from './avatar1.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.jpg';
@@ -15,6 +13,9 @@ import avatar11 from './avatar11.jpg';
 import avatar12 from './avatar12.jpg';
 import avatar13 from './avatar13.jpg';
 import avatar14 from './avatar14.png';
+import avatar15 from './avatar15.png';
+import avatar16 from './avatar16.png';
+import avatar17 from './avatar17.png';
 import flower1 from './flower1.jpg';
 import project from './project.png';
 import phone from './phone.png';
@@ -30,17 +31,9 @@ import graphic from './graphic.jpg';
 import project_management from './project_management.jpg';
 import desktop from './Group 13.png';
 import CMSDashboard from './CMSDashboard.png';
-import user from './user.png';
-import user2 from './user2.png';
-import user3 from './user3.png';
-import profile from './Profil.png'
-
-
 
 export { 
-    hero, 
     arrow, 
-    call_out, 
     avatar1,
     avatar2, 
     avatar3,
@@ -55,6 +48,9 @@ export {
     avatar12,
     avatar13,
     avatar14,
+    avatar15,
+    avatar16,
+    avatar17,
     flower1,
     project,
     team,
@@ -67,10 +63,6 @@ export {
     javascript,
     desktop,
     CMSDashboard,
-    user,
-    user2,
-    profile,
-    user3,
     arrow_down,
     spiral_arrow,
     phone,

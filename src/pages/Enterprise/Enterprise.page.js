@@ -15,8 +15,7 @@ const Enterprise = props => {
             <EnterpriseHeader  scrollY={scrollY} />
             <About />
             <AboutDash />
-            {/* <Projects /> */}
-            {/* <Function />*/}
+            <Function />
             <EnterpriseFooter /> 
             <BottomBar />
         </section>

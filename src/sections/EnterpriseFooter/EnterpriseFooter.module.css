@@ -32,7 +32,7 @@
 }
 
 .contentBoxTitle {
-  @apply text-center text-2xl text-transparent bg-gradient-to-tr from-primary-orange to-secondary-yellow bg-clip-text font-bold font-source-sans-pro;
+  @apply text-center text-2xl text-transparent bg-gradient-to-tr from-secondary-pink to-secondary-yellow bg-clip-text font-bold font-source-sans-pro;
 }
 
 .contentBoxImage {

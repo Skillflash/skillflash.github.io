@@ -11,7 +11,6 @@ import ArticleCard from './Cards/ArticleCard.component';
 import ProjectCard from './Cards/ProjectCard.component';
 import HeaderWrapper from './HeaderWrapper/HeaderWrapper.component';
 import BottomBar from './NavBar/BottomBar.component';
-import EnterpriseHeaderWrapper from './EnterpriseHeaderWrapper/EnterpriseHeaderWrapper';
 import EnterpriseWrapper from './HeaderWrapper/EnterpriseWrapper.component';
 import ExpertCard from './Cards/ExpertCard.component';
 import StatsButton from './Buttons/StatsButton.component';
@@ -32,7 +31,6 @@ export {
     ProjectCard,
     HeaderWrapper,
     BottomBar,
-    EnterpriseHeaderWrapper,
     EnterpriseWrapper,
     StatsButton,
     SumbitInput,

@@ -10,7 +10,7 @@ const ProjectHeader = props => {
     const { scrollY } = props;
 
     let params = useParams();
-    const [activeSkill, setActiveSkill] = useState(false);
+    const [activeSkill, setActiveSkill] = useState(true);
     const [activeSkills, setActiveSkills] = useState([]);
     const [selectedSkills, setSelectedSkills] = useState([]);
     const [skills, setSkills] = useState(['Klassich', 'Hauptskill', 'Subsksill', 'Subskidll', 'Sudbskill', 'Subskgill', 'Suebskill', 'Subshkill', 'Subskrill', 'Subskibll', 'Subskiall', 'Subskijll', 'Subskiltl', 'Subiskill']);
@@ -105,7 +105,7 @@ const ProjectHeader = props => {
                 )}
             </div>
             <div className={`${styles.projectSkillsWrapper}`}>
-                {skills.slice(0,range).map((skill, index) =>
+                {skills.map((skill, index) =>
                     <button
                         key={index}
                         onClick={event => SetSelectedActiveSkills(skill,event)}

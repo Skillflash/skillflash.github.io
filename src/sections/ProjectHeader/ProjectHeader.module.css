@@ -1,6 +1,6 @@
 .projectWrapper {
-    @apply flex flex-wrap items-center justify-center flex-row w-4/5 mb-5 -mt-14;
-    @apply md:mt-0;
+    @apply flex flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5 -mt-14 px-20;
+    @apply md:mt-0 md:flex-wrap md:whitespace-normal md:w-4/5 md:px-0;
 }
 
 .projectButton {
@@ -20,7 +20,8 @@
 }
 
 .projectSkillsWrapper {
-    @apply relative z-10 flex flex-wrap items-center justify-center flex-row w-4/5 mb-5;
+    @apply relative z-10 flex px-10 flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5;
+    @apply md:flex-wrap md:whitespace-normal md:w-4/5 md:px-0;
 }
 
 .projectSkillButton {
