@@ -1,5 +1,6 @@
 .mainWrapper {
     @apply w-screen py-4 hidden md:flex flex-row px-14 justify-between items-center fixed top-0 z-50 duration-300 ease-in-out;
+    @apply max-w-[1440px] -translate-x-1/2 left-[50%];
 }
 
 .logoTitle {

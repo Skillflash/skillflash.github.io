@@ -80,6 +80,7 @@ const ProjectHeader = props => {
                 <button
                     onClick={(event) => setActiveSkill(!activeSkill)}
                     className={`
+                    mx-auto
                     text-neutral-white
                     ${styles.projectButton}
                     ${!activeSkill && 'bg-opacity-70'}

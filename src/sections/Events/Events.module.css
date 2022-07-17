@@ -1,5 +1,5 @@
 .mainWrapper {
-    @apply  text-center pb-20 -mt-16;
+    @apply  text-center pb-20 -mt-24;
     @apply md:-mt-44;
 }
 

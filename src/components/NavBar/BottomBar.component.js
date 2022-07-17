@@ -17,8 +17,8 @@ const BottomBar = props => {
                 <h6 className={`${styles.bottomLinkText} ${textGradient}`}>Skills</h6>
             </NavLink>
             <NavLink
-                to='/project'
-                className={({isActive}) => isActive ? `${styles.bottomLink}${activeLink}` : `${styles.bottomLink}`}
+                to='/enterprise'
+                className={({isActive}) => isActive ? `${styles.bottomLink} ${activeLink}` : `${styles.bottomLink}`}
             >
                 <IoHeartOutline className={`${styles.bottomLinkIcon} text-primary-orange`} />
                 <h6 className={`${styles.bottomLinkText} ${textGradient}`}>Wunschliste</h6>
