@@ -1,5 +1,5 @@
 .mainWrapper {
-  @apply relative -mt-10;
+  @apply relative -mt-10 max-w-[840px] mx-auto;
 }
 
 .mainTitle {
@@ -11,9 +11,9 @@
 }
 
 .functionWrapper {
-  @apply grid grid-cols-1 mt-10 w-4/5 mx-auto px-10;
-  @apply md:w-4/5 md:px-5 md:grid-cols-2;
-  @apply lg:w-1/2 lg:px-10;
+  @apply grid grid-cols-1 mt-10 w-full mx-auto px-10;
+  @apply md:px-5 md:grid-cols-2;
+  @apply lg:px-10;
 }
 
 .functionImage {
