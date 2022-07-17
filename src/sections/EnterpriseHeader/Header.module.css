@@ -25,10 +25,6 @@
     @apply md:hidden;
 }
 
-.headerButtonFixed {
-    @apply fixed mt-6 top-16 z-50 shadow-xl bg-neutral-white;
-}
-
 .headerButtonText {
     @apply font-source-sans-pro font-bold text-2xl mx-3 bg-gradient-to-tr bg-clip-text text-transparent;
 }

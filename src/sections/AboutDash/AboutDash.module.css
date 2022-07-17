@@ -7,7 +7,7 @@
 }
 
 .mainDotWrapper {
-    @apply bg-primary-lila bg-opacity-10 h-auto w-full flex justify-center items-center py-20;
+    @apply bg-primary-lila bg-opacity-10 h-auto w-full flex justify-center items-center py-32;
     @apply sm:pb-28;
     @apply md:pb-40;
 }
@@ -22,7 +22,7 @@
 }
 
 .aboutWrapper {
-    @apply flex flex-row justify-center items-center my-1.5 mb-3;
+    @apply flex flex-row justify-center items-center my-1.5 mb-3 px-10 mx-auto;
 }
 
 .aboutWrapperImage {
@@ -36,7 +36,8 @@
 }
 
 .aboutText {
-    @apply font-quicksand font-bold text-base text-center mx-auto px-10;
+    @apply font-quicksand font-bold text-sm text-left mx-auto px-8;
+    @apply md:px-10 md:text-center md:text-base;
 }
 
 .dashBoard {
