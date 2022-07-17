@@ -12,7 +12,7 @@ const TopNavBar = props => {
 
     return (
         <div className={`${styles.mainWrapper} ${scrollY >= 130 ? 'bg-neutral-white shadow-md' : 'bg-transparent'}`}>
-            <h3 className={`${styles.logoTitle} ${scrollY >= 130 ? 'text-primary-lila' : 'text-neutral-white'}`}>Skillflash</h3>
+            <NavLink to='/' className={`${styles.logoTitle} ${scrollY >= 130 ? 'text-primary-lila' : 'text-neutral-white'}`}>Skillflash</NavLink>
             <NavLink to='/' className={`${styles.navButton} mx-10`}>
                 <FiChevronRight className={`${styles.navButtonIcon} ${scrollY >= 130 ? 'text-primary-orange' : 'text-neutral-white'}`} />
                 <h6 className={`${styles.expertCTA} ${scrollY >= 130 ? 'from-secondary-pink to-secondary-yellow' : 'from-neutral-white to-neutral-white'} font-bold `}>Expert:in werden</h6>

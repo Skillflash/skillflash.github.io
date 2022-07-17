@@ -1,8 +1,7 @@
 import React from 'react';
-import { FiFilter } from 'react-icons/fi';
 import { IoBulbOutline } from 'react-icons/io5';
-import { EnterpriseWrapper } from '../../components';
 
+import { EnterpriseWrapper } from '../../components';
 import styles from './Header.module.css';
 
 const EnterpriseHeader = props => {
@@ -19,7 +18,7 @@ const EnterpriseHeader = props => {
                 Darüber machen wir Bildungsformate erreichbarer, vernetzen Regionen
                 und fördern die Entwicklung jedes Einzelnen.
             </p>
-            <button className={`${styles.headerButton} ${scrollY >= 200 && styles.headerButtonFixed}`}>
+            <button className={`${styles.headerButton}`}>
                 <h6 className={`${styles.headerButtonText} ${scrollY >= 200 ? `from-secondary-pink to-secondary-yellow` : 'from-neutral-white to-neutral-white'}`}>Verstehen wie's geht</h6>
                 <IoBulbOutline className={`${styles.headerButtonIcon} ${scrollY >= 200 ? 'text-primary-orange' : 'text-neutral-white'}`} />
             </button>

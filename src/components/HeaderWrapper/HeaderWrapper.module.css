@@ -17,8 +17,7 @@
 }
 
 .enterpriseWrapperDotted {
-    @apply bg-primary-lila bg-opacity-10 h-screen w-full flex justify-center items-center pb-2;
-    @apply sm:pb-10;
+    @apply bg-primary-lila bg-opacity-10 h-screen w-full flex justify-center items-center pb-16;
     @apply md:pb-40 md:h-128;
 }
 

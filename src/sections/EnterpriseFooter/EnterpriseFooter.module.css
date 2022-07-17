@@ -7,7 +7,7 @@
 }
 
 .mainDotWrapper {
-    @apply bg-primary-lila bg-opacity-10 h-auto w-full flex justify-center items-center pt-48 pb-28 px-10;
+    @apply bg-primary-lila bg-opacity-10 h-auto w-full flex justify-center items-center pt-48 pb-28 px-8;
     @apply sm:pt-48 pb-28;
     @apply md:pt-72 pb-40;
 }
@@ -23,15 +23,15 @@
 }
 
 .contentBoxWrapper {
-  @apply grid grid-cols-2 gap-12 mt-4;
+  @apply grid grid-cols-2 gap-5 mt-4;
 }
 
 .contentBox {
-  @apply px-5 py-10 rounded-md shadow-xl drop-shadow-2xl w-full;
-  @apply md:px-12 md:w-[460px];
-  @apply lg:w-[520px];
-  @apply xl:w-[580px];
-  @apply 2xl:w-[640px];
+  @apply px-3 py-10 rounded-md shadow-xl drop-shadow-2xl w-full overflow-hidden;
+  @apply md:px-8 md:w-[440px];
+  @apply lg:w-[5-0px];
+  @apply xl:w-[560px];
+  @apply 2xl:w-[620px];
 }
 
 .contentBoxTitle {
@@ -43,15 +43,18 @@
 }
 
 .contentBoxName {
-  @apply text-center font-quicksand text-base font-extrabold;
+  @apply text-center font-quicksand text-sm font-extrabold whitespace-nowrap;
+  @apply md:text-base md:whitespace-normal;
 }
 
 .contentBoxSector {
-  @apply text-center font-quicksand text-sm font-semibold;
+  @apply text-center font-quicksand text-xs font-semibold;
+  @apply md:text-sm;
 }
 
 .contentText {
-  @apply font-quicksand font-bold text-center mt-5 px-10;
+  @apply font-quicksand font-bold text-left mt-5 px-7;
+  @apply md:text-center md:px-10;
 }
 
 .statsWrapper {

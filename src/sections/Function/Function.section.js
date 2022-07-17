@@ -23,8 +23,8 @@ const Function = props => {
             <h2 className={`${styles.mainTitle}`}>Funktionen</h2>
             <p className={`${styles.mainText} text-neutral-black`}>
                 Mit uns wird es zukünftig eine Übersicht über Veranstaltungen
-                in der Region geben.<br /> Zusätzlich erleichtern wir das Zurückgreifen auf
-                regionale <br />Ressourcen durch eine Suche und Biete Funktion.
+                in der Region geben.<br className='hidden md:block' /> Zusätzlich erleichtern wir das Zurückgreifen auf
+                regionale <br className='hidden md:block' />Ressourcen durch eine Suche und Biete Funktion.
             </p>
             <div className={`${styles.functionWrapper}`}>
                 <img src={phone} alt='phone' className={`${styles.functionImage}`} />
