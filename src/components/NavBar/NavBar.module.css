@@ -1,6 +1,9 @@
 .mainWrapper {
-    @apply w-screen py-4 hidden md:flex flex-row px-14 justify-between items-center fixed top-0 z-50 duration-300 ease-in-out;
-    @apply max-w-[1440px] -translate-x-1/2 left-[50%];
+    @apply w-screen py-4 hidden md:flex justify-center fixed top-0 z-50 duration-300 ease-in-out;
+}
+
+.subWrapper {
+    @apply w-full max-w-[1440px] hidden md:flex px-12 flex-row justify-between items-center mx-auto; 
 }
 
 .logoTitle {
@@ -16,11 +19,11 @@
 }
 
 .navButton:hover .navButtonIcon {
-    @apply visible mr-3;
+    @apply visible mr-1.5;
 }
 
 .expertCTA {
-    @apply text-xl font-source-sans-pro bg-gradient-to-tr bg-clip-text text-transparent capitalize duration-[700ms] ease-in-out;
+    @apply text-xl font-source-sans-pro whitespace-nowrap bg-gradient-to-tr bg-clip-text text-transparent capitalize duration-[700ms] ease-in-out;
 }
 
 .profileNavWrapper {

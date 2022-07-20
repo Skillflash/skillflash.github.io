@@ -18,9 +18,9 @@ const EnterpriseHeader = props => {
                 Darüber machen wir Bildungsformate erreichbarer, vernetzen Regionen
                 und fördern die Entwicklung jedes Einzelnen.
             </p>
-            <button className={`${styles.headerButton}`}>
-                <h6 className={`${styles.headerButtonText} ${scrollY >= 200 ? `from-secondary-pink to-secondary-yellow` : 'from-neutral-white to-neutral-white'}`}>Verstehen wie's geht</h6>
-                <IoBulbOutline className={`${styles.headerButtonIcon} ${scrollY >= 200 ? 'text-primary-orange' : 'text-neutral-white'}`} />
+            <button className={`${styles.headerButton} bg-neutral-white`}>
+                <h6 className={`${styles.headerButtonText} from-secondary-pink to-secondary-yellow`}>Verstehen wie's geht</h6>
+                <IoBulbOutline className={`${styles.headerButtonIcon} text-primary-orange`} />
             </button>
         </EnterpriseWrapper>
     )

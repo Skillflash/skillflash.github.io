@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiFilter } from 'react-icons/fi';
 
 import styles from './HeaderWrapper.module.css';
 
