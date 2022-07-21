@@ -1,6 +1,7 @@
 /* Skills */
 .SkillsArea{
-    @apply flex flex-row flex-wrap items-center w-full px-4 py-6;
+    @apply flex flex-row flex-wrap items-center w-full px-4 py-6 overflow-hidden;
+    @apply md:flex-nowrap;
 }
 
 .SkillsNumber{
@@ -75,7 +76,7 @@
 }
 
 .EventDescription{
-    @apply mt-2 text-base font-extrabold text-left font-quicksand;
+    @apply mt-2 text-base font-semibold text-left font-quicksand;
 }
 
 .EventLink{
@@ -193,14 +194,16 @@
 }
 
 .skillButtonText {
-    @apply font-quicksand font-bold;
+    @apply font-quicksand font-bold whitespace-normal overflow-hidden;
+    @apply md:whitespace-nowrap;
 }
 
 
 /* Floating buttons */
 
 .cardFloatButtonsWrapper {
-    @apply absolute top-6 opacity-0 right-4 flex flex-col duration-500 ease-in-out;
+    @apply absolute top-6 opacity-100 right-4 flex flex-col duration-500 ease-in-out;
+    @apply md:opacity-0;
 }
 
 .cardFloatButton {

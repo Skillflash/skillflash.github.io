@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BottomBar, TopNavBar } from '../../components';
+import { BottomBar, MobileNav, TopNavBar } from '../../components';
 import { EnterpriseHeader, About, EnterpriseFooter, Function, AboutDash } from '../../sections';
 
 import style from './Enterprise.module.css';
@@ -17,7 +17,6 @@ const Enterprise = props => {
             <AboutDash />
             <Function />
             <EnterpriseFooter /> 
-            <BottomBar />
         </section>
 
 

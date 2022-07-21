@@ -8,8 +8,8 @@
 }
 
 .eventsCards {
-    @apply px-10 py-8 grid;
-    @apply sm:grid-cols-2 sm:gap-7;
-    @apply md:grid-cols-3 md:gap-5;
-    @apply lg:grid-cols-4 lg:gap-4;
+    @apply px-10 py-8 grid max-w-[1440px] gap-10 mx-auto;
+    @apply sm:grid-cols-2 sm:gap-9;
+    @apply md:grid-cols-3 md:gap-8;
+    @apply lg:grid-cols-4 lg:gap-7;
 }

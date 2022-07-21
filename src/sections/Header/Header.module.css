@@ -1,12 +1,11 @@
-
 .headerContentTitle {
-    @apply text-3xl font-black text-center font-source-sans-pro mt-12;
+    @apply text-3xl font-bold text-center font-source-sans-pro mt-3;
     @apply sm:text-4xl;
     @apply md:text-5xl md:mt-0;
     @apply lg:text-6xl;
 }
 
 .headerContentSubTitle {
-    @apply text-base font-extrabold my-4 mb-2 font-quicksand px-10 text-center;
+    @apply text-base font-semibold my-4 mb-2 font-quicksand px-10 text-center;
     @apply md:text-lg mb-14;
 }

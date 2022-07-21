@@ -3,8 +3,6 @@ import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-
 import { NavLink } from 'react-router-dom';
 
 import styles from './Cards.module.css';
-import { avatar7 } from '../../resources/Images';
-import Skills from '../Skills/Skills.component';
 
 const ProjectCard = props => {
     const { project } = props;

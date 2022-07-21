@@ -85,9 +85,19 @@
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
-    height: 271px;
+    height: 167px;
 }
 
 .topCurve .topCurveFill {
     fill: #FFFFFF;
+}
+
+
+@media (min-width: 768px) { 
+    .topCurve svg {
+        position: relative;
+        display: block;
+        width: calc(300% + 1.3px);
+        height: 271px;
+    }
 }
