@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiChevronRight, FiSearch } from 'react-icons/fi';
+import { IoChevronForward, IoSearch } from 'react-icons/io5';
 
 import styles from './Search.module.css';
 
@@ -9,17 +9,16 @@ const Search = props => {
     return (
         <div className={`${styles.mainWrapper} bg-neutral-white`}>
             <div className={`${styles.contentWrapper} border-primary-orange hover:border-primary-lila`}>
-                <FiSearch className={`${styles.searchInputIcon} text-primary-orange`} />
+                <IoSearch className={`${styles.searchInputIcon} text-secondary-pink`} />
                 <input
-                    className={`${styles.inputField} text-primary-orange hover:text-primary-lila`}
+                    className={`${styles.inputField} text-neutral-black hover:text-primary-lila`}
                     placeholder={'Strategie, Digitalisierung, Projektmanagemnt..'}
                     value={value}
                     onChange={setValue}
                 />
-                <FiChevronRight className={`${styles.searchButtonIcon} text-primary-orange block md:hidden`} />
             </div>
             <button className={`${styles.searchButton} from-secondary-pink to-secondary-yellow`}>
-                <FiChevronRight className={`${styles.searchButtonIcon} text-neutral-white`} />
+                <IoChevronForward className={`${styles.searchButtonIcon} text-neutral-white`} />
             </button>
         </div>
     )

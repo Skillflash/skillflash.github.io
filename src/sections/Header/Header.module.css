@@ -1,6 +1,5 @@
-
 .headerContentTitle {
-    @apply text-3xl font-bold text-center font-source-sans-pro mt-12;
+    @apply text-3xl font-bold text-center font-source-sans-pro mt-3;
     @apply sm:text-4xl;
     @apply md:text-5xl md:mt-0;
     @apply lg:text-6xl;
@@ -9,47 +8,4 @@
 .headerContentSubTitle {
     @apply text-base font-semibold my-4 mb-2 font-quicksand px-10 text-center;
     @apply md:text-lg mb-14;
-}
-
-.mobileWrapper {
-    @apply flex flex-row items-center px-5 justify-between w-full mx-auto fixed top-0 z-20 py-2.5 shadow-xl drop-shadow-2xl;
-    @apply md:justify-center md:relative md:px-0 md:py-0 md:drop-shadow-none md:shadow-none;
-}
-
-.navProfile {
-    @apply relative inline-block ml-3;
-    @apply md:hidden md:ml-0;
-}
-
-.profileNavWrapper {
-    @apply relative z-10 p-2 w-28 shadow-lg justify-center items-center flex flex-row rounded-md ml-auto outline-none duration-300 ease-in-out;
-    @apply md:p-3
-}
-
-.navProfileMenu {
-    @apply absolute z-30 shadow-lg drop-shadow-xl mt-2 p-3 rounded right-1 -mr-1 w-64 duration-500 ease-in-out;
-}
-
-.navButton {
-    @apply flex flex-row items-center w-48 duration-500 ease-in-out;
-}
-
-.navButtonIcon {
-    @apply invisible text-lg font-bold duration-500 ease-in-out;
-}
-
-.navButton:hover .navButtonIcon {
-    @apply visible mr-1.5;
-}
-
-.divider {
-    @apply border-b w-full my-3;
-}
-
-.expertCTA {
-    @apply text-xl font-source-sans-pro whitespace-nowrap bg-gradient-to-tr bg-clip-text text-transparent capitalize duration-[700ms] ease-in-out;
-}
-
-.closeButton {
-    @apply absolute top-4 right-4 outline-none h-6 w-6 rounded-full bg-gradient-to-tr flex justify-center items-center;
 }

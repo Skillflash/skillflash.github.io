@@ -12,7 +12,6 @@ const Home = props => {
             <TopNavBar scrollY={scrollY} />
             <Header scrollY={scrollY} />
             <Events />
-            <BottomBar />
         </section>
     )
 }

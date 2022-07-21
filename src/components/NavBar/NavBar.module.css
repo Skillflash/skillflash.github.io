@@ -1,17 +1,22 @@
 .mainWrapper {
-    @apply w-screen py-4 hidden md:flex justify-center fixed top-0 z-50 duration-300 ease-in-out;
+    @apply w-screen py-4 flex justify-center fixed top-0 z-50 duration-300 ease-in-out;
 }
 
 .subWrapper {
-    @apply w-full max-w-[1440px] hidden md:flex px-12 flex-row justify-between items-center mx-auto; 
+    @apply w-full max-w-[1440px] flex px-5 flex-row justify-between items-center mx-auto; 
+    @apply md:px-12
 }
 
 .logoTitle {
-    @apply font-extrabold font-source-sans-pro text-3xl mr-14 duration-[700ms] ease-in-out;
+    @apply hidden md:block font-extrabold font-source-sans-pro text-3xl mr-14 duration-[700ms] ease-in-out;
 }
 
 .navButton {
     @apply flex flex-row items-center w-48 duration-500 ease-in-out;
+}
+
+.navButtonMd {
+    @apply hidden md:flex flex-row items-center w-48 duration-500 ease-in-out;
 }
 
 .navButtonIcon {
@@ -27,7 +32,7 @@
 }
 
 .profileNavWrapper {
-    @apply shadow-lg justify-between items-center flex flex-row px-2 py-3 rounded-md ml-auto outline-none duration-300 ease-in-out;
+    @apply shadow-lg drop-shadow-xl justify-between items-center flex flex-row px-2 py-3 rounded-md ml-auto outline-none duration-300 ease-in-out;
 }
 
 .profileButton {
@@ -35,7 +40,7 @@
 }
 
 .navProfile {
-    @apply relative ml-auto;
+    @apply relative ml-5;
 }
 
 .navProfileMenu {
@@ -46,6 +51,24 @@
     @apply border-b w-full my-3;
 }
 
+/* Search */
+
+.searchWrapper {
+    @apply flex flex-row items-center justify-between px-3 py-2 rounded-md w-4/5 shadow-lg drop-shadow-xl max-h-14 duration-300 ease-in-out;
+    @apply md:ml-auto md:w-fit;
+}
+
+.searchIcon {
+    @apply text-3xl duration-300 ease-in-out;
+}
+
+.searchField {
+    @apply bg-transparent text-sm p-2 mx-1 outline-none w-full;
+}
+
+.searchButton {
+    @apply p-2.5 rounded-md bg-gradient-to-tr text-lg duration-300 ease-in-out;
+}
 
 /* Bottom Bar */
 
@@ -65,4 +88,8 @@
 
 .bottomLinkText {
     @apply text-transparent font-source-sans-pro font-bold text-lg bg-clip-text bg-gradient-to-tr;
+}
+
+.closeButton {
+    @apply absolute top-4 right-4 outline-none h-6 w-6 rounded-full bg-gradient-to-tr flex justify-center items-center;
 }
