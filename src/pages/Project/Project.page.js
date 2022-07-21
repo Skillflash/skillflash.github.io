@@ -10,7 +10,7 @@ const Project = props => {
 
     return (
         <section className='relative'>
-            <TopNavBar scrollY={scrollY} styling='!hidden md:flex' />
+            <TopNavBar scrollY={scrollY} styling='!hidden md:!flex' />
             <ProjectHeader scrollY={scrollY} />
             <Projects />
         </section>
