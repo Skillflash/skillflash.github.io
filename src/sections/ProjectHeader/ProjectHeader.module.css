@@ -3,6 +3,10 @@
     @apply md:mt-0 md:flex-wrap md:whitespace-normal md:w-4/5 md:px-0 md:justify-center;
 }
 
+.projectMainWrapper {
+    @apply max-w-[1440px] relative mx-auto flex flex-col justify-center items-center;
+}
+
 .projectButton {
     @apply flex flex-row items-center justify-center mx-1 my-1 py-1.5 px-5 rounded-3xl shadow-xl drop-shadow-xl;
 }

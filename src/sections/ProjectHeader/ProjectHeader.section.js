@@ -76,7 +76,7 @@ const ProjectHeader = props => {
 
     return (
         <HeaderWrapper scrollY={scrollY}>
-            <div className='max-w-[1440px] relative'>
+            <div className={`${styles.projectMainWrapper}`}>
                 <div className={`${styles.projectWrapper}`}>
                     <button
                         onClick={(event) => setActiveSkill(!activeSkill)}
