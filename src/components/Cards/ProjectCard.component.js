@@ -1,30 +1,34 @@
 import React from 'react';
 import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
+import { avatar14 } from '../../resources/Images';
 
 import styles from './Cards.module.css';
 
 const ProjectCard = props => {
-    const { project } = props;
+    const { event } = props;
 
     return (
         <div className={`${styles.EventWrapper}`}>
             <div className={`${styles.projectBackgroundImageWrapper}`}>
-                <img src={project.image} alt={project.name} className={`${styles.projectBackgroundImage}`} />
+                <img src={avatar14} alt={event.Name} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.projectBackgroundGradient}`}>
-                    <NavLink to={`/project/${project.name}`} className={`${styles.projectNameWrapper} bg-neutral-black`}>
-                        <p className={`${styles.projectName} text-neutral-white`}>{project.name}</p>
+                    <NavLink to={`/project/${event.Name}`} className={`${styles.projectNameWrapper} bg-neutral-black`}>
+                        <p className={`${styles.projectName} text-neutral-white`}>{event.Name}</p>
                     </NavLink>
-                    <p className={`${styles.EventDescription} text-neutral-black`}>Lörem ipsum anar epipp som doskapet, kontradade mivårade..</p>
+                    <p className={`${styles.EventDescription} text-neutral-black`}>{event?.Description}</p>
                     <p className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}> Mehr anseigen </p>
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>
-                {project.skills.map((skill, index) =>
+                {/* {project.skills.map((skill, index) =>
                     <button key={index} className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}>
                         <p className={`${styles.skillButtonText} text-neutral-black`}>{skill}</p>
                     </button>
-                )}
+                )} */}
+                <button className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}>
+                        <p className={`${styles.skillButtonText} text-neutral-black`}>{event.Expert.Skill}</p>
+                    </button>
                 <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

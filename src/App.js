@@ -12,9 +12,9 @@ import { AccessToken, BaseUrl } from "./utils";
 
 const httpLink = createHttpLink({
   fetch,
-  uri: BaseUrl,
+  uri: process.env.REACT_APP_SECRET_DIRECTUS_LINK,
   headers: {
-    authorization: `Bearer ${AccessToken}`,
+    authorization: `Bearer ${process.env.REACT_APP_SECRET_DIRECTUS_TOKEN}`,
     'Content-Language': 'en-us',
     'Content-Type': 'application/json',
   },

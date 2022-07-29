@@ -1,6 +1,10 @@
 .projectWrapper {
-    @apply flex flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5 -mt-14 px-10;
+    @apply flex flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5 mt-3 px-10 max-w-[1440px] mx-auto;
     @apply md:mt-0 md:flex-wrap md:whitespace-normal md:w-4/5 md:px-0 md:justify-center;
+}
+
+.projectMainWrapper {
+    @apply max-w-[1440px] relative mx-auto flex flex-col justify-center items-center;
 }
 
 .projectButton {
@@ -34,18 +38,16 @@
 }
 
 .projectBackWrapper {
-    @apply fixed z-30 top-0 left-0 bg-neutral-white p-5 bg-opacity-90;
-    @apply md:absolute md:top-20 md:left-14 md:p-0 md:bg-transparent;
+    @apply absolute z-30 -top-20 mt-2.5 left-0 p-5 bg-opacity-90;
+    @apply md:mt-0 md:left-14 md:p-0 md:bg-transparent;
 }
 
 .projectBack {
-    @apply h-8 w-8 flex justify-center items-center rounded-full border-4 border-primary-orange;
-    @apply md:border-neutral-white ;
+    @apply h-8 w-8 flex justify-center items-center rounded-full border-4 duration-300 ease-in-out;
 }
 
 .projectBackIcon {
-    @apply font-extrabold text-xl text-primary-orange;
-    @apply md:text-neutral-white;
+    @apply font-extrabold text-xl duration-300 ease-in-out;
 }
 
 
@@ -55,7 +57,7 @@
 }
 
 .headerButtonFixed {
-    @apply fixed mt-6 top-16 z-50 shadow-xl bg-neutral-white;
+    @apply fixed mt-6 top-full -mt-32 md:top-16 md:mt-0 z-50 shadow-xl bg-neutral-white;
 }
 
 .headerButtonText {

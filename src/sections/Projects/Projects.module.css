@@ -5,8 +5,8 @@
 }
 
 .skillsButtonFilters {
-    @apply fixed top-0 flex flex-row px-20 py-4 bg-neutral-white whitespace-nowrap w-screen overflow-x-auto z-10;
-    @apply md:relative md:py-7 md:px-10 md:bg-transparent md:w-fit;
+    @apply fixed bottom-0 flex flex-row px-7 py-4 bg-neutral-white whitespace-nowrap w-full overflow-x-auto z-10 max-w-[1440px] mx-auto;
+    @apply md:relative md:py-7 md:px-10 md:bg-transparent;
 }
 
 .skillsButton {

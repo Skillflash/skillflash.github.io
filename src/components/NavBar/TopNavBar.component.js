@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FiChevronRight, FiMenu } from 'react-icons/fi';
-import { IoChevronForward, IoPersonCircle, IoSearch } from 'react-icons/io5';
+import { IoChevronForward, IoClose, IoPersonCircle, IoSearch } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
 
 import styles from './NavBar.module.css';
@@ -36,6 +36,7 @@ const TopNavBar = props => {
                         <IoPersonCircle className={`${scrollY >= 130 ? 'mx-1 text-2xl text-primary-orange' : 'mx-1 text-2xl text-neutral-white'}`} />
                     </button>
                     <div className={`${styles.navProfileMenu} bg-neutral-white ${isProfile ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                        <button onClick={() => setIsProfile(!isProfile)} className={`${styles.closeButton} text-neutral-white from-secondary-pink to-secondary-yellow`}><IoClose /></button>
                         <NavLink to='/' className={`${styles.navButton} my-2`}>
                             <FiChevronRight className={`${styles.navButtonIcon} text-primary-orange`} />
                             <h6 className={`${styles.expertCTA} from-secondary-pink to-secondary-yellow font-bold`}>Registrieren</h6>
