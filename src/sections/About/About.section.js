@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { avatar13, arrow_down, phone, spiral_arrow, vertical_spiral, phone1 } from '../../resources/Images';
+import React from 'react';
+import { avatar13, arrow_down, spiral_arrow, vertical_spiral, phone1 } from '../../resources/Images';
 import { MdLocationPin } from 'react-icons/md';
 
 import styles from './About.module.css';

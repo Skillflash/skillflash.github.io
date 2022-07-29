@@ -1,9 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { BottomBar, TopNavBar } from '../../components';
-import { Events, ProjectHeader, Projects } from '../../sections';
 
-import style from './Project.module.css';
+import { TopNavBar } from '../../components';
+import { ProjectHeader, Projects } from '../../sections';
 
 const Project = props => {
     const { scrollY } = props

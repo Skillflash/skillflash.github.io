@@ -1,7 +1,7 @@
 import React from "react";
 import { StatsButton, SumbitInput } from "../../components";
-import { avatar1, avatar14, avatar15, avatar16, avatar17 } from "../../resources/Images";
-import { IconName, MdThumbDown, MdThumbUp } from "react-icons/md";
+import { avatar14, avatar15, avatar16, avatar17 } from "../../resources/Images";
+import { MdThumbDown, MdThumbUp } from "react-icons/md";
 
 import styles from "./EnterpriseFooter.module.css";
 
