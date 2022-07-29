@@ -5,8 +5,6 @@ import { phone } from '../../resources/Images'
 import styles from './Function.module.css';
 
 const Function = props => {
-    const { scrollY } = props;
-
     const functions = [
         'Marktplatz für diverse Formate',
         'Eventerstellung und -verwaltung',

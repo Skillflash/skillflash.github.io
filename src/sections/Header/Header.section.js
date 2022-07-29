@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { FiChevronRight, FiFilter, FiMenu } from 'react-icons/fi';
-import { IoClose, IoPersonCircle } from 'react-icons/io5';
-import { NavLink } from 'react-router-dom';
 import { HeaderWrapper, Search } from '../../components';
 
 import styles from './Header.module.css';
@@ -10,7 +7,6 @@ const Header = props => {
     const { scrollY } = props;
 
     const [text, setText] = useState('Skills für den Erfolg finden..');
-    const [isProfile, setIsProfile] = useState(false);
     
     return (
         <HeaderWrapper scrollY={scrollY}>
