@@ -50,7 +50,7 @@ const ProjectHeader = props => {
         let _allSkills = [...skills];
         let removeIndex = _allSkills.findIndex(a => a === data)
         if (skillsIndex < 0) {
-            _skills.push(data);
+            _skills.unshift(data);
         } else {
             _skills.splice(skillsIndex, 1);
         }
@@ -78,18 +78,6 @@ const ProjectHeader = props => {
         <HeaderWrapper scrollY={scrollY}>
             <div className={`${styles.projectMainWrapper}`}>
                 <div className={`${styles.projectWrapper}`}>
-                    <button
-                        onClick={(event) => setActiveSkill(!activeSkill)}
-                        className={`
-                        mx-auto
-                        text-neutral-white
-                        ${styles.projectButton}
-                        ${!activeSkill && 'bg-opacity-70'}
-                        bg-neutral-black`}
-                        >
-                            <h6 className={`${styles.projectButtonText}`}>{params.project}</h6>
-                            <IoCloseCircleOutline className={`${styles.projectButtonIcon}`} />
-                        </button>
                     {selectedSkills.length >= 1 && selectedSkills.map((selectedSkill, index) =>
                         <button
                             onClick={() => SetActiveSkills(selectedSkill)}
@@ -105,6 +93,18 @@ const ProjectHeader = props => {
                             <IoCloseCircleOutline onClick={(event) => SetSelectedActiveSkills(selectedSkill, event)} className={`${styles.projectButtonIcon}`} />
                         </button>
                     )}
+                    <button
+                        onClick={(event) => setActiveSkill(!activeSkill)}
+                        className={`
+                        mx-auto
+                        text-neutral-white
+                        ${styles.projectButton}
+                        ${!activeSkill && 'bg-opacity-70'}
+                        bg-neutral-black`}
+                        >
+                            <h6 className={`${styles.projectButtonText}`}>{params.project}</h6>
+                            <IoCloseCircleOutline className={`${styles.projectButtonIcon}`} />
+                        </button>
                 </div>
                 <div className={`${styles.projectSkillsWrapper}`}>
                     {skills.map((skill, index) =>

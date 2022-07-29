@@ -186,7 +186,7 @@
 }
 
 .projectName {
-    @apply text-left font-bold text-base font-quicksand;
+    @apply text-left font-bold text-base font-quicksand capitalize;
 }
 
 .skillButton {

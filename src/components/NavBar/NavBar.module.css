@@ -91,5 +91,5 @@
 }
 
 .closeButton {
-    @apply absolute top-4 right-4 outline-none h-6 w-6 rounded-full bg-gradient-to-tr flex justify-center items-center;
+    @apply absolute top-4 right-4 outline-none h-6 w-6 rounded-full bg-gradient-to-tr flex justify-center items-center animate-pulse hover:animate-none;
 }

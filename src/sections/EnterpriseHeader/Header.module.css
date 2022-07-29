@@ -19,7 +19,7 @@
 
 
 .headerButton {
-    @apply z-10 flex flex-row items-center p-2 rounded duration-500 ease-in-out;
+    @apply z-10 flex flex-row items-center my-5 p-2 rounded duration-500 ease-in-out;
     /* @apply md:hidden; */
 }
 

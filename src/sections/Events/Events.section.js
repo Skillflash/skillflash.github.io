@@ -1,15 +1,20 @@
 import React from 'react';
-import { ExpertCard1, EventCard1,TeamCard, AudioCard1, ArticleCard1, CTACard, ProjectCard } from '../../components';
 
+import { LoadingIndicator, ProjectCard } from '../../components';
+import theme from '../../resources/theme/theme';
 import styles from './Events.module.css';
-import projects from '../../dummy/projects'
 
 const Events = props => {
+    const { events } = props; 
     return (
         <section className={`${styles.mainWrapper} bg-neutral-white`}>
-            <div className={`${styles.eventsCards}`}>
-                {projects.map((project, index) => <ProjectCard project={project} key={index} />)}
+            {events.loading ?
+               <LoadingIndicator size={2} color={theme.SECONDARY_PINK} />
+             :
+                <div className={`${styles.eventsCards}`}>
+                {events.data.map((event, index) => <ProjectCard event={event} key={index} />)}
             </div>
+            }
         </section>
     )
 }

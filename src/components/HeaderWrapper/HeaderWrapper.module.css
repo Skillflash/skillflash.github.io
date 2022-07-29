@@ -5,7 +5,7 @@
 }
 
 .enterpriseWrapper {
-    @apply relative bg-gradient-to-tr h-120 top-0 flex justify-center items-center pb-20;
+    @apply relative bg-gradient-to-tr h-126 top-0 flex justify-center items-center pb-20;
     @apply md:h-128 md:pb-0;
 
 }
@@ -17,7 +17,7 @@
 }
 
 .enterpriseWrapperDotted {
-    @apply bg-primary-lila bg-opacity-10 h-120 w-full flex justify-center items-center pb-16 pt-16;
+    @apply bg-primary-lila bg-opacity-10 h-126 w-full flex justify-center items-center pb-16 pt-16;
     @apply md:pb-40 md:h-128 md:pt-0;
 }
 

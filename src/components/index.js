@@ -15,6 +15,7 @@ import EnterpriseWrapper from './HeaderWrapper/EnterpriseWrapper.component';
 import ExpertCard from './Cards/ExpertCard.component';
 import StatsButton from './Buttons/StatsButton.component';
 import SumbitInput from './Inputs/SubmitInput.component';
+import LoadingIndicator from './Loader/Loader.component';
 
 export {
     TopNavBar,
@@ -34,4 +35,5 @@ export {
     EnterpriseWrapper,
     StatsButton,
     SumbitInput,
+    LoadingIndicator,
 };
