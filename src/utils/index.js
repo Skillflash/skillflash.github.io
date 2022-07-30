@@ -1,4 +1,3 @@
-import BaseUrl from "./BaseUrl";
-import AccessToken from "./accessToken";
+import extractInitials from "./extractIni";
 
-export { BaseUrl, AccessToken };
+export {extractInitials };

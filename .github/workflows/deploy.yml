@@ -1,29 +1,44 @@
 name: CI
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+      - masterJ
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [16.x]
+
     steps:
-    
-    - name: Checkout
-      uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Build
-      run: |
-        npm install
-        npm run-script build
-      env:
-        REACT_APP_SECRET_DIRECTUS_LINK: ${{ secrets.DIRECTUS_LINK }}
-        REACT_APP_SECRET_DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN }}
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        BRANCH: gh-pages
-        FOLDER: build
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+        # env:
+        #   REACT_APP_SECRET_DIRECTUS_LINK: ${{ secrets.DIRECTUS_LINK }}
+        #   REACT_APP_SECRET_DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN }}
+
+      - name: Deploy
+        run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
+          npm run deploy
+        env:
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          github_token: ${{ secrets.ACCESS_DEPLOY_SECRET }}
+          repository: ${{ github.repository }}

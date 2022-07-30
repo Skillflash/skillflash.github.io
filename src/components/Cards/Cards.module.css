@@ -107,10 +107,18 @@
 .TeamProfilesArea{
     @apply flex flex-row w-40 mt-2 mx-auto;
 }
+
 .TeamProfiles{
     @apply w-8 h-8 rounded-full border-2 border-white shadow-xl drop-shadow-md;
 }
 
+.TeamIni {
+    @apply w-40 h-40 flex justify-center text-7xl items-center rounded-full mx-auto border-2 border-white shadow-2xl;
+}
+
+.TeamProfilesIni {
+    @apply w-8 h-8 flex justify-center font-bold items-center rounded-full border-2 border-white shadow-xl drop-shadow-md;
+}
 
 /* Audio Card */
 
@@ -194,7 +202,7 @@
 }
 
 .skillButtonText {
-    @apply font-quicksand font-bold whitespace-normal overflow-hidden;
+    @apply font-quicksand font-bold whitespace-normal overflow-hidden capitalize;
     @apply md:whitespace-nowrap;
 }
 

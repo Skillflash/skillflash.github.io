@@ -1,10 +1,6 @@
 .projectWrapper {
-    @apply flex flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5 mt-3 px-10 max-w-[1440px] mx-auto;
-    @apply md:mt-0 md:flex-wrap md:whitespace-normal md:w-4/5 md:px-0 md:justify-center;
-}
-
-.projectMainWrapper {
-    @apply max-w-[1440px] relative mx-auto flex flex-col justify-center items-center;
+    @apply flex flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5 mt-20 px-10 max-w-[1440px] mx-auto;
+    @apply md:-mt-28 md:flex-wrap md:whitespace-normal md:w-full md:px-0 md:justify-center;
 }
 
 .projectButton {
@@ -16,16 +12,16 @@
 }
 
 .projectButtonText {
-    @apply text-2xl font-quicksand font-bold;
+    @apply text-2xl font-quicksand font-bold capitalize whitespace-nowrap;
 }
 
 .projectButtonIcon {
-    @apply text-2xl ml-2 font-quicksand
+    @apply text-2xl ml-2 font-quicksand;
 }
 
 .projectSkillsWrapper {
-    @apply relative z-10 flex px-6 flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5;
-    @apply md:flex-wrap md:whitespace-normal md:w-4/5 md:px-0 md:justify-center;
+    @apply relative z-10 flex px-6 flex-nowrap whitespace-nowrap overflow-x-auto flex-row w-screen mb-5 max-w-[1440px];
+    @apply md:flex-wrap md:whitespace-normal md:w-full md:px-0 md:justify-center;
 }
 
 .projectSkillButton {
@@ -38,8 +34,11 @@
 }
 
 .projectBackWrapper {
-    @apply absolute z-30 -top-20 mt-2.5 left-0 p-5 bg-opacity-90;
-    @apply md:mt-0 md:left-14 md:p-0 md:bg-transparent;
+    @apply absolute z-30 top-16 mt-2.5 left-0 p-5 bg-opacity-90 max-w-[1440px];
+    @apply md:mt-0 md:p-0 md:bg-transparent md:left-14 md:top-20;
+    @apply lg:left-1/2 lg:-translate-x-1/2 lg:-ml-[600px];
+    @apply xl:-ml-[610px];
+    @apply 2xl:-ml-[640px];
 }
 
 .projectBack {
