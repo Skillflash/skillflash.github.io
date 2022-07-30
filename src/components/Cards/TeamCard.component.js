@@ -4,22 +4,24 @@ import { IoAddCircleOutline, IoHeartOutline, IoShareOutline, IoShareSocialOutlin
 import styles from './Cards.module.css';
 import Skills from '../Skills/Skills.component';
 import { avatar7, avatar8, avatar9, avatar10, avatar11, avatar12, team } from '../../resources/Images';
+import { extractInitials } from '../../utils';
 
 const TeamCard = props => {
+    const { team } = props;
+
     return (
         <div className= {`${styles.TeamWrapper}`}>
             <div className= {`${styles.TeamBody}`}>
                 <div>
-                    <img src= {team} alt='avatar 7' className= {`${styles.TeamImage}`}/>
+                    {team.image ? <img src={avatar7} alt='avatar 7' className={`${styles.TeamImage}`} />
+                        :
+                        <h3 className={`${styles.TeamIni} bg-neutral-white text-neutral-black`}>{extractInitials(team.Name)}</h3>
+                    }
                 </div>
-                <p className={`${styles.TeamTitle} text-neutral-black`}>Team-Name </p>
+                <p className={`${styles.TeamTitle} text-neutral-black`}>{team.Name}</p>
                 <div className={`${styles.TeamProfilesArea}`}>
-                    <img src= {avatar7} alt='avatar 7' className= {`${styles.TeamProfiles}`}/>
-                    <img src= {avatar8} alt='avatar 8' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
-                    <img src= {avatar9} alt='avatar 9' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
-                    <img src= {avatar10} alt='avatar 10' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
-                    <img src= {avatar11} alt='avatar 11' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
-                    <img src= {avatar12} alt='avatar 12' className= {`${styles.TeamProfiles} ml-[-10px]`}/>
+                    {team.Users.slice(0,1).map((user, index) => user && user.image ? <img key={index} src= {avatar8} alt='avatar 8' className= {`${styles.TeamProfiles}`}/> : <h5 key={index} className={`${styles.TeamProfilesIni} bg-neutral-white text-neutral-black`}>{extractInitials(user.Firstname + ' ' + user.Lastname)}</h5>)}
+                    {team.Users.slice(1).map((user, index) => user && user.image ? <img key={index} src= {avatar8} alt='avatar 8' className= {`${styles.TeamProfiles} -ml-2.5`}/> : <h5 key={index} className={`${styles.TeamProfilesIni} -ml-2.5 bg-neutral-white text-neutral-black`}>{extractInitials(user.Firstname + ' ' + user.Lastname)}</h5>)}
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>

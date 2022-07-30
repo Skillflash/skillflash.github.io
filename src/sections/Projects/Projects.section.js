@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
 
 import experts from '../../dummy/experts';
-import { ArticleCard, AudioCard, EventCard, ExpertCardInn, TeamCard } from '../../components';
+import { ArticleCard, AudioCard, EventCard, ExpertCardInn, LoadingIndicator, TeamCard } from '../../components';
 
 
 import styles from './Projects.module.css'
+import theme from '../../resources/theme/theme';
 
 const Projects = props => {
+    const { teams } = props;
+
+    const { data, loading, error } = teams;
+
     const [filters, setFilters] = useState([
         { name: 'Expert:inn', value: 'expert:inn', color:'bg-primary-blue' },
         { name: 'Events', value: 'events', color:'bg-primary-lila' },
@@ -35,6 +40,8 @@ const Projects = props => {
         setFilters([..._filters]);
     }
 
+
+
     return (
         <section className={`${styles.mainWrapper} bg-neutral-white`}>
             <div className={`${styles.skillsButtonFilters}`}>
@@ -54,16 +61,21 @@ const Projects = props => {
                     </button>
                 )}
             </div>
-            <div className={`${styles.skillsCards}`}>
+            {loading ? 
+                <div className='mt-40'>
+                    <LoadingIndicator size={2} color={theme.PRIMARY_ORANGE} />
+                </div>
+            :
+                <div className={`${styles.skillsCards}`}>
                 <ExpertCardInn expert = { experts[0]} skillcolor = 'blue'  />
                 <EventCard />
                 <AudioCard />
-                <TeamCard />
+                <TeamCard team={data[0]} />
                 <ArticleCard />
                 <EventCard />
                 <AudioCard />
-                <TeamCard />
-            </div>
+                <TeamCard team={data[1]} />
+            </div>}
         </section>
     )
 }

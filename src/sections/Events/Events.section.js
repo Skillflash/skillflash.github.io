@@ -9,7 +9,9 @@ const Events = props => {
     return (
         <section className={`${styles.mainWrapper} bg-neutral-white`}>
             {events.loading ?
-                <LoadingIndicator size={2} color={theme.SECONDARY_PINK} />
+                <div className='mt-20'>
+                    <LoadingIndicator size={2} color={theme.SECONDARY_PINK} />
+                </div>
              :
                 <div className={`${styles.eventsCards}`}>
                 {events.data.map((event, index) => <ProjectCard event={event} key={index} />)}

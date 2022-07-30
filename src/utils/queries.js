@@ -16,3 +16,29 @@ export const eventsQuery = gql`
         }
     }
 `
+
+export const skillsQuery = gql`
+    query {
+        Skills {
+            Skillname
+            Level
+            Industry
+            Expert {
+                Skill
+            }
+        }
+    }
+`
+
+export const teamsQuery = gql`
+    query {
+        Team {
+            Description
+            Name
+            Users {
+                Firstname
+                Lastname
+            }
+        }
+    }
+`

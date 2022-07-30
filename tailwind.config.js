@@ -16,6 +16,7 @@ module.exports = {
       },
       width: {
         '76': '19rem',
+        '110': '28rem',
       },
       colors: {
         'primary-fade': {
