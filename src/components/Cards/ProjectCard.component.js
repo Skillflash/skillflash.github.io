@@ -16,7 +16,7 @@ const ProjectCard = props => {
                     <NavLink to={`/project/${event.Name}`} className={`${styles.projectNameWrapper} bg-neutral-black`}>
                         <p className={`${styles.projectName} text-neutral-white`}>{event.Name}</p>
                     </NavLink>
-                    <p className={`${styles.EventDescription} text-neutral-black`}>{event?.Description}</p>
+                    <p className={`${styles.EventDescription} text-neutral-black`}>{event?.Description.substring(0, 55)} {event?.Description.length > 55 && '...'}</p>
                     <p className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}> Mehr anseigen </p>
                 </div>
             </div>
