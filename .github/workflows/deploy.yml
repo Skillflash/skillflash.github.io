@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - masterJ
+      - release
 
 jobs:
   build:

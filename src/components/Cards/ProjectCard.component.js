@@ -21,14 +21,14 @@ const ProjectCard = props => {
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>
-                {/* {project.skills.map((skill, index) =>
+                {event.Expert && event.Expert.Skills.length >=1 && event.Expert.Skills.map((skill, index) =>
                     <button key={index} className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}>
-                        <p className={`${styles.skillButtonText} text-neutral-black`}>{skill}</p>
+                        <p className={`${styles.skillButtonText} text-neutral-black`}>{skill.Skillname}</p>
                     </button>
-                )} */}
-                <button className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}>
+                )}
+                {/* <button className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}>
                         <p className={`${styles.skillButtonText} text-neutral-black`}>{event.Expert.Skill}</p>
-                    </button>
+                    </button> */}
                 <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
             </div>
             <div className={`${styles.cardFloatButtonsWrapper}`}>

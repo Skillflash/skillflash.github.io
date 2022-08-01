@@ -4,6 +4,7 @@ import { IoAddCircleOutline, IoHeartOutline, IoShareSocialOutline } from 'react-
 import styles from './Cards.module.css';
 import { avatar7, project } from '../../resources/Images';
 import Skills from '../Skills/Skills.component';
+import { Link } from 'react-router-dom';
 
 
 const EventCard = props => {
@@ -20,7 +21,7 @@ const EventCard = props => {
                     </div>
                     <p className={`${styles.EventTitle} text-neutral-black`}>Event Titel</p>
                     <p className={`${styles.EventDescription} text-neutral-black`}>Lörem ipsum anar epipp som doskapet, kontradade mivårade..</p>
-                    <p className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}> Mehr anseigen </p>
+                    <Link to='/event/Event Title' className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}> Mehr anseigen </Link>
                 </div>
             </div>
             <div className={`${styles.SkillsArea}`}>

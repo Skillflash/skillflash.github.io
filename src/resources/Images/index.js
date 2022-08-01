@@ -33,6 +33,7 @@ import project_management from './project_management.jpg';
 import vertical_spiral from './vertical-spiral.png';
 import desktop from './Group 13.png';
 import CMSDashboard from './CMSDashboard.png';
+import event from './event.png';
 
 export { 
     arrow, 
@@ -69,5 +70,6 @@ export {
     spiral_arrow,
     phone,
     phone1,
-    vertical_spiral
+    vertical_spiral,
+    event
 };

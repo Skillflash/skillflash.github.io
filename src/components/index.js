@@ -16,6 +16,9 @@ import ExpertCard from './Cards/ExpertCard.component';
 import StatsButton from './Buttons/StatsButton.component';
 import SumbitInput from './Inputs/SubmitInput.component';
 import LoadingIndicator from './Loader/Loader.component';
+import EventWrapper from './HeaderWrapper/EventWrapper.component';
+import EventDetailsCard from './Cards/EventDetailsCard.component';
+import EventButton from './Buttons/EventButton.component';
 
 export {
     TopNavBar,
@@ -36,4 +39,7 @@ export {
     StatsButton,
     SumbitInput,
     LoadingIndicator,
+    EventWrapper,
+    EventDetailsCard,
+    EventButton,
 };

@@ -7,6 +7,8 @@ import EnterpriseFooter from "./EnterpriseFooter/EterpriseFooter.section"
 import EnterpriseHeader from "./EnterpriseHeader/EnterpriseHeader.section";
 import About from "./About/About.section";
 import AboutDash from "./AboutDash/AboutDash.section";
+import EventDetailHeader from "./Events/EventDetailHeader.section";
+import EventDetails from "./Events/EventDetails.section";
 
 export {
     Header,
@@ -18,6 +20,8 @@ export {
     Function,
     EnterpriseFooter,
     AboutDash,
+    EventDetailHeader,
+    EventDetails,
 }
 
 
