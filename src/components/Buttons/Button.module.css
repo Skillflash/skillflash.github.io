@@ -18,3 +18,8 @@
 .statsButton {
     @apply  rounded-md shadow-md drop-shadow-xl px-6 py-3 m-2;
 }
+
+
+.eventButton {
+    @apply flex flex-row bg-gradient-to-tr items-center justify-center w-full mt-5 rounded py-2;
+}

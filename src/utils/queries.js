@@ -8,7 +8,9 @@ export const eventsQuery = gql`
             Author
             Type
             Expert {
-                Skill
+                Skills {
+                    Skillname
+                }
             }
             Location {
                 Country
@@ -24,7 +26,9 @@ export const skillsQuery = gql`
             Level
             Industry
             Expert {
-                Skill
+                Skills {
+                    Skillname
+                }
             }
         }
     }
@@ -38,6 +42,34 @@ export const teamsQuery = gql`
             Users {
                 Firstname
                 Lastname
+            }
+        }
+    }
+`
+
+
+export const expertsQuery = gql`
+query {
+        Expert {
+            Event {
+                Author
+                Description
+                Type
+                Name
+            }
+            Skills {
+                Skillname
+            }
+            Experience {
+                Company
+                Role
+                Name
+                Startdate
+            }
+            Blog {
+                Date
+                Name
+                Content
             }
         }
     }

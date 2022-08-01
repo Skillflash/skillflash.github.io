@@ -80,7 +80,7 @@
 }
 
 .EventLink{
-    @apply mt-2 bg-gradient-to-tr text-transparent bg-clip-text text-base font-bold text-left font-quicksand underline;
+    @apply mt-2 bg-gradient-to-tr text-transparent bg-clip-text text-base font-bold text-left font-quicksand underline block;
 }
 
 .eventAuthorImage {
@@ -206,6 +206,61 @@
     @apply md:whitespace-nowrap;
 }
 
+
+/* Event Details Card */
+
+.eventCard {
+    @apply shadow-xl drop-shadow-2xl flex flex-col rounded-md;
+}
+
+.eventCardImageWrapper {
+    @apply relative;
+}
+
+.eventCardImage {
+    
+}
+
+.eventCardBook {
+    @apply absolute top-4 right-4 h-8 w-8 flex justify-center items-center rounded-full text-xl;
+}
+
+.eventTitle {
+    @apply text-3xl bg-gradient-to-tr text-transparent bg-clip-text font-source-sans-pro font-bold;
+}
+
+.eventSkills {
+    @apply flex flex-row justify-start items-center;
+}
+
+.eventSkillWrapper {
+    @apply outline-none px-3.5 py-1.5 w-fit rounded-3xl mr-2 shadow-xl drop-shadow-xl duration-500 ease-in-out;
+    @apply hover:bg-opacity-70;
+}
+
+.eventSkill {
+    @apply text-left font-bold text-sm font-quicksand capitalize;
+}
+
+.eventZoom {
+    @apply text-2xl flex flex-row items-center my-5; 
+}
+
+.eventZoomText {
+    @apply underline text-sm font-quicksand font-bold; 
+}
+
+.eventPriceRange {
+    @apply font-quicksand text-sm font-bold
+}
+
+.buttonText {
+    @apply font-source-sans-pro font-bold text-lg mr-2;
+}
+
+.buttonIcon {
+    @apply font-source-sans-pro font-bold text-xl;
+}
 
 /* Floating buttons */
 

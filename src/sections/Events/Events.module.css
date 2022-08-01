@@ -13,3 +13,67 @@
     @apply md:grid-cols-3 md:gap-8;
     @apply lg:grid-cols-4 lg:gap-7;
 }
+
+
+
+/* Event Details */
+
+.projectBackWrapper {
+    @apply absolute z-30 top-16 mt-2.5 left-0 p-5 bg-opacity-90 max-w-[1440px];
+    @apply md:mt-0 md:p-0 md:bg-transparent md:left-14 md:top-20;
+    @apply lg:left-1/2 lg:-translate-x-1/2 lg:-ml-[600px];
+    @apply xl:-ml-[610px];
+    @apply 2xl:-ml-[640px];
+}
+
+.projectBack {
+    @apply h-8 w-8 flex justify-center items-center rounded-full border-4 duration-300 ease-in-out;
+}
+
+.projectBackIcon {
+    @apply font-extrabold text-xl duration-300 ease-in-out;
+}
+
+.eventDetails {
+    @apply grid grid-cols-3 gap-8 w-full px-20 translate-y-[65%] max-w-[1440px] mx-auto pb-10;
+}
+
+.eventAuthor {
+    @apply col-span-2;
+}
+
+.eventAuthorDetails {
+    @apply flex flex-row justify-start items-center;
+}
+
+.eventAuthorImage {
+    @apply h-11 w-11 rounded-full border-2 shadow-md drop-shadow-2xl mr-3;
+}
+
+.eventAuthorName {
+    @apply underline mr-2 font-quicksand font-bold text-lg;
+}
+
+.eventAuthorText {
+    @apply font-quicksand text-lg font-bold;
+}
+
+.eventSpace {
+    @apply text-5xl;
+}
+
+.eventDetailsWrapper {
+    @apply grid grid-cols-3 gap-8 px-20 w-full py-10 max-w-[1440px] mx-auto;
+}
+
+.eventDetailTextWrapper {
+    @apply col-span-2 flex flex-col;
+}
+
+.eventDetailTextTitle {
+    @apply text-xl font-bold font-source-sans-pro;
+}
+
+.eventDetailTextText {
+    @apply py-6 pr-20 text-base font-quicksand font-semibold;
+}
