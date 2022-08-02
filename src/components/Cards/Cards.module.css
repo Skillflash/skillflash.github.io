@@ -278,7 +278,8 @@
 }
 
 .expertProfileCardWrapper{
-    @apply w-80 p-8 rounded-md bg-white shadow-lg
+    @apply w-80 p-8 rounded-md bg-white shadow-lg;
+    @apply hover:shadow-2xl
 }
 
 .expertProfileCardImage{
@@ -320,6 +321,7 @@
 .TeamWrapper:hover .cardFloatButtonsWrapper,
 .audioWrapper:hover .cardFloatButtonsWrapper,
 .projectWrapper:hover .cardFloatButtonsWrapper,
+.expertProfileCardWrapper:hover .cardFloatButtonsWrapper,
 .articleWrapper:hover .cardFloatButtonsWrapper {
     @apply opacity-100 duration-500 ease-in-out;
 }
