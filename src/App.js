@@ -10,8 +10,7 @@ import {
 import "./App.css";
 import Routers from "./routes/Router.navigation";
 import { AccessToken, BaseUrl } from "./utils";
-import experts from "./dummy/experts";
-import { ExpertAboutPage } from "./pages";
+import { ExpertPage } from "./pages";
 
 const httpLink = createHttpLink({
   fetch,
@@ -36,7 +35,7 @@ function App() {
     // </ApolloProvider>
 
     <div>
-      <ExpertAboutPage/>
+      <ExpertPage/>
     </div>
 
   );

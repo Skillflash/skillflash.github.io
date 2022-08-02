@@ -11,6 +11,14 @@ const experts = [
         address: undefined,
         skills: ['Subskill','Subskill',],
         image: avatar7,
+        events: [
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+        ]
     },
     {
         firstName: 'Antonia',
@@ -22,6 +30,20 @@ const experts = [
         address: 'Hidelsheim',
         skills: ['Klassisch','Agil', 'Hybrid'],
         image: avatar14,
+        events: [
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+        ]
     },
     {
         firstName: 'Paul',
@@ -31,8 +53,46 @@ const experts = [
         experience: '6',
         domain: ['ProjektManagement'],
         address: 'Hidelsheim',
-        skills: ['Klassisch','Agil', 'Hybrid'],
+        skills: ['ProjektManagement','Coaching', 'Design Thinking', 'UX/UI Design', 'Lean Startup'],
         image: avatar13,
+        events: [
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+            {
+                title: 'Event Titel',
+                date: '12. Mai',
+                description:'Lörem ipsum anar epipp som doskapet, kontradade mivårade..',
+                skills: ['Subskills', 'Subskill',]
+            },
+        ]
     },
 
 
