@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoArrowBack } from 'react-icons/io5';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './Events.module.css';
 import { EventDetailsCard, EventWrapper } from '../../components';
@@ -9,12 +9,18 @@ import { avatar12, avatar13, avatar16, avatar17 } from '../../resources/Images';
 const EventDetailHeader = props => {
     const { scrollY } = props;
 
+    const navigate = useNavigate();
+
+    const GoBack = () => {
+        navigate(-1)
+    }
+
     return (
         <EventWrapper styling=''>
             <div className={styles.projectBackWrapper}>
-                <Link to='/' className={`${styles.projectBack} ${scrollY >= 200 ? 'border-primary-orange' : 'border-neutral-white'}`}>
+                <button onClick={() => GoBack()} className={`${styles.projectBack} ${scrollY >= 200 ? 'border-primary-orange' : 'border-neutral-white'}`}>
                     <IoArrowBack className={`${styles.projectBackIcon} ${scrollY >= 200 ? 'text-primary-orange' : 'text-neutral-white'}`} />
-                </Link>
+                </button>
             </div>
             <div className={`${styles.eventDetails}`}>
                 <EventDetailsCard />
