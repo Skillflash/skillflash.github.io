@@ -10,7 +10,6 @@ import {
 import "./App.css";
 import Routers from "./routes/Router.navigation";
 import { AccessToken, BaseUrl } from "./utils";
-import { ExpertPage } from "./pages";
 
 const httpLink = createHttpLink({
   fetch,
@@ -30,13 +29,9 @@ const apolloClient = new ApolloClient({
 
 function App() {
   return (
-    // <ApolloProvider client={apolloClient}>
-    //   <Routers />
-    // </ApolloProvider>
-
-    <div>
-      <ExpertPage/>
-    </div>
+    <ApolloProvider client={apolloClient}>
+      <Routers />
+    </ApolloProvider>
 
   );
 }
