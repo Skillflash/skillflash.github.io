@@ -1,0 +1,13 @@
+.aboutWrapper{
+    @apply py-4
+}
+.aboutUserName{
+    @apply mt-6 font-bold font-source-sans-pro text-2xl;
+}
+.aboutDescription{
+    @apply mt-2 font-quicksand font-bold text-base w-11/12 text-neutral-black
+
+}
+.aboutSkills{
+
+}

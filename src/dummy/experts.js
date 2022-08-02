@@ -4,6 +4,8 @@ const experts = [
     {
         firstName: 'Vor und',
         lastName: 'Nachname',
+        userName: '',
+        description: 'Lörem ipsum soren röforad ilig krohet, krokovis i ede i hol sara inte gena lörem ipsum soren.',
         experience: '4',
         domain: [],
         address: undefined,
@@ -13,12 +15,26 @@ const experts = [
     {
         firstName: 'Antonia',
         lastName: 'Sensen',
+        userName: '@antonia_sensen',
+        description: 'Lörem ipsum soren röforad ilig krohet, krokovis i ede i hol sara inte gena lörem ipsum soren.',
         experience: '6',
         domain: ['ProjektManagement'],
         address: 'Hidelsheim',
         skills: ['Klassisch','Agil', 'Hybrid'],
         image: avatar14,
     },
+    {
+        firstName: 'Paul',
+        lastName: 'Mertens',
+        userName: '@paul_mertens',
+        description: 'Lörem ipsum soren röforad ilig krohet, krokovis i ede i hol sara inte gena lörem ipsum soren.',
+        experience: '6',
+        domain: ['ProjektManagement'],
+        address: 'Hidelsheim',
+        skills: ['Klassisch','Agil', 'Hybrid'],
+        image: avatar13,
+    },
+
 
 ];
 

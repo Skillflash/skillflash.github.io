@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -9,6 +10,8 @@ import {
 import "./App.css";
 import Routers from "./routes/Router.navigation";
 import { AccessToken, BaseUrl } from "./utils";
+import experts from "./dummy/experts";
+import { ExpertAboutPage } from "./pages";
 
 const httpLink = createHttpLink({
   fetch,
@@ -28,9 +31,13 @@ const apolloClient = new ApolloClient({
 
 function App() {
   return (
-    <ApolloProvider client={apolloClient}>
-      <Routers />
-    </ApolloProvider>
+    // <ApolloProvider client={apolloClient}>
+    //   <Routers />
+    // </ApolloProvider>
+
+    <div>
+      <ExpertAboutPage/>
+    </div>
 
   );
 }
