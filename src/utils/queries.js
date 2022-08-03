@@ -20,18 +20,27 @@ export const eventsQuery = gql`
 `
 
 export const skillsQuery = gql`
-    query {
-        Skills {
-            Skillname
-            Level
-            Industry
-            Expert {
-                Skills {
-                    Skillname
-                }
-            }
+query {
+    Skills {
+        Skillname
+        Description
+        Expert{
+            Skills {
+                 Skillname
+             }
         }
+        
     }
+}
+`
+
+export const subskillsQuery = gql`
+query {
+    Subskill {
+        Name 
+        Description
+    }
+}
 `
 
 export const teamsQuery = gql`
