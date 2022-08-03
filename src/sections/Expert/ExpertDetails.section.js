@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { ExpertProfileCard } from '../../components';
+import ExpertAbout from './ExpertAbout.section';
+import ExpertEvents from './ExpertEvent.section';
 import experts from '../../dummy/experts';
 
 import styles from './Expert.module.css';
-import ExpertAbout from './ExpertAbout.section';
-import ExpertEvents from './ExpertEvent.section';
 
-const Expert = (props) => {
+const ExpertDetails = (props) => {
 
   const {expert} = props
 
@@ -17,6 +18,10 @@ const Expert = (props) => {
   }
   
   return (
+    <div className='-mt-16 flex relative'>
+        <div className='pl-16 pr-10'>
+          <ExpertProfileCard expert = {experts[2]}/>
+        </div>
     <div>
         {/* Tabs */}
         <div className = {`${styles.tabsContainer}`}>
@@ -44,7 +49,8 @@ const Expert = (props) => {
         </div>
         
     </div>
+    </div>
   )
 }
 
-export default Expert
+export default ExpertDetails
