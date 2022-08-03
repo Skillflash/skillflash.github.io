@@ -11,7 +11,8 @@ import EventDetailHeader from "./Events/EventDetailHeader.section";
 import EventDetails from "./Events/EventDetails.section";
 import ExpertAbout from "./Expert/ExpertAbout.section";
 import ExpertEvents from "./Expert/ExpertEvent.section";
-import Expert from "./Expert/Expert.section";
+import ExpertDetails from "./Expert/ExpertDetails.section";
+import ExpertHeader from "./Expert/ExpertHeader.section";
 
 export {
     Header,
@@ -27,7 +28,8 @@ export {
     EventDetails,
     ExpertAbout,
     ExpertEvents,
-    Expert,
+    ExpertDetails,
+    ExpertHeader,
 }
 
 

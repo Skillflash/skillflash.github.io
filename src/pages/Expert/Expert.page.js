@@ -1,20 +1,17 @@
 import React from 'react'
-import { ExpertProfileCard } from '../../components'
+import { ExpertProfileCard, TopNavBar } from '../../components'
 import experts from '../../dummy/experts'
-import { Expert } from '../../sections'
+import { ExpertDetails, ExpertHeader } from '../../sections'
 
-const ExpertPage = () => {
+const Expert = (props) => {
+  const {scrollY} = props
   return (
     <section>
-      <div className='h-20 w-full bg-gradient-to-r from-secondary-yellow to-primary-orange'></div>
-      <div className='-mt-16 flex'>
-        <div className='pl-16 pr-10'>
-          <ExpertProfileCard expert = {experts[2]}/>
-        </div>
-        <Expert expert = {experts[2]}/>
-      </div>
+        <TopNavBar scrollY = {scrollY} />
+        <ExpertHeader/>
+        <ExpertDetails expert = {experts[2]}/>
     </section>
   )
 }
 
-export default ExpertPage
+export default Expert
