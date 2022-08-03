@@ -1,22 +1,26 @@
 import gql from 'graphql-tag';
 
 export const eventsQuery = gql`
-    query {
-        Event {
-            Description
-            Name
-            Author
-            Type
-            Expert {
-                Skills {
-                    Skillname
-                }
-            }
-            Location {
-                Country
-            }
-        }
+  query {
+    Event {
+      id
+      Description
+      Name
+      startdate
+      Enddate
+      Previewimg {
+        id
+        width
+        height
+        title
+        type
+        tags
+        description
+        filesize
+        filename_disk
+      }
     }
+  }
 `
 
 export const skillsQuery = gql`

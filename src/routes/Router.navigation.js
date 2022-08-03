@@ -33,7 +33,6 @@ const Routers = () => {
             <Route path='/event/'>
                 <Route path=':event' element={<Event scrollY={scrollY} />} />
             </Route>
-
             <Route path="/" exact element={<Home scrollY={scrollY}  />} />
         </Routes>
     )

@@ -11,7 +11,7 @@ const ProjectCard = props => {
     return (
         <div className={`${styles.EventWrapper}`}>
             <div className={`${styles.projectBackgroundImageWrapper}`}>
-                <img src={avatar14} alt={event.Name} className={`${styles.projectBackgroundImage}`} />
+                <img src={`https://50fx80xt.directus.com/assets/3bbe1720-f899-4d82-976e-c01743dac646`} alt={event.Name} className={`${styles.projectBackgroundImage}`} />
                 <div className={`${styles.projectBackgroundGradient}`}>
                     <NavLink to={`/project/${event.Name}`} className={`${styles.projectNameWrapper} bg-neutral-black`}>
                         <p className={`${styles.projectName} text-neutral-white`}>{event.Name}</p>
