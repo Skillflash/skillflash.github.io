@@ -9,6 +9,9 @@ import About from "./About/About.section";
 import AboutDash from "./AboutDash/AboutDash.section";
 import EventDetailHeader from "./Events/EventDetailHeader.section";
 import EventDetails from "./Events/EventDetails.section";
+import ExpertAbout from "./Expert/ExpertAbout.section";
+import ExpertEvents from "./Expert/ExpertEvent.section";
+import Expert from "./Expert/Expert.section";
 
 export {
     Header,
@@ -22,6 +25,9 @@ export {
     AboutDash,
     EventDetailHeader,
     EventDetails,
+    ExpertAbout,
+    ExpertEvents,
+    Expert,
 }
 
 

@@ -1,0 +1,41 @@
+.aboutWrapper{
+    @apply py-4
+}
+.aboutUserName{
+    @apply mt-6 font-bold font-source-sans-pro text-2xl;
+}
+.aboutDescription{
+    @apply mt-2 font-quicksand font-bold text-base w-11/12 text-neutral-black
+
+}
+.aboutSkills{
+    @apply mt-2
+}
+
+.tabsContainer {
+    @apply flex
+}
+.tabActive{
+    @apply bg-white px-4 py-2 w-fit  rounded-t-md 
+}
+
+.tab{
+    @apply px-4 py-2 w-fit font-bold font-source-sans-pro text-[32px] text-white
+}
+
+.tabTextActive{
+    @apply font-bold font-source-sans-pro text-[32px] bg-clip-text text-transparent bg-gradient-to-r from-secondary-pink to-secondary-yellow
+}
+
+.tabText{
+    @apply font-bold font-source-sans-pro text-4xl text-white
+}
+
+.tabContent{
+    @apply hidden
+}
+
+.tabContentActive{
+    @apply block
+}
+

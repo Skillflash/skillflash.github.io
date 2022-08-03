@@ -34,6 +34,10 @@ import vertical_spiral from './vertical-spiral.png';
 import desktop from './Group 13.png';
 import CMSDashboard from './CMSDashboard.png';
 import event from './event.png';
+import linkedIn from './LinkedIn.png';
+import github from './Github.png';
+import instagram from './Instagram.png';
+import youtube from './YouTube.png';
 
 export { 
     arrow, 
@@ -71,5 +75,9 @@ export {
     phone,
     phone1,
     vertical_spiral,
-    event
+    event, 
+    github,
+    instagram,
+    linkedIn,
+    youtube,
 };

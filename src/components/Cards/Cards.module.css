@@ -277,11 +277,51 @@
     @apply text-xl;
 }
 
+.expertProfileCardWrapper{
+    @apply w-80 p-8 rounded-md bg-white shadow-lg;
+    @apply hover:shadow-2xl
+}
+
+.expertProfileCardImage{
+    @apply mt-10 w-56 h-56 rounded-full border-2 border-white mx-auto shadow-md
+}
+
+.expertProfileCardName{
+    @apply text-center font-bold text-[40px] font-source-sans-pro bg-clip-text text-transparent bg-gradient-to-r from-secondary-pink to-secondary-yellow
+}
+
+.expertProfileCardUserName{
+    @apply font-bold text-2xl font-quicksand text-neutral-black
+}
+
+.expertProfileCardDescription{
+    @apply font-bold text-base font-quicksand text-neutral-black mt-4
+}
+
+.expertProfileCardAddress{
+    @apply font-bold text-base font-quicksand text-neutral-black underline ml-4
+}
+
+.expertProfileCardButton{
+    @apply flex  bg-gradient-to-r from-secondary-pink to-secondary-yellow px-4 py-2 rounded-md justify-center text-white font-bold font-source-sans-pro text-2xl mt-6
+}
+
+.expertProfileCardMediaGroup{
+    @apply flex  justify-around mt-12
+
+}
+
+.expertProfileCardMedia{
+    @apply h-10 w-10 border-2 border-white shadow-md rounded-full
+}
+
+
 .EventWrapper:hover .cardFloatButtonsWrapper,
 .ExpertWrapper:hover .cardFloatButtonsWrapper,
 .TeamWrapper:hover .cardFloatButtonsWrapper,
 .audioWrapper:hover .cardFloatButtonsWrapper,
 .projectWrapper:hover .cardFloatButtonsWrapper,
+.expertProfileCardWrapper:hover .cardFloatButtonsWrapper,
 .articleWrapper:hover .cardFloatButtonsWrapper {
     @apply opacity-100 duration-500 ease-in-out;
 }
