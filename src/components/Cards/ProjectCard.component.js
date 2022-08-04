@@ -4,7 +4,7 @@ import {
   IoHeartOutline,
   IoShareSocialOutline,
 } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { avatar14 } from "../../resources/Images";
 
 import styles from "./Cards.module.css";
@@ -33,12 +33,12 @@ const ProjectCard = (props) => {
             {event?.Description.substring(0, 55)}{" "}
             {event?.Description.length > 55 && "..."}
           </p>
-          <p
+          <Link 
+            to={`/event/${event.Name}`}
             className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}
           >
-            {" "}
-            Mehr anseigen{" "}
-          </p>
+            Mehr anseigen
+          </Link>
         </div>
       </div>
       <div className={`${styles.SkillsArea}`}>
