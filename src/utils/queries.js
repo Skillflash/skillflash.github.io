@@ -12,30 +12,33 @@ export const eventsQuery = gql`
         id
         width
         height
-        title
-        type
-        tags
-        description
-        filesize
-        filename_disk
       }
     }
   }
-`
+`;
 
 export const skillsQuery = gql`
-    query {
-        Skills {
-            Skillname
-            Level
-            Industry
-            Expert {
-                Skills {
-                    Skillname
-                }
-            }
+query {
+    Skills {
+        Skillname
+        Description
+        Expert{
+            Skills {
+                 Skillname
+             }
         }
+        
     }
+}
+`
+
+export const subskillsQuery = gql`
+query {
+    Subskill {
+        Name 
+        Description
+    }
+}
 `
 
 export const teamsQuery = gql`
