@@ -32,7 +32,7 @@ query {
 }
 `
 
-export const subskillsQuery = gql`
+export const subskillQuery = gql`
 query {
     Subskill {
         Name 
