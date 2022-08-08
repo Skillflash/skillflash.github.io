@@ -45,7 +45,7 @@ const ProjectHeader = props => {
 
     const SetActiveSkills = data => {
         let _skills = [...activeSkills];
-        let skillsIndex = _skills.findIndex(s => s.Skillname === data.Skillname);
+        let skillsIndex = _skills.findIndex(s => s.Name === data.Name);
         if (skillsIndex < 0) {
             _skills.push(data);
         } else {
@@ -56,9 +56,9 @@ const ProjectHeader = props => {
 
     const SetSelectedSkills = data => {
         let _skills = [...selectedSkills];
-        let skillsIndex = _skills.findIndex(s => s.Skillname === data.Skillname);
+        let skillsIndex = _skills.findIndex(s => s.Name === data.Name);
         let _allSkills = [...skills];
-        let removeIndex = _allSkills.findIndex(a => a.Skillname === data.Skillname)
+        let removeIndex = _allSkills.findIndex(a => a.Name === data.Name)
         if (skillsIndex < 0) {
             _skills.unshift(data);
         } else {
@@ -98,7 +98,7 @@ const ProjectHeader = props => {
                             ${activeSkills.findIndex(a => a === selectedSkill) === -1 && 'bg-opacity-70'}
                             bg-neutral-white`}
                         >
-                            <h6 className={`${styles.projectButtonText}`}>{selectedSkill.Skillname}</h6>
+                            <h6 className={`${styles.projectButtonText}`}>{selectedSkill.Name}</h6>
                             <IoCloseCircleOutline onClick={(event) => SetSelectedActiveSkills(selectedSkill, event)} className={`${styles.projectButtonIcon}`} />
                         </button>
                     )}
@@ -125,7 +125,7 @@ const ProjectHeader = props => {
                                 onClick={event => SetSelectedActiveSkills(skill,event)}
                                 className={`text-neutral-black ${styles.projectSkillButton} bg-neutral-white border-neutral-black`}
                             >
-                                <h6 className={`${styles.projectSkillButtonText}`}>{skill.Skillname}</h6>
+                                <h6 className={`${styles.projectSkillButtonText}`}>{skill.Name}</h6>
                             </button>
                         )}
                     </div>
