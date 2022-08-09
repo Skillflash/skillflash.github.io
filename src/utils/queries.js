@@ -1,83 +1,77 @@
 import gql from 'graphql-tag';
 
 export const eventsQuery = gql`
-  query {
-    Event {
-      id
-      Description
-      Name
-      startdate
-      Enddate
-      Previewimg {
+query {
+    Event{
+       name
+       startDate
+       endDate
+       description
+       maxTicketPrice 
+       minTicketPrice 
+       eventImage{
+           height   
+       }
+       author{
+           username  
+       }
+       locationType
+       locationLink
+       skills {
         id
-        width
-        height
-      }
+        }  
     }
-  }
-`;
-
-export const skillsQuery = gql`
-query {
-    Skills {
-        Skillname
-        Description
-        Expert{
-            Skills {
-                 Skillname
-             }
-        }
-        
-    }
-}
+} 
 `
-
-export const subskillQuery = gql`
-query {
-    Subskill {
-        Name 
-        Description
-    }
-}
-`
-
-export const teamsQuery = gql`
-    query {
-        Team {
-            Description
-            Name
-            Users {
-                Firstname
-                Lastname
-            }
-        }
-    }
-`
-
 
 export const expertsQuery = gql`
 query {
-        Expert {
-            Event {
-                Author
-                Description
-                Type
-                Name
-            }
-            Skills {
-                Skillname
-            }
-            Experience {
-                Company
-                Role
-                Name
-                Startdate
-            }
-            Blog {
-                Date
-                Name
-                Content
-            }
+    Expert{
+        profileImage{
+            height
         }
+        username
+        firstName
+        lastName
+        email
+        shortBio
+        description
+        yearsOfExperience
+        author   
     }
+}
 `
+
+export const skillsQuery = gql`
+query {
+    MainSkills {
+             skillName
+             description
+             subskills{
+                 id
+                }
+         }
+ }   
+`
+
+export const subskillQuery = gql`
+query{
+    SubSkill{
+        name
+        description
+    }
+}
+`
+
+export const websiteQuery = gql`
+query{
+    website{
+        path
+        title
+    }
+}
+`
+
+
+
+
