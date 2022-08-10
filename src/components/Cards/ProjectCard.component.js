@@ -16,25 +16,25 @@ const ProjectCard = (props) => {
     <div className={`${styles.EventWrapper}`}>
       <div className={`${styles.projectBackgroundImageWrapper}`}>
         <img
-          src={`https://50fx80xt.directus.app/assets/${event.Previewimg.id}?key=system-large-cover&cache-buster=KkcpWsbzGXH2dhxye_kWu&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzODcwMWE2LTdkNTAtNDE2Yi1iYmU3LTkzYjBjZDY4OWY5MyIsInJvbGUiOiIwMzlhZmJjNy0wYWZkLTRkMTctYTQ0Zi1jN2I5NTYxOWM5OTAiLCJhcHBfYWNjZXNzIjoxLCJhZG1pbl9hY2Nlc3MiOjEsImlhdCI6MTY1OTUyOTg4MCwiZXhwIjoxNjU5NTMwNzgwLCJpc3MiOiJkaXJlY3R1cyJ9.HS3IHoFSzxPHAcYZ1jbgqChJSxBsuy4nxrR7V68hA8M`}
-          alt={event.Name}
+          src={`https://50fx80xt.directus.app/assets/${event.eventImage.id}?key=system-large-cover&cache-buster=KkcpWsbzGXH2dhxye_kWu&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzODcwMWE2LTdkNTAtNDE2Yi1iYmU3LTkzYjBjZDY4OWY5MyIsInJvbGUiOiIwMzlhZmJjNy0wYWZkLTRkMTctYTQ0Zi1jN2I5NTYxOWM5OTAiLCJhcHBfYWNjZXNzIjoxLCJhZG1pbl9hY2Nlc3MiOjEsImlhdCI6MTY1OTUyOTg4MCwiZXhwIjoxNjU5NTMwNzgwLCJpc3MiOiJkaXJlY3R1cyJ9.HS3IHoFSzxPHAcYZ1jbgqChJSxBsuy4nxrR7V68hA8M`}
+          alt={event.name}
           className={`${styles.projectBackgroundImage}`}
         />
         <div className={`${styles.projectBackgroundGradient}`}>
           <NavLink
-            to={`/project/${event.Name}`}
+            to={`/project/${event.name}`}
             className={`${styles.projectNameWrapper} bg-neutral-black`}
           >
             <p className={`${styles.projectName} text-neutral-white`}>
-              {event.Name}
+              {event.name}
             </p>
           </NavLink>
           <p className={`${styles.EventDescription} text-neutral-black`}>
-            {event?.Description.substring(0, 55)}{" "}
-            {event?.Description.length > 55 && "..."}
+            {event?.description.substring(0, 55)}{" "}
+            {event?.description.length > 55 && "..."}
           </p>
-          <Link 
-            to={`/event/${event.Name}`}
+          <Link
+            to={`/event/${event.name}`}
             className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}
           >
             Mehr anseigen
