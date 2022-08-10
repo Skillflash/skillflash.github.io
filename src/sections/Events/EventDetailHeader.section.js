@@ -36,9 +36,7 @@ const EventDetailHeader = (props) => {
         <div className={`${styles.eventAuthor}`}>
           <div className={`${styles.eventAuthorDetails}`}>
             <img
-              src={
-                "http://localhost:8055/assets/c1982e98-5b6d-4327-807a-2561002029d7?access_token=mytoken&width=60&height=60&quality=80"
-              }
+              src={avatar13}
               alt={expert.data && expert.data[0].author.profileImage.type}
               className={`${styles.eventAuthorImage} border-neutral-white`}
             />
