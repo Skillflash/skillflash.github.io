@@ -5,7 +5,7 @@ import {subskillQuery} from '../../utils/queries';
 export default () => {
   const {data, loading, error} = useQuery(subskillQuery);
   return {
-    data: data?.Subskill,
+    data: data?.SubSkill,
     loading,
     error,
   };

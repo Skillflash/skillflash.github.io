@@ -98,7 +98,7 @@ const ProjectHeader = props => {
                             ${activeSkills.findIndex(a => a === selectedSkill) === -1 && 'bg-opacity-70'}
                             bg-neutral-white`}
                         >
-                            <h6 className={`${styles.projectButtonText}`}>{selectedSkill.Name}</h6>
+                            <h6 className={`${styles.projectButtonText}`}>{selectedSkill.skillName}</h6>
                             <IoCloseCircleOutline onClick={(event) => SetSelectedActiveSkills(selectedSkill, event)} className={`${styles.projectButtonIcon}`} />
                         </button>
                     )}
@@ -125,7 +125,7 @@ const ProjectHeader = props => {
                                 onClick={event => SetSelectedActiveSkills(skill,event)}
                                 className={`text-neutral-black ${styles.projectSkillButton} bg-neutral-white border-neutral-black`}
                             >
-                                <h6 className={`${styles.projectSkillButtonText}`}>{skill.Name}</h6>
+                                <h6 className={`${styles.projectSkillButtonText}`}>{skill.skillName}</h6>
                             </button>
                         )}
                     </div>

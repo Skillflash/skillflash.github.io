@@ -13,8 +13,8 @@ const Project = props => {
     return (
         <section className='relative'>
             <TopNavBar scrollY={scrollY} />
-            <ProjectHeader scrollY={scrollY} projectSkills={subskill} />
-            {/* <ProjectHeader scrollY={scrollY} projectSubskill={subskill} /> */}
+            <ProjectHeader scrollY={scrollY} projectSkills={skills} />
+            <ProjectHeader scrollY={scrollY} projectSubskill={subskill} />
             {/* <Projects teams={teams} /> */}
         </section>
     )

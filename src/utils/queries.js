@@ -2,7 +2,6 @@ import gql from "graphql-tag";
 
 export const eventsQuery = gql`
 query {
-<<<<<<< HEAD
     Event{
        name
        startDate
@@ -39,45 +38,10 @@ query {
         description
         yearsOfExperience
         author   
-=======
-  Event {
-    id
-    description
-    name
-    startDate
-    endDate
-    skills {
-      id
-      MainSkills_id {
-        id
-        skillName
-      }
-    }
-    eventImage {
-      id
-      width
-      height
-    }
-  }
-}
-`;
-
-export const skillsQuery = gql`
-  query {
-    Skills {
-      Skillname
-      Description
-      Expert {
-        Skills {
-          Skillname
-        }
-      }
->>>>>>> 493dd5e7ce5535b3fda6f12659990633afa4abf5
     }
   }
 `;
 
-<<<<<<< HEAD
 export const skillsQuery = gql`
 query {
     MainSkills {
@@ -95,18 +59,10 @@ query{
     SubSkill{
         name
         description
-=======
-export const subskillQuery = gql`
-  query {
-    Subskill {
-      Name
-      Description
->>>>>>> 493dd5e7ce5535b3fda6f12659990633afa4abf5
     }
   }
 `;
 
-<<<<<<< HEAD
 export const websiteQuery = gql`
 query{
     website{
@@ -116,10 +72,6 @@ query{
 }
 `
 
-
-
-
-=======
 export const teamsQuery = gql`
   query {
     Team {
@@ -133,19 +85,6 @@ export const teamsQuery = gql`
   }
 `;
 
-export const expertsQuery = gql`
-  query {
-    Expert {
-      id
-      Email
-      yearsofexperince
-      Username
-      Profilimg {
-        id
-      }
-      Shortbio
-      Firstandlastname
-    }
-  }
-`;
->>>>>>> 493dd5e7ce5535b3fda6f12659990633afa4abf5
+
+
+

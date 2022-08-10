@@ -4,8 +4,9 @@ import {skillsQuery} from '../../utils/queries';
 
 export default () => {
   const {data, loading, error} = useQuery(skillsQuery);
+
   return {
-    data: data?.Skills,
+    data: data?.MainSkills,
     loading,
     error,
   };
