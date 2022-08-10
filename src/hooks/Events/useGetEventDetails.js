@@ -32,8 +32,6 @@ const useGetEventDetails = (props) => {
              shortBio
              description
              profileImage{
-                 width
-                 height
                  id
                  type
              }
@@ -44,9 +42,9 @@ const useGetEventDetails = (props) => {
   `;
   const { data, loading, error } = useQuery(eventQueryFilter);
 
-  console.log("data 2", data);
+  console.log("data 2", data?.Event[0]);
   return {
-    data: data?.Event,
+    data: data?.Event[0],
     loading,
     error,
   };
