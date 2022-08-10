@@ -3,37 +3,57 @@ import { IoArrowBack } from 'react-icons/io5';
 import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './Events.module.css';
-import { EventDetailsCard, EventWrapper } from '../../components';
+import { EventDetailsCard, EventWrapper, LoadingIndicator } from '../../components';
 import { avatar12, avatar13, avatar16, avatar17 } from '../../resources/Images';
+import theme from '../../resources/theme/theme';
 
-const EventDetailHeader = props => {
-    const { scrollY } = props;
+const EventDetailHeader = (props) => {
+  const { scrollY, expert } = props;
 
-    const navigate = useNavigate();
+  const {data, loading, error} = expert;
 
-    const GoBack = () => {
-        navigate(-1)
-    }
+  const navigate = useNavigate();
 
-    return (
-        <EventWrapper styling=''>
-            <div className={styles.projectBackWrapper}>
-                <button onClick={() => GoBack()} className={`${styles.projectBack} ${scrollY >= 200 ? 'border-primary-orange' : 'border-neutral-white'}`}>
-                    <IoArrowBack className={`${styles.projectBackIcon} ${scrollY >= 200 ? 'text-primary-orange' : 'text-neutral-white'}`} />
-                </button>
-            </div>
-            <div className={`${styles.eventDetails}`}>
-                <EventDetailsCard />
-                <div className={`${styles.eventAuthor}`}>
-                    <div className={`${styles.eventAuthorDetails}`}>
-                        <img src={avatar13} alt='Author' className={`${styles.eventAuthorImage} border-neutral-white`} />
-                        <h4 className={`${styles.eventAuthorName} text-neutral-white`}>Paul Mertens</h4>
-                        <p className={`${styles.eventAuthorText} text-neutral-white`}>..organsiert dieses Event.</p>
-                    </div>
-                </div>
-            </div>
-        </EventWrapper>
-    )
-}
+  const GoBack = () => {
+    navigate(-1);
+  };
+
+  return (
+    <EventWrapper styling="">
+      <div className={styles.projectBackWrapper}>
+        <button
+          onClick={() => GoBack()}
+          className={`${styles.projectBack} ${
+            scrollY >= 200 ? "border-primary-orange" : "border-neutral-white"
+          }`}
+        >
+          <IoArrowBack
+            className={`${styles.projectBackIcon} ${
+              scrollY >= 200 ? "text-primary-orange" : "text-neutral-white"
+            }`}
+          />
+        </button>
+      </div>
+      <div className={`${styles.eventDetails}`}>
+        <EventDetailsCard loading={loading} event={data} />
+        <div className={`${styles.eventAuthor}`}>
+          {loading ? <LoadingIndicator color={theme.NEUTRAL_WHITE} /> : data && <div className={`${styles.eventAuthorDetails}`}>
+            <img
+              src={`${process.env.REACT_APP_SECRET_DIRECTUS_LINK}assets/${data.author.profileImage.id}${process.env.REACT_APP_IMAGE_EXTENSIONS}`}
+              alt={data && data.author.profileImage.type}
+              className={`${styles.eventAuthorImage} border-neutral-white`}
+            />
+            <h4 className={`${styles.eventAuthorName} text-neutral-white`}>
+              {data && data.author.firstName}
+            </h4>
+            <p className={`${styles.eventAuthorText} text-neutral-white`}>
+              {data && data.author.shortBio}
+            </p>
+          </div>}
+        </div>
+      </div>
+    </EventWrapper>
+  );
+};
 
 export default EventDetailHeader;

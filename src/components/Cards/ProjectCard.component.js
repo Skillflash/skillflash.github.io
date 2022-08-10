@@ -16,25 +16,25 @@ const ProjectCard = (props) => {
     <div className={`${styles.EventWrapper}`}>
       <div className={`${styles.projectBackgroundImageWrapper}`}>
         <img
-          src={`https://50fx80xt.directus.app/assets/${event.Previewimg.id}?key=system-large-cover&cache-buster=KkcpWsbzGXH2dhxye_kWu&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzODcwMWE2LTdkNTAtNDE2Yi1iYmU3LTkzYjBjZDY4OWY5MyIsInJvbGUiOiIwMzlhZmJjNy0wYWZkLTRkMTctYTQ0Zi1jN2I5NTYxOWM5OTAiLCJhcHBfYWNjZXNzIjoxLCJhZG1pbl9hY2Nlc3MiOjEsImlhdCI6MTY1OTUyOTg4MCwiZXhwIjoxNjU5NTMwNzgwLCJpc3MiOiJkaXJlY3R1cyJ9.HS3IHoFSzxPHAcYZ1jbgqChJSxBsuy4nxrR7V68hA8M`}
-          alt={event.Name}
+          src={`${process.env.REACT_APP_SECRET_DIRECTUS_LINK}assets/${event.eventImage.id}${process.env.REACT_APP_IMAGE_EXTENSIONS}`}
+          alt={event.name}
           className={`${styles.projectBackgroundImage}`}
         />
         <div className={`${styles.projectBackgroundGradient}`}>
           <NavLink
-            to={`/project/${event.Name}`}
+            to={`/project/${event.name}`}
             className={`${styles.projectNameWrapper} bg-neutral-black`}
           >
             <p className={`${styles.projectName} text-neutral-white`}>
-              {event.Name}
+              {event.name}
             </p>
           </NavLink>
           <p className={`${styles.EventDescription} text-neutral-black`}>
-            {event?.Description.substring(0, 55)}{" "}
-            {event?.Description.length > 55 && "..."}
+            {event?.description.substring(0, 55)}{" "}
+            {event?.description.length > 55 && "..."}
           </p>
-          <Link 
-            to={`/event/${event.Name}`}
+          <Link
+            to={`/event/${event.name}`}
             className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}
           >
             Mehr anseigen
@@ -42,21 +42,18 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className={`${styles.SkillsArea}`}>
-        {event.Expert &&
-          event.Expert.Skills.length >= 1 &&
-          event.Expert.Skills.map((skill, index) => (
+        {event.skills &&
+          event.skills.length >= 1 &&
+          event.skills.map((skill, index) => (
             <button
               key={index}
               className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}
             >
               <p className={`${styles.skillButtonText} text-neutral-black`}>
-                {skill.Skillname}
+                {skill.MainSkills_id.skillName}
               </p>
             </button>
           ))}
-        {/* <button className={`${styles.skillButton} bg-neutral-white border-neutral-black hover:bg-neutral-grey-light`}>
-                        <p className={`${styles.skillButtonText} text-neutral-black`}>{event.Expert.Skill}</p>
-                    </button> */}
         <p className={`${styles.SkillsNumber} text-neutral-black`}>24..</p>
       </div>
       <div className={`${styles.cardFloatButtonsWrapper}`}>

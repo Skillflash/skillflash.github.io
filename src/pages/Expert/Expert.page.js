@@ -7,11 +7,11 @@ const Expert = (props) => {
   const {scrollY} = props
   return (
     <section>
-        <TopNavBar scrollY = {scrollY} />
-        <ExpertHeader/>
-        <ExpertDetails expert = {experts[2]}/>
+      <TopNavBar scrollY={scrollY} />
+      <ExpertHeader />
+      <ExpertDetails expert={experts} />
     </section>
-  )
+  );
 }
 
 export default Expert
