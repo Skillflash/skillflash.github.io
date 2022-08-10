@@ -10,7 +10,6 @@ const Event = (props) => {
   let params = useParams();
 
   let eventDetail = useGetEventDetails(params);
-  console.log("eventdetail here", eventDetail);
 
   const { scrollY } = props;
 

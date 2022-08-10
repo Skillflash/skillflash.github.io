@@ -3,11 +3,14 @@ import { IoArrowBack } from 'react-icons/io5';
 import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './Events.module.css';
-import { EventDetailsCard, EventWrapper } from '../../components';
+import { EventDetailsCard, EventWrapper, LoadingIndicator } from '../../components';
 import { avatar12, avatar13, avatar16, avatar17 } from '../../resources/Images';
+import theme from '../../resources/theme/theme';
 
 const EventDetailHeader = (props) => {
   const { scrollY, expert } = props;
+
+  const {data, loading, error} = expert;
 
   const navigate = useNavigate();
 
@@ -32,21 +35,21 @@ const EventDetailHeader = (props) => {
         </button>
       </div>
       <div className={`${styles.eventDetails}`}>
-        <EventDetailsCard />
+        <EventDetailsCard loading={loading} event={data} />
         <div className={`${styles.eventAuthor}`}>
-          <div className={`${styles.eventAuthorDetails}`}>
+          {loading ? <LoadingIndicator color={theme.NEUTRAL_WHITE} /> : data && <div className={`${styles.eventAuthorDetails}`}>
             <img
-              src={avatar13}
-              alt={expert.data && expert.data[0].author.profileImage.type}
+              src={`${process.env.REACT_APP_SECRET_DIRECTUS_LINK}assets/${data.author.profileImage.id}${process.env.REACT_APP_IMAGE_EXTENSIONS}`}
+              alt={data && data.author.profileImage.type}
               className={`${styles.eventAuthorImage} border-neutral-white`}
             />
             <h4 className={`${styles.eventAuthorName} text-neutral-white`}>
-              {expert.data && expert.data[0].author.firstName}
+              {data && data.author.firstName}
             </h4>
             <p className={`${styles.eventAuthorText} text-neutral-white`}>
-              {expert.data && expert.data[0].author.shortBio}
+              {data && data.author.shortBio}
             </p>
-          </div>
+          </div>}
         </div>
       </div>
     </EventWrapper>
