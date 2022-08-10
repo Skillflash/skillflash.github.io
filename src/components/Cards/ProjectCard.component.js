@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
     <div className={`${styles.EventWrapper}`}>
       <div className={`${styles.projectBackgroundImageWrapper}`}>
         <img
-          src={`https://50fx80xt.directus.app/assets/${event.Previewimg.id}?key=system-large-cover&cache-buster=KkcpWsbzGXH2dhxye_kWu&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzODcwMWE2LTdkNTAtNDE2Yi1iYmU3LTkzYjBjZDY4OWY5MyIsInJvbGUiOiIwMzlhZmJjNy0wYWZkLTRkMTctYTQ0Zi1jN2I5NTYxOWM5OTAiLCJhcHBfYWNjZXNzIjoxLCJhZG1pbl9hY2Nlc3MiOjEsImlhdCI6MTY1OTUyOTg4MCwiZXhwIjoxNjU5NTMwNzgwLCJpc3MiOiJkaXJlY3R1cyJ9.HS3IHoFSzxPHAcYZ1jbgqChJSxBsuy4nxrR7V68hA8M`}
+          src={`https://50fx80xt.directus.app/assets/${event.Previewimg.id}${process.env.REACT_APP_IMAGE_EXTENSIONS}`}
           alt={event.Name}
           className={`${styles.projectBackgroundImage}`}
         />

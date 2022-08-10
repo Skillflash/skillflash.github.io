@@ -20,10 +20,10 @@
 }
 
 .navButtonIcon {
-    @apply invisible text-lg font-bold duration-500 ease-in-out;
+    @apply visible md:invisible text-lg font-bold duration-500 ease-in-out;
 }
 
-.navButton:hover .navButtonIcon {
+.navButtonMd:hover .navButtonIcon {
     @apply visible mr-1.5;
 }
 
