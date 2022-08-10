@@ -1,83 +1,93 @@
-import gql from 'graphql-tag';
+import gql from "graphql-tag";
 
 export const eventsQuery = gql`
   query {
     Event {
       id
-      Description
-      Name
-      startdate
-      Enddate
-      Previewimg {
+      description
+      name
+      startDate
+      endDate
+      skills {
+        id
+        MainSkills_id {
+          id
+        }
+      }
+      eventImage {
         id
         width
         height
+        title
+        filename_disk
+        type
+        description
+      }
+      author {
+        firstName
+        lastName
+        id
+        shortBio
+        description
+        profileImage {
+          width
+          height
+          id
+          type
+        }
       }
     }
   }
 `;
 
 export const skillsQuery = gql`
-query {
+  query {
     Skills {
-        Skillname
-        Description
-        Expert{
-            Skills {
-                 Skillname
-             }
+      Skillname
+      Description
+      Expert {
+        Skills {
+          Skillname
         }
-        
+      }
     }
-}
-`
+  }
+`;
 
 export const subskillQuery = gql`
-query {
+  query {
     Subskill {
-        Name 
-        Description
+      Name
+      Description
     }
-}
-`
+  }
+`;
 
 export const teamsQuery = gql`
-    query {
-        Team {
-            Description
-            Name
-            Users {
-                Firstname
-                Lastname
-            }
-        }
+  query {
+    Team {
+      Description
+      Name
+      Users {
+        Firstname
+        Lastname
+      }
     }
-`
-
+  }
+`;
 
 export const expertsQuery = gql`
-query {
-        Expert {
-            Event {
-                Author
-                Description
-                Type
-                Name
-            }
-            Skills {
-                Skillname
-            }
-            Experience {
-                Company
-                Role
-                Name
-                Startdate
-            }
-            Blog {
-                Date
-                Name
-                Content
-            }
-        }
+  query {
+    Expert {
+      id
+      Email
+      yearsofexperince
+      Username
+      Profilimg {
+        id
+      }
+      Shortbio
+      Firstandlastname
     }
-`
+  }
+`;
