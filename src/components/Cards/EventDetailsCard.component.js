@@ -9,7 +9,11 @@ import { IoFilmOutline } from "react-icons/io5";
 
 const EventDetailsCard = (props) => {
   const { event } = props;
-  console.log("event 3", event);
+
+  let eventDate = event && event.startDate;
+
+  let displayDate = new Date(eventDate).toDateString();
+
   return (
     <div className={`${styles.eventCard} bg-neutral-white`}>
       <div className={`${styles.eventCardImageWrapper}`}>
@@ -28,50 +32,42 @@ const EventDetailsCard = (props) => {
         <h6
           className={`${styles.eventTitle} from-secondary-pink to-secondary-yellow`}
         >
-          {event && event?.description}
+          {event && event?.locationLink}
         </h6>
         <div className={`${styles.EventDateArea} bg-neutral-black`}>
           <p className={`${styles.EventDate} text-neutral-white`}>
-            {event && event?.startDate}
+            {displayDate}
           </p>
         </div>
         <div className="my-5 border border-neutral-grey" />
         <div className={`${styles.eventSkills}`}>
-          <Link
-            to={`/project`}
-            className={`${styles.eventSkillWrapper} bg-neutral-black`}
-          >
-            <p className={`${styles.eventSkill} text-neutral-white`}>
-              {event?.skills && event?.skills[0]?.id}
-            </p>
-          </Link>
-          <Link
-            to={`/project`}
-            className={`${styles.eventSkillWrapper} bg-neutral-black`}
-          >
-            <p className={`${styles.eventSkill} text-neutral-white`}>
-              {event?.skills && event?.skills[1]?.id}
-            </p>
-          </Link>
-          <Link
-            to={`/project`}
-            className={`${styles.eventSkillWrapper} bg-neutral-black`}
-          >
-            <p className={`${styles.eventSkill} text-neutral-white`}>
-              {event?.skills && event?.skills[2]?.id}
-            </p>
-          </Link>
+          {event?.skills &&
+            event?.skills?.map((skill) => {
+              return (
+                <Link
+                  to={`/project`}
+                  className={`${styles.eventSkillWrapper} bg-neutral-black`}
+                >
+                  <p className={`${styles.eventSkill} text-neutral-white`}>
+                    {skill.__typename}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
         <div className={`${styles.eventZoom} self-start text-neutral-black`}>
           <MdLocationPin
             size={16}
             className="mr-1 text-2xl text-neutral-black"
           />
-          <p className={`${styles.eventZoomText}`}>Zoom</p>
+          <p className={`${styles.eventZoomText}`}>
+            {event && event?.locationType}
+          </p>
         </div>
         <div>
           <p className={`${styles.eventPriceRange} text-neutral-black`}>
-            42,50€ - 45,30€
+            {event && event?.minTicketPrice}€ - {event && event?.maxTicketPrice}
+            €
           </p>
         </div>
         <EventButton>
