@@ -24,29 +24,6 @@ query {
 }
 `;
 
-export const skillsQuery = gql`
-  query {
-    Skills {
-      Skillname
-      Description
-      Expert {
-        Skills {
-          Skillname
-        }
-      }
-    }
-  }
-`;
-
-export const subskillQuery = gql`
-  query {
-    Subskill {
-      Name
-      Description
-    }
-  }
-`;
-
 export const teamsQuery = gql`
   query {
     Team {
@@ -77,10 +54,6 @@ export const expertsQuery = gql`
 `; 
 
 
-
-
-
-
 export const skillsQuery = gql`
 query {
     MainSkills {
@@ -104,18 +77,7 @@ query{
 
 
 
-export const teamsQuery = gql`
-  query {
-    Team {
-      Description
-      Name
-      Users {
-        Firstname
-        Lastname
-      }
-    }
-  }
-`;
+
 
 
 
