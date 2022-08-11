@@ -12,7 +12,7 @@ import Routers from "./routes/Router.navigation";
 
 const httpLink = createHttpLink({
   fetch,
-  uri: process.env.REACT_APP_SECRET_DIRECTUS_LINK,
+  uri: process.env.REACT_APP_SECRET_DIRECTUS_LINK + "graphql",
   headers: {
     authorization: `Bearer ${process.env.REACT_APP_SECRET_DIRECTUS_TOKEN}`,
     "Content-Language": "en-us",
