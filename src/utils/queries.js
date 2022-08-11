@@ -2,45 +2,84 @@ import gql from "graphql-tag";
 
 export const eventsQuery = gql`
 query {
-    Event{
-       name
-       startDate
-       endDate
-       description
-       maxTicketPrice 
-       minTicketPrice 
-       eventImage{
-           height   
-       }
-       author{
-           username  
-       }
-       locationType
-       locationLink
-       skills {
+  Event {
+    id
+    description
+    name
+    startDate
+    endDate
+    skills {
+      id
+      MainSkills_id {
         id
-        }  
+        skillName
+      }
     }
-} 
-`
+    eventImage {
+      id
+      width
+      height
+    }
+  }
+}
+`;
 
-export const expertsQuery = gql`
-query {
-    Expert{
-        profileImage{
-            height
+export const skillsQuery = gql`
+  query {
+    Skills {
+      Skillname
+      Description
+      Expert {
+        Skills {
+          Skillname
         }
-        username
-        firstName
-        lastName
-        email
-        shortBio
-        description
-        yearsOfExperience
-        author   
+      }
     }
   }
 `;
+
+export const subskillQuery = gql`
+  query {
+    Subskill {
+      Name
+      Description
+    }
+  }
+`;
+
+export const teamsQuery = gql`
+  query {
+    Team {
+      Description
+      Name
+      Users {
+        Firstname
+        Lastname
+      }
+    }
+  }
+`;
+
+export const expertsQuery = gql`
+  query {
+    Expert {
+      id
+      Email
+      yearsofexperince
+      Username
+      Profilimg {
+        id
+      }
+      Shortbio
+      Firstandlastname
+    }
+  }
+`; 
+
+
+
+
+
 
 export const skillsQuery = gql`
 query {
@@ -63,14 +102,7 @@ query{
   }
 `;
 
-export const websiteQuery = gql`
-query{
-    website{
-        path
-        title
-    }
-}
-`
+
 
 export const teamsQuery = gql`
   query {
