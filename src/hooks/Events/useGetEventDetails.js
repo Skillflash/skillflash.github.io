@@ -13,6 +13,11 @@ const useGetEventDetails = (props) => {
             name
             startDate
             endDate
+            locationLink
+            locationType
+            date_updated
+            maxTicketPrice
+            minTicketPrice
             skills {
               id
             }
@@ -42,7 +47,6 @@ const useGetEventDetails = (props) => {
   `;
   const { data, loading, error } = useQuery(eventQueryFilter);
 
-  console.log("data 2", data?.Event[0]);
   return {
     data: data?.Event[0],
     loading,
