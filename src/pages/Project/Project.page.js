@@ -9,11 +9,11 @@ const Project = props => {
 
     let skills = useGetSkills();
     let teams = useGetTeams();
-    let subskill = useGetSubskill();
+    let subskills = useGetSubskill();
     return (
         <section className='relative'>
             <TopNavBar scrollY={scrollY} />
-            <ProjectHeader scrollY={scrollY} projectSkills={skills} />
+            <ProjectHeader scrollY={scrollY} projectSkills={subskills} />
             {/* <ProjectHeader scrollY={scrollY} projectSubskill={subskill} /> */}
             {/* <Projects teams={teams} /> */}
         </section>
