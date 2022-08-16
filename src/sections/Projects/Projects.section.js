@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
 
-import experts from '../../dummy/experts';
-import { ArticleCard, AudioCard, EventCard, ExpertCardInn, LoadingIndicator, TeamCard } from '../../components';
+import { EventCard, ExpertCardInn, LoadingIndicator } from '../../components';
 
 
-import styles from './Projects.module.css'
 import theme from '../../resources/theme/theme';
+import styles from './Projects.module.css';
 
 const Projects = props => {
-    const { teams } = props;
+    const { teams, events, experts } = props;
 
-    const { data, loading, error } = teams;
+    const { data, loading, error } = events;
+    const { _data, _loading, _error } = experts;
+
+
 
     const [filters, setFilters] = useState([
         { name: 'Expert:inn', value: 'expert:inn', color:'bg-primary-blue' },
@@ -61,20 +63,20 @@ const Projects = props => {
                     </button>
                 )}
             </div>
-            {loading ? 
+            {loading || _loading ? 
                 <div className='mt-40'>
                     <LoadingIndicator size={2} color={theme.PRIMARY_ORANGE} />
                 </div>
             :
                 <div className={`${styles.skillsCards}`}>
-                <ExpertCardInn expert = { experts[0]} skillcolor = 'blue'  />
+                {_data.map((datum, index) => <ExpertCardInn key={index} expert={datum} skillcolor = 'blue'  />)}
+                {/* <AudioCard /> */}
+                {data.map((datum, index) => <EventCard key={index} event={datum} />)}
+                {/* <TeamCard team={data[0]} /> */}
+                {/* <ArticleCard />
                 <EventCard />
-                <AudioCard />
-                <TeamCard team={data[0]} />
-                <ArticleCard />
-                <EventCard />
-                <AudioCard />
-                <TeamCard team={data[1]} />
+                <AudioCard /> */}
+                {/* <TeamCard team={data[1]} /> */}
             </div>}
         </section>
     )

@@ -11,6 +11,7 @@ const ProjectHeader = props => {
     const { scrollY, projectSkills } = props;
 
     const { data, loading, error } = projectSkills;
+    console.log(data)
 
     let params = useParams();
     const [activeSkill, setActiveSkill] = useState(true);
@@ -22,7 +23,7 @@ const ProjectHeader = props => {
 
     useEffect(() => {
         if (!loading) {
-            setSkills([...data]);
+            setSkills([...data.subskills]);
         }
     }, [data, loading]);
 
@@ -45,7 +46,7 @@ const ProjectHeader = props => {
 
     const SetActiveSkills = data => {
         let _skills = [...activeSkills];
-        let skillsIndex = _skills.findIndex(s => s.name === data.name);
+        let skillsIndex = _skills.findIndex(s => s.SubSkill_id.name === data.SubSkill_id.name);
         if (skillsIndex < 0) {
             _skills.push(data);
         } else {
@@ -56,9 +57,9 @@ const ProjectHeader = props => {
 
     const SetSelectedSkills = data => {
         let _skills = [...selectedSkills];
-        let skillsIndex = _skills.findIndex(s => s.name === data.name);
+        let skillsIndex = _skills.findIndex(s => s.SubSkill_id.name === data.SubSkill_id.name);
         let _allSkills = [...skills];
-        let removeIndex = _allSkills.findIndex(a => a.name === data.name)
+        let removeIndex = _allSkills.findIndex(a => a.SubSkill_id.name === data.SubSkill_id.name)
         if (skillsIndex < 0) {
             _skills.unshift(data);
         } else {
@@ -98,7 +99,7 @@ const ProjectHeader = props => {
                             ${activeSkills.findIndex(a => a === selectedSkill) === -1 && 'bg-opacity-70'}
                             bg-neutral-white`}
                         >
-                            <h6 className={`${styles.projectButtonText}`}>{selectedSkill.name}</h6>
+                            <h6 className={`${styles.projectButtonText}`}>{selectedSkill.SubSkill_id.name}</h6>
                             <IoCloseCircleOutline onClick={(event) => SetSelectedActiveSkills(selectedSkill, event)} className={`${styles.projectButtonIcon}`} />
                         </button>
                     )}
@@ -125,7 +126,7 @@ const ProjectHeader = props => {
                                 onClick={event => SetSelectedActiveSkills(skill,event)}
                                 className={`text-neutral-black ${styles.projectSkillButton} bg-neutral-white border-neutral-black`}
                             >
-                                <h6 className={`${styles.projectSkillButtonText}`}>{skill.name}</h6>
+                                <h6 className={`${styles.projectSkillButtonText}`}>{skill.SubSkill_id && skill.SubSkill_id.name}</h6>
                             </button>
                         )}
                     </div>
