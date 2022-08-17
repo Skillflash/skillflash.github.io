@@ -15,9 +15,7 @@ const EventDetailsCard = (props) => {
   return (
     <>
       {loading ? 
-      <div className={`${styles.eventCardLoading} bg-transparent`}>
-        <LoadingIndicator />
-      </div>
+      <div />
        : <div className={`${styles.eventCard} bg-neutral-white`}>
         <div className={`${styles.eventCardImageWrapper}`}>
           <img

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {BottomBar, Search, TopNavBar} from '../../components';
+import { TopNavBar} from '../../components';
 import { useGetEvents, useGetSkills } from '../../hooks';
 import { Events, Header } from '../../sections';
 import styles from './Home.module.css'

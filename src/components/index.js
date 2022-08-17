@@ -20,6 +20,9 @@ import EventWrapper from './HeaderWrapper/EventWrapper.component';
 import EventDetailsCard from './Cards/EventDetailsCard.component';
 import EventButton from './Buttons/EventButton.component';
 import ExpertProfileCard from './Cards/ExpertProfileCard.component';
+import Error from './Error/Error.component';
+import Loading from './Loader/Loading.component';
+
 export {
     TopNavBar,
     Search,
@@ -42,5 +45,7 @@ export {
     EventWrapper,
     EventDetailsCard,
     EventButton,
-    ExpertProfileCard
+    ExpertProfileCard,
+    Error,
+    Loading,
 };
