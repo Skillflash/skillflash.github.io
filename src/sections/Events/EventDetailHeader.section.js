@@ -43,9 +43,9 @@ const EventDetailHeader = (props) => {
               alt={data && data.author.profileImage.type}
               className={`${styles.eventAuthorImage} border-neutral-white`}
             />
-            <h4 className={`${styles.eventAuthorName} text-neutral-white`}>
-              {data && data.author.firstName}
-            </h4>
+            <Link to={`/expert/${data.author.username}`} className={`${styles.eventAuthorName} text-neutral-white`}>
+              {data && data.author.username}
+            </Link>
             <p className={`${styles.eventAuthorText} text-neutral-white`}>
               {data && data.author.shortBio}
             </p>

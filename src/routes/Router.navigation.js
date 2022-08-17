@@ -26,7 +26,9 @@ const Routers = () => {
     return (
         <Routes>
             <Route path='/enterprise' element={<Enterprise scrollY={scrollY} />} />
-            <Route path='/expert' element={<Expert scrollY={scrollY} />} />
+            <Route path='/expert/'>
+                <Route path=':username'  element={<Expert scrollY={scrollY} />} />
+            </Route>
             <Route path='/project/'>
                 <Route path=':project' element={<Project scrollY={scrollY} />} />
             </Route>

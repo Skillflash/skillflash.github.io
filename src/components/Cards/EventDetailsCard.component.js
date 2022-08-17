@@ -35,7 +35,7 @@ const EventDetailsCard = (props) => {
           <h6
             className={`${styles.eventTitle} from-secondary-pink to-secondary-yellow`}
           >
-            Speaking about {event && event?.name}
+            {event && event?.name}
           </h6>
           <div className={`${styles.EventDateArea} bg-neutral-black`}>
             <Moment className={`${styles.EventDate} text-neutral-white`} format="D MMM" withTitle>

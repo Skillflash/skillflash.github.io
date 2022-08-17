@@ -1,13 +1,14 @@
 import React from 'react'
 
 import { EventCard } from '../../components';
+import styles from './Expert.module.css';
 
 const ExpertEvents = props => {
-  const { expert } = props;  
+  const { events } = props;  
   
   return (
-    <div className='md:grid md:grid-cols-3 md:gap-2 py-10'>
-      {expert.events.map((evt, index) => <EventCard />)}
+    <div className={`${styles.expertEventWrapper}`}>
+      {events.map((event, index) => <EventCard event={event} />)}
     </div>
   )
 }

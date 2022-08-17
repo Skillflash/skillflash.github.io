@@ -35,6 +35,7 @@ const useGetEventDetails = (props) => {
               description
             }
           author {
+             username
              firstName
              lastName
              id

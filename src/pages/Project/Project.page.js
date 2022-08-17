@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import { TopNavBar } from '../../components';
-import { useGetSkills, useGetTeams, useGetSubskill, useGetSkill, useGetEvents, useGetFilterExperts } from '../../hooks';
+import { useGetSkill, useGetEvents, useGetFilterExperts } from '../../hooks';
 import { ProjectHeader, Projects } from '../../sections';
 
 const Project = props => {

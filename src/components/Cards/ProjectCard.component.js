@@ -34,7 +34,7 @@ const ProjectCard = (props) => {
             {skill?.description.length > 55 && "..."}
           </p>
           <Link
-            to={`/event/${skill.skillName}`}
+            to={`/`}
             className={`${styles.EventLink} from-primary-blue to-primary-lila decoration-primary-blue`}
           >
             Mehr anseigen

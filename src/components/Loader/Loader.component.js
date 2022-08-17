@@ -6,7 +6,7 @@ const LoadingIndicator = props => {
     const { size, color } = props;
     return (
         <div className='w-fit mx-auto'>
-            <Loader type="line-scale-party" color={color} active size='lg' style={{transform: `scale(${size})`}}  />
+            <Loader type="line-scale" color={color} active size='lg' style={{transform: `scale(${size})`}}  />
         </div>
     )
 }

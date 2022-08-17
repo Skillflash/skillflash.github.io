@@ -11,7 +11,6 @@ const ProjectHeader = props => {
     const { scrollY, projectSkills } = props;
 
     const { data, loading, error } = projectSkills;
-    console.log(data)
 
     let params = useParams();
     const [activeSkill, setActiveSkill] = useState(true);

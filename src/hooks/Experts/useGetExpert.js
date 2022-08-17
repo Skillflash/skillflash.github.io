@@ -1,16 +1,19 @@
 import { gql, useQuery } from "@apollo/client";
 
-const useGetFilterExperts = skill => {
+const useGetExpert = username => {
     const expertFilterQuery = gql`
     query {
-        Expert(filter: {skills: {MainSkills_id: {skillName: {_eq: "${skill}"}}}}) {
+        Expert(filter: {username: {_eq: "${username}"}}) {
             username
-            firstName
-            lastName
             profileImage {
                 id
             }
+            firstName
+            lastName
+            shortBio
             yearsOfExperience
+            description
+            email
             skills {
                 id
                 MainSkills_id {
@@ -22,9 +25,10 @@ const useGetFilterExperts = skill => {
        }`
   const { data, loading, error } = useQuery(expertFilterQuery);
   return {
-    _data: data?.Expert,
-    _loading: loading,
-    _error: error,
+    data: data?.Expert[0],
+    loading: loading,
+    error: error,
   };
 };
-export default useGetFilterExperts;
+
+export default useGetExpert;

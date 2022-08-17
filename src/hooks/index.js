@@ -5,6 +5,8 @@ import useGetTeams from "./Teams/useGetTeams";
 import useGetExperts from "./Experts/useGetExperts";
 import useGetSkill from "./Skills/useGetSkill";
 import useGetFilterExperts from "./Experts/useGetFilterExperts";
+import useGetExpert from "./Experts/useGetExpert";
+import useGetExpertEvents from "./Events/useGetExpertEvents";
 
 export {
     useGetEvents, 
@@ -14,4 +16,6 @@ export {
     useGetSubskill, 
     useGetSkill,
     useGetFilterExperts,
+    useGetExpert,
+    useGetExpertEvents,
 }
