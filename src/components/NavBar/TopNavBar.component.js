@@ -25,7 +25,7 @@ const TopNavBar = props => {
                 </NavLink>
                 <div className={`${styles.searchWrapper} ${scrollY >= 130 ? 'bg-neutral-white' : 'bg-transparent'}`}>
                     <IoSearch  className={`${styles.searchIcon} ${scrollY >= 130 ? 'text-primary-orange' : 'text-neutral-white'} `} />
-                    <input className={`${styles.searchField} ${scrollY >= 130 ? 'text-neutral-black' : 'text-neutral-white'} `} value={text} onChange={e => setText(e.target.value)} />
+                    <input className={`${styles.searchField} ${scrollY >= 130 ? 'text-neutral-black' : 'text-neutral-white'} `} value={text} onFocus={() => setText("")} onChange={e => setText(e.target.value)} />
                     <button className={`${styles.searchButton} ${scrollY >= 130 ? 'text-neutral-white from-secondary-pink to-secondary-yellow' : 'text-neutral-white from-transparent to-transparent'}`} >
                         <IoChevronForward />
                     </button>

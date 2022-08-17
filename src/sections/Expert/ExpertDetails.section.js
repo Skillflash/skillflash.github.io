@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { ExpertProfileCard, LoadingIndicator } from '../../components';
+import { Error, ExpertProfileCard, Loading, LoadingIndicator } from '../../components';
 import ExpertAbout from './ExpertAbout.section';
 import ExpertEvents from './ExpertEvent.section';
 import styles from './Expert.module.css';
@@ -16,6 +16,22 @@ const ExpertDetails = (props) => {
 
   const toggleChange = index =>{
     setToggleState(index)
+  }
+
+  if (error || _error) {
+    return (
+      <section className={`${styles.mainWrapper} bg-neutral-white`}>
+        <Error />
+      </section>
+    )
+  }
+
+  if (loading || _loading) {
+    return (
+      <section className={`${styles.mainWrapper} bg-neutral-white`}>
+          <Loading />
+      </section>
+    )
   }
   
   return (

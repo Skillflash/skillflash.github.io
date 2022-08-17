@@ -67,3 +67,8 @@
     @apply text-xl mr-2;
 }
 
+.subTitle {
+    @apply font-quicksand font-semibold text-transparent text-xl tracking-wide bg-gradient-to-tr bg-clip-text;
+    @apply sm:text-2xl;
+    @apply md:text-3xl;
+}

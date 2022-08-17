@@ -118,6 +118,7 @@ const ProjectHeader = props => {
                 {loading ?
                     <LoadingIndicator size={1} color={theme.NEUTRAL_WHITE} />
                     :
+                    error ? <h2 className={`${styles.subTitle} from-neutral-white to-neutral-grey-light`}>Sorry, an error occured</h2> :
                     <div className={`${styles.projectSkillsWrapper}`}>
                         {skills.map((skill, index) =>
                             <button

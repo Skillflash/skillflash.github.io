@@ -1,12 +1,31 @@
 import React from 'react';
 
-import { LoadingIndicator, ProjectCard } from '../../components';
+import { Error, Loading, LoadingIndicator, ProjectCard } from '../../components';
 import theme from '../../resources/theme/theme';
 import styles from './Events.module.css';
 
 const Events = props => {
     const { events, skills } = props; 
     const {loading, data, error} = skills;
+
+    console.log(error)
+
+    if (error) {
+      return (
+        <section className={`${styles.mainWrapper} bg-neutral-white`}>
+          <Error />
+        </section>
+      )
+    }
+
+    if (loading) {
+      return (
+        <section className={`${styles.mainWrapper} bg-neutral-white`}>
+            <Loading />
+        </section>
+      )
+    }
+
     return (
       <section className={`${styles.mainWrapper} bg-neutral-white`}>
         {loading ? (

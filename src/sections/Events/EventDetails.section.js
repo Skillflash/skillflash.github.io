@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoadingIndicator } from '../../components';
+import { Error, Loading, LoadingIndicator } from '../../components';
 import theme from '../../resources/theme/theme';
 
 import styles from './Events.module.css';
@@ -7,6 +7,22 @@ import styles from './Events.module.css';
 const EventDetails = props => {
     const { event } = props;
     const {loading, data, error} = event;
+
+    if (error) {
+      return (
+        <section className={`${styles.mainWrapper} bg-neutral-white pt-40`}>
+          <Error />
+        </section>
+      )
+    }
+  
+    if (loading) {
+      return (
+        <section className={`${styles.mainWrapper} bg-neutral-white pt-40`}>
+            <Loading />
+        </section>
+      )
+    }
 
     return (
       <section className={`${styles.eventDetailsWrapper}`}>

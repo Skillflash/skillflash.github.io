@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
 
-import { EventCard, ExpertCardInn, LoadingIndicator } from '../../components';
+import { Error, EventCard, ExpertCardInn, Loading, LoadingIndicator } from '../../components';
 
 
 import theme from '../../resources/theme/theme';
@@ -12,8 +12,6 @@ const Projects = props => {
 
     const { data, loading, error } = events;
     const { _data, _loading, _error } = experts;
-
-
 
     const [filters, setFilters] = useState([
         { name: 'Expert:inn', value: 'expert:inn', color:'bg-primary-blue' },
@@ -42,6 +40,21 @@ const Projects = props => {
         setFilters([..._filters]);
     }
 
+    if (error || _error) {
+        return (
+          <section className={`${styles.mainWrapper} bg-neutral-white`}>
+            <Error />
+          </section>
+        )
+      }
+    
+      if (loading || _loading) {
+        return (
+          <section className={`${styles.mainWrapper} bg-neutral-white`}>
+              <Loading />
+          </section>
+        )
+      }
 
 
     return (
