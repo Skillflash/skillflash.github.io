@@ -209,8 +209,12 @@
 
 /* Event Details Card */
 
+.eventCardLoading {
+    @apply flex flex-col justify-center mr-10 min-w-full h-96;
+}
+
 .eventCard {
-    @apply shadow-xl drop-shadow-2xl flex flex-col rounded-md;
+    @apply shadow-xl drop-shadow-2xl flex flex-col rounded-md mr-10 w-[22rem];
 }
 
 .eventCardImageWrapper {
@@ -218,11 +222,11 @@
 }
 
 .eventCardImage {
-    
+    @apply h-60 w-full bg-center rounded-t-md;
 }
 
 .eventCardBook {
-    @apply absolute top-4 right-4 h-8 w-8 flex justify-center items-center rounded-full text-xl;
+    @apply absolute cursor-pointer top-4 right-4 h-8 w-8 flex justify-center items-center rounded-full text-xl shadow-md drop-shadow-xl;
 }
 
 .eventTitle {
@@ -242,12 +246,16 @@
     @apply text-left font-bold text-sm font-quicksand capitalize;
 }
 
+.eventLink {
+    @apply underline;
+}
+
 .eventZoom {
     @apply text-2xl flex flex-row items-center my-5; 
 }
 
 .eventZoomText {
-    @apply underline text-sm font-quicksand font-bold; 
+    @apply text-sm font-quicksand capitalize font-bold flex flex-row items-center justify-start; 
 }
 
 .eventPriceRange {
@@ -278,24 +286,24 @@
 }
 
 .expertProfileCardWrapper{
-    @apply w-80 p-8 rounded-md bg-white shadow-lg;
+    @apply relative w-[22rem] p-8 rounded-md bg-white shadow-lg;
     @apply hover:shadow-2xl
 }
 
 .expertProfileCardImage{
-    @apply mt-10 w-56 h-56 rounded-full border-2 border-white mx-auto shadow-md
+    @apply mt-10 w-56 h-56 rounded-full border-2 border-white mx-auto shadow-md drop-shadow-xl mb-2;
 }
 
 .expertProfileCardName{
-    @apply text-center font-bold text-[40px] font-source-sans-pro bg-clip-text text-transparent bg-gradient-to-r from-secondary-pink to-secondary-yellow
+    @apply text-left font-bold text-[40px] font-source-sans-pro bg-clip-text text-transparent bg-gradient-to-r;
 }
 
 .expertProfileCardUserName{
-    @apply font-bold text-2xl font-quicksand text-neutral-black
+    @apply font-bold text-2xl font-quicksand text-neutral-black;
 }
 
 .expertProfileCardDescription{
-    @apply font-bold text-base font-quicksand text-neutral-black mt-4
+    @apply font-bold text-base font-quicksand text-neutral-black mt-2;
 }
 
 .expertProfileCardAddress{
@@ -303,7 +311,7 @@
 }
 
 .expertProfileCardButton{
-    @apply flex  bg-gradient-to-r from-secondary-pink to-secondary-yellow px-4 py-2 rounded-md justify-center text-white font-bold font-source-sans-pro text-2xl mt-6
+    @apply flex cursor-pointer bg-gradient-to-r px-4 py-2 rounded-md justify-center text-white font-bold font-source-sans-pro text-2xl mt-6
 }
 
 .expertProfileCardMediaGroup{

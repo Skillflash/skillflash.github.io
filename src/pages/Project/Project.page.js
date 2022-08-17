@@ -1,21 +1,24 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import { TopNavBar } from '../../components';
-import { useGetSkills, useGetTeams, useGetSubskill } from '../../hooks';
+import { useGetSkill, useGetEvents, useGetFilterExperts } from '../../hooks';
 import { ProjectHeader, Projects } from '../../sections';
 
 const Project = props => {
     const { scrollY } = props;
+    let {project} = useParams();
 
-    let skills = useGetSkills();
-    let teams = useGetTeams();
-    let subskills = useGetSubskill();
+    let skills = useGetSkill(project);
+    let events = useGetEvents(project);
+    let experts = useGetFilterExperts(project);
+
     return (
         <section className='relative'>
             <TopNavBar scrollY={scrollY} />
-            <ProjectHeader scrollY={scrollY} projectSkills={subskills} />
+            <ProjectHeader scrollY={scrollY} projectSkills={skills} />
             {/* <ProjectHeader scrollY={scrollY} projectSubskill={subskill} /> */}
-            {/* <Projects teams={teams} /> */}
+            <Projects events={events} experts={experts} />
         </section>
     )
 }

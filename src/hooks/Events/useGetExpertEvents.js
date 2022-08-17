@@ -1,8 +1,8 @@
 import { gql, useQuery } from "@apollo/client";
 
-const useGetEvents = skill => {
+const useGetExpertEvents = username => {
   const eventFilterQuery = gql `query {
-    Event(filter: {skills: {MainSkills_id: {skillName: {_eq: "${skill}"}}}}) {
+    Event(filter: {author: {username: {_eq: "${username}"}}}) {
         name
         startDate
         description
@@ -25,10 +25,10 @@ const useGetEvents = skill => {
    }`
   const { data, loading, error } = useQuery(eventFilterQuery);
   return {
-    data: data?.Event,
-    loading,
-    error,
+    _data: data?.Event,
+    _loading: loading,
+    _error: error,
   };
 };
 
-export default useGetEvents;
+export default useGetExpertEvents;

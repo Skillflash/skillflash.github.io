@@ -56,14 +56,20 @@ export const expertsQuery = gql`
 
 export const skillsQuery = gql`
 query {
-    MainSkills {
-             skillName
-             description
-             subskills{
-                 id
-                }
-         }
- }   
+  MainSkills {
+      skillName
+      description
+      subskills {
+          id
+          SubSkill_id {
+              name
+          }
+      }
+      image {
+          id
+      }
+  }
+ }  
 `
 
 export const subskillQuery = gql`

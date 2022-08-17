@@ -5,18 +5,19 @@ import theme from '../../resources/theme/theme';
 import styles from './Events.module.css';
 
 const Events = props => {
-    const { events } = props; 
+    const { events, skills } = props; 
+    const {loading, data, error} = skills;
     return (
       <section className={`${styles.mainWrapper} bg-neutral-white`}>
-        {events.loading ? (
+        {loading ? (
           <div className="mt-20">
             <LoadingIndicator size={2} color={theme.SECONDARY_PINK} />
           </div>
         ) : (
           <div className={`${styles.eventsCards}`}>
-            {events.data &&
-              events.data.map((event, index) => (
-                <ProjectCard event={event} key={index} />
+            {data &&
+              data.map((datum, index) => (
+                <ProjectCard skill={datum} key={index} />
               ))}
           </div>
         )}

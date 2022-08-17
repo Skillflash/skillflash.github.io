@@ -1,27 +1,29 @@
 import React, { useState } from 'react';
 
-import { ExpertProfileCard } from '../../components';
+import { ExpertProfileCard, LoadingIndicator } from '../../components';
 import ExpertAbout from './ExpertAbout.section';
 import ExpertEvents from './ExpertEvent.section';
-import experts from '../../dummy/experts';
 import styles from './Expert.module.css';
 
 const ExpertDetails = (props) => {
+  const {expert, events} = props;
 
-  const {expert} = props
+  const {data, loading, error} = expert;
+
+  const {_data, _loading, _error} = events;
 
   const [toggleState, setToggleState] = useState(1)
 
   const toggleChange = index =>{
     setToggleState(index)
-    console.log(toggleState)
   }
   
   return (
     <div className='-mt-16 flex relative max-w-[1440px] mx-auto'>
-      <div className='pl-16 pr-10'>
-        <ExpertProfileCard expert = {experts[2]}/>
-      </div>
+      {loading ? <LoadingIndicator /> :<div className='pl-16 pr-10'>
+        <ExpertProfileCard expert={data}/>
+      </div>}
+      {loading || _loading ? <LoadingIndicator /> : 
       <div>
           {/* Tabs */}
           <div className = {`${styles.tabsContainer}`}>
@@ -40,11 +42,11 @@ const ExpertDetails = (props) => {
               </div>
           </div>
           {/* Sections */}
-          <div className = {`${styles.contentsContainer}`}>
-              <div className={ toggleState === 1 ? `${styles.tabContentActive}` :   `${styles.tabContent}` }><ExpertAbout expert = {experts[2]}/></div>
-              <div className={ toggleState === 2 ? `${styles.tabContentActive}` :   `${styles.tabContent}` }><ExpertEvents expert = {experts[2]}/></div>
-          </div>
-      </div>
+            <div className = {`${styles.contentsContainer}`}>
+                <div className={ toggleState === 1 ? `${styles.tabContentActive}` :   `${styles.tabContent}` }><ExpertAbout expert={data}/></div>
+                <div className={ toggleState === 2 ? `${styles.tabContentActive}` :   `${styles.tabContent}` }><ExpertEvents events={_data}/></div>
+            </div>
+      </div>}
     </div>
   )
 }

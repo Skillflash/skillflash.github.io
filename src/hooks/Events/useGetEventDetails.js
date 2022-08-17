@@ -20,6 +20,10 @@ const useGetEventDetails = (props) => {
             minTicketPrice
             skills {
               id
+              MainSkills_id {
+                id
+                skillName
+              }
             }
             eventImage {
               id
@@ -31,6 +35,7 @@ const useGetEventDetails = (props) => {
               description
             }
           author {
+             username
              firstName
              lastName
              id

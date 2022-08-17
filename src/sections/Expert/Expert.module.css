@@ -55,3 +55,9 @@
     @apply 2xl:-ml-[640px];
 }
 
+
+/* Expert Events */
+
+.expertEventWrapper {
+    @apply md:grid md:grid-cols-3 md:gap-2 py-10;
+}
