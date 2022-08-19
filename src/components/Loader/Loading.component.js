@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 import styles from './Loader.module.css';
 
 const Loading = props => {
-    let words = ["Loading...", "Skillflash", "One sec..."];
+    let words = ["Loading...", "Skillflash...", "One sec..."];
     return (
         <div className={`${styles.loadingWrapper}`}>
             <Typed
@@ -13,6 +13,7 @@ const Loading = props => {
                 typeSpeed={40}
                 backSpeed={60}
                 backDelay={3000}
+                shuffle
                 loop
                 showCursor={false}
             />
