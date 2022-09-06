@@ -48,6 +48,7 @@
 
 ## Web running
 
+
 - Clone the repository from GitHub `https://github.com/Skillflash/skillflash.github.io.git`
 - Navigate to the web folder ` cd skillflash.github.io/`
 - Add the .env file with the environment variables.
